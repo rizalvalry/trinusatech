@@ -2668,12 +2668,12 @@ Layanan konsultasi strategi kami membantu Anda mengidentifikasi dan merencanakan
                         </div>
                         <div class="elementor-element elementor-element-ae079f8 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="ae079f8" data-element_type="widget" data-widget_type="heading.default">
                            <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">Our Locations</h2>
+                              <h2 class="elementor-heading-title elementor-size-default">Lokasi</h2>
                            </div>
                         </div>
                         <div class="elementor-element elementor-element-f8d80f2 elementor-widget elementor-widget-heading" data-id="f8d80f2" data-element_type="widget" data-widget_type="heading.default">
                            <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">find us easily in your city.</h2>
+                              <h2 class="elementor-heading-title elementor-size-default">Temukan Kami Dengan Mudah.</h2>
                            </div>
                         </div>
                      </div>
@@ -2684,87 +2684,10 @@ Layanan konsultasi strategi kami membantu Anda mengidentifikasi dan merencanakan
                <div class="elementor-container elementor-column-gap-wider">
                   <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-24ac299" data-id="24ac299" data-element_type="column">
                      <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-9114add elementor-widget__width-initial elementor-absolute elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="9114add" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-bounce-in" >
-                                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       London					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       15 Locations					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4efe660 elementor-widget__width-initial elementor-absolute elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="4efe660" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-bounce-in" >
-                                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       USA					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       25 Locations					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-099c33f elementor-widget__width-initial elementor-absolute elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="099c33f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-bounce-in" >
-                                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Chinese					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       10  Locations					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-e6152e0 elementor-widget__width-initial elementor-absolute elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="e6152e0" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation_delay&quot;:900}" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-bounce-in" >
-                                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>				</span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Australia					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       13 Locations					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-6480713 elementor-widget elementor-widget-image" data-id="6480713" data-element_type="widget" data-widget_type="image.default">
-                           <div class="elementor-widget-container">
-                              <img width="937" height="513" src="wp-content/uploads/sites/20/2022/03/map-particel.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/03/map-particel.png 937w, https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/03/map-particel-300x164.png 300w, https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/03/map-particel-768x420.png 768w, https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/03/map-particel-800x438.png 800w" sizes="(max-width: 937px) 100vw, 937px" />															
-                           </div>
-                        </div>
+                       
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.562685454992!2d106.8433534!3d-6.2451859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x160234e756fdf17b!2sWisma%20NH!5e0!3m2!1sid!2sid!4v1653851215571!5m2!1sid!2sid" width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                        
                      </div>
                   </div>
                </div>
