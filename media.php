@@ -199,7 +199,6 @@
       <link rel="icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" sizes="32x32" />
       <link rel="icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" sizes="192x192" />
       <link rel="apple-touch-icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" />
-      <!-- <link href='wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2' rel='stylesheet' type='text/css'> -->
       <meta name="msapplication-TileImage" content="https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/04/favicon-tech.png" />
    </head>
    <body class="envato_tk_templates-template-default single single-envato_tk_templates postid-68 elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-68">
@@ -1374,35 +1373,229 @@
       <script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1' id='jquery-numerator-js'></script>
       <script type='text/javascript' src='wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4' id='imagesloaded-js'></script>
       <script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/e-gallery/js/e-gallery.min7359.js?ver=1.2.0' id='elementor-gallery-js'></script>
-      <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.mina767.js?ver=3.6.3' id='elementor-pro-webpack-runtime-js'></script>
+      <!-- <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.mina767.js?ver=3.6.3' id='elementor-pro-webpack-runtime-js'></script> -->
+      <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.minf43b.js?ver=3.7.1' id='elementor-pro-webpack-runtime-js'></script>
       <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/webpack.runtime.min3ab2.js?ver=3.6.5' id='elementor-webpack-runtime-js'></script>
       <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend-modules.min3ab2.js?ver=3.6.5' id='elementor-frontend-modules-js'></script>
       <script type='text/javascript' src='wp-includes/js/dist/vendor/regenerator-runtime.min3937.js?ver=0.13.9' id='regenerator-runtime-js'></script>
       <script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
       <script type='text/javascript' src='wp-includes/js/dist/hooks.min8cbb.js?ver=1e58c8c5a32b2e97491080c5b10dc71c' id='wp-hooks-js'></script>
       <script type='text/javascript' src='wp-includes/js/dist/i18n.mina28b.js?ver=30fcecb428a0e8383d3776bcdd3a7834' id='wp-i18n-js'></script>
-      <script type='text/javascript' id='wp-i18n-js-after'>
-         wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-      </script>
-      <script type='text/javascript' id='elementor-pro-frontend-js-translations'>
-         ( function( domain, translations ) {
-         	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
-         	localeData[""].domain = domain;
-         	wp.i18n.setLocaleData( localeData, domain );
-         } )( "elementor-pro", { "locale_data": { "messages": { "": {} } } } );
-      </script>
-      <script type='text/javascript' id='elementor-pro-frontend-js-before'>
-         var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/elementor.deverust.com\/techvisio\/wp-admin\/admin-ajax.php","nonce":"120a5c0e20","urls":{"assets":"https:\/\/elementor.deverust.com\/techvisio\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/elementor.deverust.com\/techvisio\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/elementor.deverust.com\/techvisio\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-      </script>
-      <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/frontend.mina767.js?ver=3.6.3' id='elementor-pro-frontend-js'></script>
-      <script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-      <script type='text/javascript' src='wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1' id='jquery-ui-core-js'></script>
-      <script type='text/javascript' id='elementor-frontend-js-before'>
-         var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.6.5","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/elementor.deverust.com\/techvisio\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":68,"title":"Homepage%20%E2%80%93%20Techvisio","excerpt":"","featuredImage":"https:\/\/elementor.deverust.com\/techvisio\/wp-content\/uploads\/sites\/20\/2022\/04\/Homepage-159x1024.jpg"}};
-      </script>
+      <!-- <script type='text/javascript' src='wp-includes/js/dist/hooks.mincbb5.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script> -->
+      <!-- <script type='text/javascript' src='wp-includes/js/dist/i18n.min771a.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script> -->
+    <script type='text/javascript' id='wp-i18n-js-after'>
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+    </script>
+    <script type='text/javascript' id='elementor-pro-frontend-js-before'>
+        var ElementorProFrontendConfig = {
+            "ajaxurl": "https:\/\/elementor.deverust.com\/techvisio\/wp-admin\/admin-ajax.php",
+            "nonce": "318e2b163b",
+            "urls": {
+                "assets": "https:\/\/elementor.deverust.com\/techvisio\/wp-content\/plugins\/elementor-pro\/assets\/",
+                "rest": "https:\/\/elementor.deverust.com\/techvisio\/wp-json\/"
+            },
+            "shareButtonsNetworks": {
+                "facebook": {
+                    "title": "Facebook",
+                    "has_counter": true
+                },
+                "twitter": {
+                    "title": "Twitter"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "has_counter": true
+                },
+                "pinterest": {
+                    "title": "Pinterest",
+                    "has_counter": true
+                },
+                "reddit": {
+                    "title": "Reddit",
+                    "has_counter": true
+                },
+                "vk": {
+                    "title": "VK",
+                    "has_counter": true
+                },
+                "odnoklassniki": {
+                    "title": "OK",
+                    "has_counter": true
+                },
+                "tumblr": {
+                    "title": "Tumblr"
+                },
+                "digg": {
+                    "title": "Digg"
+                },
+                "skype": {
+                    "title": "Skype"
+                },
+                "stumbleupon": {
+                    "title": "StumbleUpon",
+                    "has_counter": true
+                },
+                "mix": {
+                    "title": "Mix"
+                },
+                "telegram": {
+                    "title": "Telegram"
+                },
+                "pocket": {
+                    "title": "Pocket",
+                    "has_counter": true
+                },
+                "xing": {
+                    "title": "XING",
+                    "has_counter": true
+                },
+                "whatsapp": {
+                    "title": "WhatsApp"
+                },
+                "email": {
+                    "title": "Email"
+                },
+                "print": {
+                    "title": "Print"
+                }
+            },
+            "facebook_sdk": {
+                "lang": "en_US",
+                "app_id": ""
+            },
+            "lottie": {
+                "defaultAnimationUrl": "https:\/\/elementor.deverust.com\/techvisio\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+            }
+        };
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/frontend.minf43b.js?ver=3.7.1' id='elementor-pro-frontend-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+    <script type='text/javascript' id='elementor-frontend-js-before'>
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Extra",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Extra",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                }
+            },
+            "version": "3.6.5",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_dom_optimization": true,
+                "e_optimized_assets_loading": true,
+                "a11y_improvements": true,
+                "e_import_export": true,
+                "e_hidden_wordpress_widgets": true,
+                "theme_builder_v2": true,
+                "landing-pages": true,
+                "elements-color-picker": true,
+                "favorite-widgets": true,
+                "admin-top-bar": true,
+                "page-transitions": true,
+                "notes": true,
+                "form-submissions": true,
+                "e_scroll_snap": true
+            },
+            "urls": {
+                "assets": "https:\/\/elementor.deverust.com\/techvisio\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "body_background_background": "classic",
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 68,
+                "title": "Homepage%20%E2%80%93%20Techvisio",
+                "excerpt": "",
+                "featuredImage": "https:\/\/elementor.deverust.com\/techvisio\/wp-content\/uploads\/sites\/20\/2022\/04\/Homepage-159x1024.jpg"
+            }
+        };
+    </script>
       <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.min3ab2.js?ver=3.6.5' id='elementor-frontend-js'></script>
-      <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/elements-handlers.mina767.js?ver=3.6.3' id='pro-elements-handlers-js'></script>
-      <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.mina767.js?ver=3.6.3' id='e-sticky-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/elements-handlers.minf43b.js?ver=3.7.1' id='pro-elements-handlers-js'></script>
+    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.minf43b.js?ver=3.7.1' id='e-sticky-js'></script>
    </body>
    <!-- Mirrored from elementor.deverust.com/techvisio/template-kit/homepage/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 03:51:43 GMT -->
 </html>

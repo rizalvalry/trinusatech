@@ -5,3 +5,9 @@
 /.htaccess
 config/koneksi.php
 .htaccess
+media-backup.php
+/##wp-content
+/old-wp-includes
+/old-wp-content
+
+
