@@ -1,13 +1,3 @@
-			<?php
-			$query00 = $db->query("SELECT * FROM halaman_statis WHERE id_halaman = 4 AND aktif = 'Y'");
-			
-			$query75  = $db->query("SELECT * FROM USER WHERE nama_lengkap LIKE '%direktur%' AND blokir = 'T'");
-			
-			$profileceo  = $db->query("SELECT pin_bb FROM profil");
-			
-			?>
-
-
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" >
          <defs>
             <filter id="wp-duotone-dark-grayscale">
@@ -193,7 +183,10 @@
                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         </div>
                      </div> -->
-	  				<?php $compro = $query00->fetch_assoc(); ?>
+	  				<?php
+                 $query00 = $db->query("SELECT * FROM halaman_statis WHERE id_halaman = 4 AND aktif = 'Y'"); 
+                 $compro = $query00->fetch_assoc(); 
+               ?>
 
 					 <div class="elementor-element elementor-element-50d01e7 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="50d01e7" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
@@ -240,9 +233,15 @@
                   </div>
                </div> -->
 
-               <?php $ceoprofile    = $query75->fetch_assoc(); ?>
+               <?php 
+               $query75  = $db->query("SELECT * FROM USER WHERE nama_lengkap LIKE '%direktur%' AND blokir = 'T'");
+               $ceoprofile    = $query75->fetch_assoc(); 
+               ?>
 
-               <?php $descceo    = $profileceo->fetch_assoc(); ?>
+               <?php 
+               $profileceo  = $db->query("SELECT pin_bb FROM profil");
+               $descceo    = $profileceo->fetch_assoc(); 
+               ?>
 
                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-bf5794b" data-id="bf5794b" data-element_type="column">
                   <div class="elementor-widget-wrap elementor-element-populated">
