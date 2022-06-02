@@ -190,13 +190,13 @@
 
 					 <div class="elementor-element elementor-element-50d01e7 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="50d01e7" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                           <h2 class="elementor-heading-title elementor-size-default"><?= $compro['judul_halaman']; ?></h2>
+                           <h2 class="elementor-heading-title elementor-size-default"><?php echo $compro['judul_halaman']; ?></h2>
                         </div>
                      </div>
 					  
 					  <div class="elementor-element elementor-element-50d01e7 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="50d01e7" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                           <h2 class="elementor-heading-title elementor-size-default"><?= $compro['isi_halaman']; ?></h2>
+                           <h2 class="elementor-heading-title elementor-size-default"><?php echo $compro['isi_halaman']; ?></h2>
                         </div>
                      </div>
 
@@ -236,9 +236,8 @@
                <?php 
                $query75  = $db->query("SELECT * FROM USER WHERE nama_lengkap LIKE '%direktur%' AND blokir = 'T'");
                $ceoprofile    = $query75->fetch_assoc(); 
-               ?>
-
-               <?php 
+               
+ 
                $profileceo  = $db->query("SELECT pin_bb FROM profil");
                $descceo    = $profileceo->fetch_assoc(); 
                ?>
@@ -247,7 +246,7 @@
                   <div class="elementor-widget-wrap elementor-element-populated">
                      <div class="elementor-element elementor-element-995f12d elementor-widget elementor-widget-image" data-id="995f12d" data-element_type="widget" data-widget_type="image.default">
                         <div class="elementor-widget-container">
-                           <img width="419" height="596" src="gambar/user/<?= $ceoprofile['foto']; ?>" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/user/<?= $ceoprofile['foto']; ?> 419w, gambar/user/<?= $ceoprofile['foto']; ?> 211w" sizes="(max-width: 419px) 100vw, 419px" />															
+                           <img width="419" height="596" src="gambar/user/<?php echo $ceoprofile['foto']; ?>" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/user/<?php echo $ceoprofile['foto']; ?> 419w, gambar/user/<?php echo $ceoprofile['foto']; ?> 211w" sizes="(max-width: 419px) 100vw, 419px" />															
                         </div>
                      </div>
                      <div class="elementor-element elementor-element-8444baa elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="8444baa" data-element_type="widget" data-widget_type="icon-box.default">
@@ -256,10 +255,10 @@
                               <div class="elementor-icon-box-content">
                                  <h3 class="elementor-icon-box-title">
                                     
-                                    <span><?= $descceo['pin_bb']; ?></span>
+                                    <span><?php echo $descceo['pin_bb']; ?></span>
                                  </h3>
                                  <p class="elementor-icon-box-description">
-								 <?= $ceoprofile['nama_lengkap']; ?> <br>
+								 <?php echo $ceoprofile['nama_lengkap']; ?> <br>
                                     <strong> CEO Trinusa Technologies </strong>					
                                  </p>
                               </div>
@@ -406,7 +405,7 @@
 												$portofolio = $porto->fetch_assoc();
 												?>
 												<div class="elementor-widget-container">
-													<?= $portofolio['metode_pengiriman']; ?>
+													<?php echo $portofolio['metode_pengiriman']; ?>
 												</div>
 
                                              <!-- <div class="elementor-element elementor-element-ab30927 elementor-widget elementor-widget-heading" data-id="ab30927" data-element_type="widget" data-widget_type="heading.default">
@@ -589,9 +588,9 @@
                                  <div class="elementor-element elementor-element-416bfd1 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="416bfd1" data-element_type="widget" data-widget_type="image-box.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-image-box-wrapper">
-                                          <figure class="elementor-image-box-img"><a href="#"><img width="1767" height="1179" src="<?= $users[$i]; $i++; ?>" class="attachment-full size-full" alt="" loading="lazy" /></a></figure>
+                                          <figure class="elementor-image-box-img"><a href="#"><img width="1767" height="1179" src="<?php echo $users[$i]; $i++; ?>" class="attachment-full size-full" alt="" loading="lazy" /></a></figure>
                                           <div class="elementor-image-box-content">
-                                             <h3 class="elementor-image-box-title"><a href="#"><?= $rowkategoriproduct['nama_kategori']; ?></a></h3>
+                                             <h3 class="elementor-image-box-title"><a href="#"><?php echo $rowkategoriproduct['nama_kategori']; ?></a></h3>
                                              <!-- <p class="elementor-image-box-description">4936 Projects</p> -->
                                           </div>
                                        </div>
@@ -616,7 +615,7 @@
                               <div class="elementor-widget-wrap elementor-element-populated">
                                  <div class="elementor-element elementor-element-9df1a1d elementor-widget elementor-widget-image" data-id="9df1a1d" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                       <img width="1926" height="1286" src="wp-content/uploads/sites/20/2022/02/searching-for-solutions-group-of-three-young-and-p-QKN7X76.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/pengiriman/<?= $portofolio['gambar']; ?> 1926w, gambar/pengiriman/<?= $portofolio['gambar']; ?> 300w, gambar/pengiriman/<?= $portofolio['gambar']; ?> 1024w, gambar/pengiriman/<?= $portofolio['gambar']; ?> 768w, gambar/pengiriman/<?= $portofolio['gambar']; ?> 1536w, gambar/pengiriman/<?= $portofolio['gambar']; ?> 800w" sizes="(max-width: 1926px) 100vw, 1926px" />															
+                                       <img width="1926" height="1286" src="wp-content/uploads/sites/20/2022/02/searching-for-solutions-group-of-three-young-and-p-QKN7X76.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/pengiriman/<?php echo $portofolio['gambar']; ?> 1926w, gambar/pengiriman/<?php echo $portofolio['gambar']; ?> 300w, gambar/pengiriman/<?php echo $portofolio['gambar']; ?> 1024w, gambar/pengiriman/<?php echo $portofolio['gambar']; ?> 768w, gambar/pengiriman/<?php echo $portofolio['gambar']; ?> 1536w, gambar/pengiriman/<?php echo $portofolio['gambar']; ?> 800w" sizes="(max-width: 1926px) 100vw, 1926px" />															
                                     </div>
                                  </div>
                               </div>
@@ -638,7 +637,7 @@
 												$portofoliosecond = $porto2->fetch_assoc();
 												?>
 												<div class="elementor-widget-container">
-                                       <p><?= $portofoliosecond['metode_pengiriman']; ?></p>
+                                       <p><?php echo $portofoliosecond['metode_pengiriman']; ?></p>
                                     </div>
 
 
@@ -691,7 +690,7 @@
                                  </div>
                                  <div class="elementor-element elementor-element-2107bb6 elementor-widget elementor-widget-image" data-id="2107bb6" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
-                                       <img width="1844" height="1229" src="wp-content/uploads/sites/20/2022/02/technologies-in-business-VSH2THX.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/pengiriman/<?= $portofoliosecond['gambar']; ?> 1844w, gambar/pengiriman/<?= $portofoliosecond['gambar']; ?> 300w, gambar/pengiriman/<?= $portofoliosecond['gambar']; ?> 1024w, gambar/pengiriman/<?= $portofoliosecond['gambar']; ?> 768w, gambar/pengiriman/<?= $portofoliosecond['gambar']; ?> 1536w, gambar/pengiriman/<?= $portofoliosecond['gambar']; ?> 800w" sizes="(max-width: 1844px) 100vw, 1844px" />															
+                                       <img width="1844" height="1229" src="wp-content/uploads/sites/20/2022/02/technologies-in-business-VSH2THX.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/pengiriman/<?php echo $portofoliosecond['gambar']; ?> 1844w, gambar/pengiriman/<?php echo $portofoliosecond['gambar']; ?> 300w, gambar/pengiriman/<?php echo $portofoliosecond['gambar']; ?> 1024w, gambar/pengiriman/<?php echo $portofoliosecond['gambar']; ?> 768w, gambar/pengiriman/<?php echo $portofoliosecond['gambar']; ?> 1536w, gambar/pengiriman/<?php echo $portofoliosecond['gambar']; ?> 800w" sizes="(max-width: 1844px) 100vw, 1844px" />															
                                     </div>
                                  </div>
                               </div>
@@ -714,7 +713,7 @@
                      
 
 
- 					<p><?= $nextportofolio['metode_pengiriman']; ?></p>
+ 					<p><?php echo $nextportofolio['metode_pengiriman']; ?></p>
 					 
 					 
                      
@@ -737,7 +736,7 @@
                      
 
 
- 					<p><?= $nextportofolio['metode_pengiriman']; ?></p>
+ 					<p><?php echo $nextportofolio['metode_pengiriman']; ?></p>
 					 
 					 
                      
@@ -753,7 +752,7 @@
                                     <div class="elementor-widget-container">
                                        <div class="elementor-button-wrapper">
 									  	
-										<img src="gambar/pengiriman/<?= $nextportofolio['gambar']; ?>" style="width:250px;"/>
+										<img src="gambar/pengiriman/<?php echo $nextportofolio['gambar']; ?>" style="width:250px;"/>
 									
                                           </a>
                                        </div>
