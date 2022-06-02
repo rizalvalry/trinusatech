@@ -234,12 +234,10 @@
                </div> -->
 
                <?php 
-               $query75  = $db->query("SELECT * FROM USER WHERE nama_lengkap LIKE '%direktur%' AND blokir = 'T'");
+               $query75  = $db->query("SELECT * FROM user WHERE nama_lengkap LIKE '%direktur%' AND blokir = 'T'");
                $ceoprofile    = $query75->fetch_assoc(); 
                
  
-               $profileceo  = $db->query("SELECT pin_bb FROM profil");
-               $descceo    = $profileceo->fetch_assoc(); 
                ?>
 
                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-bf5794b" data-id="bf5794b" data-element_type="column">
@@ -254,6 +252,10 @@
                            <div class="elementor-icon-box-wrapper">
                               <div class="elementor-icon-box-content">
                                  <h3 class="elementor-icon-box-title">
+                                    <?php
+                                    $profileceo  = $db->query("SELECT pin_bb FROM profil");
+                                    $descceo    = $profileceo->fetch_assoc(); 
+                                    ?>
                                     
                                     <span><?php echo $descceo['pin_bb']; ?></span>
                                  </h3>
