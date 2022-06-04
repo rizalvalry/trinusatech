@@ -205,6 +205,10 @@
       <!-- contact us -->
       <link rel='stylesheet' id='elementor-post-1866-css' href='wp-content/uploads/sites/20/elementor/css/post-18664dae.css?ver=1653842061' type='text/css' media='all' />
       <!-- end contactus -->
+
+      <!-- karir -->
+      <link rel='stylesheet' id='elementor-post-2462-css' href='wp-content/uploads/sites/20/elementor/css/post-24623eeb.css?ver=1653862049' type='text/css' media='all' />
+      <!-- end karir -->
    
       <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -361,7 +365,7 @@
                                     <div class="elementor-widget-container">
                                        <nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                           <ul id="menu-1-26c93b7" class="elementor-nav-menu">
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="#" aria-current="page" class="elementor-item">Home</a></li>
+                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="<?= $row00['alamat_web']; ?>" aria-current="page" class="elementor-item">Home</a></li>
 											 
 
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
