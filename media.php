@@ -1,6 +1,7 @@
 <?php
     error_reporting(0);
 	session_start();
+   header('Access-Control-Allow-Origin: *');
 	require "config/koneksi.php";
 	$query00     = $db->query("SELECT nama_toko,email_pengelola,nomor_hp,meta_deskripsi,static_content, alamat, nomor_hp, email_protokol, alamat_web FROM profil");
 	$row00       = $query00->fetch_assoc();
@@ -200,6 +201,19 @@
       <link rel="icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" sizes="192x192" />
       <link rel="apple-touch-icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" />
       <meta name="msapplication-TileImage" content="https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/04/favicon-tech.png" />
+   
+      <!-- contact us -->
+      <link rel='stylesheet' id='elementor-post-1866-css' href='wp-content/uploads/sites/20/elementor/css/post-18664dae.css?ver=1653842061' type='text/css' media='all' />
+      <!-- end contactus -->
+   
+      <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <!-- <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> -->
+
    </head>
    <body class="envato_tk_templates-template-default single single-envato_tk_templates postid-68 elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-68">
 	<!--header-->

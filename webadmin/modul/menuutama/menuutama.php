@@ -317,7 +317,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-4">Ikon Menu</label>
 							<div class="col-sm-5">
-								<input type="text" value="<?php echo isset( $ikon ) ? $ikon : ""; ?>" class="form-control" name="ikon" placeholder="Contoh fa fa-home atau glyphicon glyphicon-home" maxlength="50" />
+								<textarea id="tinymce_basic" class="form-control" name="ikon" placeholder="Contoh Deskripsi Halaman" ><?php echo isset( $ikon ) ? $ikon : ""; ?></textarea>
 								<p class="help-block"><i>Untuk icon yang lebih besar Anda bisa mengganti <b>fa fa-nama_icon</b> dengan <b>glyphicon glyphicon-nama_icon</b></i></p>
 							</div>
 						</div>
@@ -598,7 +598,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-4">Ikon Menu</label>
 							<div class="col-sm-5">
-								<input type="text" value="<?php echo $row['icon']; ?>" class="form-control" name="ikon" placeholder="Contoh fa fa-home atau glyphicon glyphicon-home" maxlength="50" />
+								<textarea id="tinymce_basic" class="form-control" name="ikon" placeholder="Contoh Deskripsi Halaman" ><?php echo $row['icon']; ?></textarea>
 								<p class="help-block"><i>Untuk icon yang lebih besar Anda bisa mengganti <b>fa fa-nama_icon</b> dengan <b>glyphicon glyphicon-nama_icon</b></i></p>
 							</div>
 						</div>
