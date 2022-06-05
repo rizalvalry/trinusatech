@@ -898,7 +898,9 @@
                               data-widget_type="nav-menu.default">
                               <div class="elementor-widget-container">
                                  <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
-                                    <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>                                                    <span class="elementor-screen-only">Menu</span>
+                                    <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i>
+                                    <i class="fa fa-window-close" aria-hidden="true"></i>                                                    
+                                    <span class="elementor-screen-only">Menu</span>
                                  </div>
                                  <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
                                     <ul id="menu-2-8d04f4e" class="elementor-nav-menu">

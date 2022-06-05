@@ -5083,7 +5083,7 @@ body.rtl .elementor-68 .elementor-element.elementor-element-5c5ba0c {
 }
 
 .elementor-68 .elementor-element.elementor-element-0845a5b .elementor-posts-container .elementor-post__thumbnail {
-    /* padding-bottom:calc( 0.66 * 100% ); */
+    padding-bottom: calc( 0.66 * 100%);
 }
 
 .elementor-68 .elementor-element.elementor-element-0845a5b:after {

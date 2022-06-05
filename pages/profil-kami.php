@@ -1197,9 +1197,9 @@
                                  </div>
                                  <div class="elementor-element elementor-element-8d04f4e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-nav-menu" data-id="8d04f4e" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;dropdown&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
                                     <div class="elementor-widget-container">
-                                       <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+                                       <!-- <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
                                           <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
-                                       </div>
+                                       </div> -->
                                        <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
                                           <ul id="menu-2-8d04f4e" class="elementor-nav-menu">
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89"><a href="https://elementor.deverust.com/techvisio/template-kit/homepage/" class="elementor-item" tabindex="-1">Home</a></li>

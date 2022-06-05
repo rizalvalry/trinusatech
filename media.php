@@ -446,8 +446,8 @@
                                        </div>
                                        <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
                                           <ul id="menu-2-26c93b7" class="elementor-nav-menu">
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="#" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="#" class="elementor-item" tabindex="-1">About Us</a></li>
+                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="<?= $row00['alamat_web']; ?>" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+                                             <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="#" class="elementor-item" tabindex="-1">About Us</a></li> -->
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
                                                 <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Service</a>
                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
@@ -984,44 +984,66 @@
                                  </div>
                                  <div class="elementor-element elementor-element-8d04f4e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-nav-menu" data-id="8d04f4e" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;dropdown&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
                                     <div class="elementor-widget-container">
-                                       <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
-                                       <i class="fa-solid fa-bars"></i>   
+                                       <!-- <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+                                       <i class="fa fa-window-close" aria-hidden="true"></i>   
 									   			<span class="elementor-screen-only">Menu</span>
-                                       </div>
+                                       </div> -->
                                        <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
                                           <ul id="menu-2-8d04f4e" class="elementor-nav-menu">
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="#" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="#" class="elementor-item" tabindex="-1">About Us</a></li>
+                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="<?= $row00['alamat_web']; ?>" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+                                             <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="#" class="elementor-item" tabindex="-1">About Us</a></li> -->
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
-                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Service</a>
+                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">IT Solutions</a>
                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="#" class="elementor-sub-item" tabindex="-1">Service Set</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"><a href="#" class="elementor-sub-item" tabindex="-1">Service Detail</a></li>
+                                                <?php 
+												$query2 = $db->prepare("SELECT nama_kategori FROM kategori_produk");
+												$query2->execute();
+												$result2      = $query2->get_result();
+												while ( $row2         = $result2->fetch_assoc() ){ ?>
+                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row2['nama_kategori']; ?></a></li>
+                                                   <?php } ?>
                                                 </ul>
                                              </li>
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="#" class="elementor-item" tabindex="-1">Career</a></li>
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
-                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Pages</a>
+                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Partnerships</a>
                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="#" class="elementor-sub-item" tabindex="-1">Our Team</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99"><a href="#" class="elementor-sub-item" tabindex="-1">Testimonials</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"><a href="#" class="elementor-sub-item" tabindex="-1">Pricing &#038; Plans</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="#" class="elementor-sub-item" tabindex="-1">FAQ &#038; Help Center</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="#" class="elementor-sub-item" tabindex="-1">404</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104"><a href="#" class="elementor-sub-item" tabindex="-1">Coming Soon</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2256"><a href="#" class="elementor-sub-item" tabindex="-1">Login</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2300"><a href="#" class="elementor-sub-item" tabindex="-1">Register</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="#" class="elementor-sub-item" tabindex="-1">Contact Us</a></li>
+                                                <?php
+                                                $query3 = $db->prepare("SELECT judul_galeri FROM galeri");
+                                                $query3->bind_param("s", $aktif3);
+                                                $aktif3 = "Y";
+                                                $query3->execute();
+                                                $result3= $query3->get_result();
+                                                while ( $row3 = $result3->fetch_assoc() ){ ?>                                                               
+                                                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row3['judul_galeri']; ?></a></li>
+                                                <?php } ?> 
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
-                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Blog</a>
+                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Artikel</a>
                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107"><a href="#" class="elementor-sub-item" tabindex="-1">Our Blog</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108"><a href="#" class="elementor-sub-item" tabindex="-1">Post Archive</a></li>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109"><a href="#" class="elementor-sub-item" tabindex="-1">Single Post</a></li>
+                                                <?php
+                                                $query3 = $db->prepare("SELECT id_kategori,nama_kategori,kategori_seo FROM kategori_artikel WHERE aktif=? ORDER BY nama_kategori ASC");
+                                                $query3->bind_param("s", $aktif3);
+                                                $aktif3 = "Y";
+                                                $query3->execute();
+                                                $result3= $query3->get_result();
+                                                while ( $row3 = $result3->fetch_assoc() ){ ?>                                                               
+                                                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row3['nama_kategori']; ?></a></li>
+                                                <?php } ?> 
+                                                   
                                                 </ul>
                                              </li>
+                                             <?php
+												$query4  = $db->prepare("SELECT nama_menu,link FROM menuutama WHERE aktif=? AND lokasi=? ORDER BY urutan ASC");
+												$query4->bind_param("ss", $aktif4,$lokasi4);
+												$lokasi4 = "Public";
+												$aktif4  = "Y";
+												$query4->execute();
+												$result4 = $query4->get_result();
+												while ( $row4 = $result4->fetch_assoc() ){ ?>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="<?= $row4['link']; ?>" class="elementor-item" tabindex="-1"><?= $row4['nama_menu']; ?></a></li>
+                                    <?php } ?>
+
                                           </ul>
                                        </nav>
                                     </div>
@@ -1042,7 +1064,7 @@
                         <div class="elementor-container elementor-column-gap-no">
                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1eb5237" data-id="1eb5237" data-element_type="column">
                               <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-d79b37a elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-desktop elementor-widget elementor-widget-button" data-id="d79b37a" data-element_type="widget" data-widget_type="button.default">
+                                 <!-- <div class="elementor-element elementor-element-d79b37a elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-desktop elementor-widget elementor-widget-button" data-id="d79b37a" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-button-wrapper">
                                           <a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
@@ -1052,13 +1074,13 @@
                                           </a>
                                        </div>
                                     </div>
-                                 </div>
+                                 </div> -->
                                  <div class="elementor-element elementor-element-cb372ef elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-desktop elementor-widget elementor-widget-button" data-id="cb372ef" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-button-wrapper">
                                           <a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
                                           <span class="elementor-button-content-wrapper">
-                                          <span class="elementor-button-text">Register</span>
+                                          <span class="elementor-button-text">Konsultasi Gratis</span>
                                           </span>
                                           </a>
                                        </div>
