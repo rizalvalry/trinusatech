@@ -10,167 +10,17 @@
 ?>
 <!doctype html>
 <html lang="en-US">
-   <!-- Mirrored from elementor.deverust.com/techvisio/template-kit/homepage/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 03:51:25 GMT -->
-   <!-- Added by HTTrack -->
    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-   <!-- /Added by HTTrack -->
+
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="profile" href="https://gmpg.org/xfn/11">
-      <title>Homepage &#8211; Techvisio</title>
+      <title><?php include "pages/judul.php"; ?> | <?php include 'seo/dina_meta1.php'; ?></title>
       <meta name='robots' content='max-image-preview:large' />
       <link rel='dns-prefetch' href='http://s.w.org/' />
       <link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min7404.css?ver=5.9.3' type='text/css' media='all' />
-      <style id='global-styles-inline-css' type='text/css'>
-         body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white:
-         #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red:
-         #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber:
-         #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan:
-         #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue:
-         #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:
-         linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224)
-         100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180)
-         0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:
-         linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1)
-         100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1)
-         0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:
-         linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:
-         linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98)
-         80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236)
-         0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165)
-         0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112)
-         0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203)
-         0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:
-         linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:
-         linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale:
-         url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:
-         url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow:
-         url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:
-         url('#wp-duotone-blue-red');--wp--preset--duotone--midnight:
-         url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:
-         url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:
-         url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange:
-         url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium:
-         20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color:
-         var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color:
-         var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white)
-         !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color:
-         var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color:
-         var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color:
-         var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color:
-         var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color:
-         var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color:
-         var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color:
-         var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color:
-         var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color:
-         var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color:
-         var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color:
-         var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color:
-         var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color:
-         var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color:
-         var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color:
-         var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color:
-         var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color:
-         var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color:
-         var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color:
-         var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color:
-         var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black)
-         !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray)
-         !important;}.has-white-border-color{border-color: var(--wp--preset--color--white)
-         !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink)
-         !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red)
-         !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange)
-         !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber)
-         !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan)
-         !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan)
-         !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue)
-         !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue)
-         !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple)
-         !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:
-         var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple)
-         !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:
-         var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan)
-         !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:
-         var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)
-         !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:
-         var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red)
-         !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:
-         var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray)
-         !important;}.has-cool-to-warm-spectrum-gradient-background{background:
-         var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background:
-         var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background:
-         var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background:
-         var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background:
-         var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background:
-         var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background:
-         var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small)
-         !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium)
-         !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large)
-         !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-         * {box-sizing: border-box;}
-         body {font-family: Verdana, sans-serif;}
-         .mySlides {display: none;}
-         img {vertical-align: middle;}
-         /* Slideshow container */
-         .slideshow-container {
-         max-width: 720px;
-         position: relative;
-         margin: auto;
-         }
-         /* Caption text */
-         .text {
-         color: #f2f2f2;
-         font-size: 15px;
-         padding: 8px 12px;
-         position: absolute;
-         bottom: 8px;
-         width: 100%;
-         text-align: center;
-         }
-         /* Number text (1/3 etc) */
-         .numbertext {
-         color: #f2f2f2;
-         font-size: 12px;
-         padding: 8px 12px;
-         position: absolute;
-         top: 0;
-         }
-         /* The dots/bullets/indicators */
-         .dot {
-         height: 15px;
-         width: 15px;
-         margin: 0 2px;
-         background-color: #bbb;
-         border-radius: 50%;
-         display: inline-block;
-         transition: background-color 0.6s ease;
-         }
-         .active {
-         background-color: #717171;
-         }
-         /* Fading animation */
-         .fade {
-         animation-name: fade;
-         animation-duration: 1.5s;
-         }
-         @keyframes fade {
-         from {opacity: .4} 
-         to {opacity: 1}
-         }
-         /* On smaller screens, decrease text size */
-         @media only screen and (max-width: 300px) {
-         .text {font-size: 11px}
-         }
-
-		img.radius-circle {
-			border-radius: 50% !important;
-		}
-
-		section.elementor-top-section.elementor-element.elementor-element-5b35a63.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default-marginportofolio {
-			padding: 2.5em;
-		}
-      </style>
+      <link rel='stylesheet' id='template-kit-export-css'  href='style.css' type='text/css' media='all' />
       <link rel='stylesheet' id='template-kit-export-css'  href='wp-content/plugins/template-kit-export/public/assets/css/template-kit-export-public.min365c.css?ver=1.0.21' type='text/css' media='all' />
       <link rel='stylesheet' id='hello-elementor-css'  href='wp-content/themes/hello-elementor/style.min0875.css?ver=2.5.0' type='text/css' media='all' />
       <link rel='stylesheet' id='hello-elementor-theme-style-css'  href='wp-content/themes/hello-elementor/theme.min0875.css?ver=2.5.0' type='text/css' media='all' />
@@ -185,22 +35,44 @@
       <link rel='stylesheet' id='elementor-post-2005-css'  href='wp-content/uploads/sites/20/elementor/css/post-20055d09.css?ver=1652314551' type='text/css' media='all' />
       <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSource+Code+Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COrbitron%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.9.3' type='text/css' media='all' />
       <link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' type='text/css' media='all' />
-      <!-- <link rel='stylesheet' id='elementor-icons-fa-solid-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css?ver=5.15.3' type='text/css' media='all' />
-         <link rel='stylesheet' id='elementor-icons-fa-brands-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3' type='text/css' media='all' />
-         <link rel='stylesheet' id='elementor-icons-fa-regular-css'  href='wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min52d5.css?ver=5.15.3' type='text/css' media='all' /> -->
       <script type='text/javascript' src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
       <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
       <script type='text/javascript' src='wp-content/plugins/template-kit-export/public/assets/js/template-kit-export-public.min365c.js?ver=1.0.21' id='template-kit-export-js'></script>
       <link rel="https://api.w.org/" href="https://elementor.deverust.com/techvisio/wp-json/" />
+      <!-- meta code -->
+      <meta name="description" content="<?php include 'seo/dina_meta2.php'; ?>" />
+      <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <link rel="canonical" href="index.html" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="PT Trinusa Technologies" />
+      <meta property="og:description" content="<?php include 'seo/dina_meta2.php'; ?>" />
+      <meta property="og:url" content="<?= $row00['alamat_web']; ?>" />
+      <meta property="og:site_name" content="PT Trinusa Technologies" />
+      <meta property="og:image" content="<?= $row00['alamat_web']; ?>gambar/toko/logo.png" />
+      <meta property="og:image:secure_url" content="<?= $row00['alamat_web']; ?>gambar/toko/logo.png" />
+      <meta property="og:image:width" content="686" />
+      <meta property="og:image:height" content="687" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content="<?php include 'seo/dina_meta2.php'; ?>" />
+      <meta name="twitter:title" content="PT Trinusa Technologies" />
+      <meta name="twitter:image" content="<?= $row00['alamat_web']; ?>gambar/toko/logo.png" />
       <meta name="generator" content="WordPress 5.9.3" />
+      <!-- end meta code -->
+      <!-- fa-icon -->
       <link rel="canonical" href="#" />
       <link rel='shortlink' href='https://elementor.deverust.com/techvisio/?p=68' />
       <link rel="alternate" type="application/json+oembed" href="https://elementor.deverust.com/techvisio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felementor.deverust.com%2Ftechvisio%2Ftemplate-kit%2Fhomepage%2F" />
       <link rel="alternate" type="text/xml+oembed" href="https://elementor.deverust.com/techvisio/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felementor.deverust.com%2Ftechvisio%2Ftemplate-kit%2Fhomepage%2F&amp;format=xml" />
-      <link rel="icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" sizes="32x32" />
-      <link rel="icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" sizes="192x192" />
-      <link rel="apple-touch-icon" href="wp-content/uploads/sites/20/2022/04/favicon-tech.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/site.webmanifest">
+      <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileImage" content="https://elementor.deverust.com/techvisio/wp-content/uploads/sites/20/2022/04/favicon-tech.png" />
+      <!-- end fa-icon -->
    
       <!-- contact us -->
       <link rel='stylesheet' id='elementor-post-1866-css' href='wp-content/uploads/sites/20/elementor/css/post-18664dae.css?ver=1653842061' type='text/css' media='all' />
@@ -373,11 +245,11 @@
                                                 
 												<ul class="sub-menu elementor-nav-menu--dropdown">
 												<?php 
-												$query2 = $db->prepare("SELECT nama_kategori FROM kategori_produk");
+												$query2 = $db->prepare("SELECT * FROM kategori_produk");
 												$query2->execute();
 												$result2      = $query2->get_result();
 												while ( $row2         = $result2->fetch_assoc() ){ ?>
-													<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="#" class="elementor-sub-item"><?= $row2['nama_kategori']; ?></a></li>
+													<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="solutions-<?= $row2['id_kategori']; ?>" class="elementor-sub-item"><?= $row2['nama_kategori']; ?></a></li>
 													
 													<?php } ?>
 												</ul>
@@ -1637,5 +1509,5 @@
     <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/elements-handlers.minf43b.js?ver=3.7.1' id='pro-elements-handlers-js'></script>
     <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.minf43b.js?ver=3.7.1' id='e-sticky-js'></script>
    </body>
-   <!-- Mirrored from elementor.deverust.com/techvisio/template-kit/homepage/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 03:51:43 GMT -->
+   
 </html>

@@ -61,6 +61,8 @@
 		include "pages/semua-artikel.php";
 	} else if ( $_GET['module'] == "karir" ){
 		include "pages/karir.php";
+	} else if ( $_GET['module'] == "solutions" ){
+		include "pages/solutions.php";
 	} else {
 		echo "Page Not Found";
 	}
