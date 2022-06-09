@@ -1,89 +1,4 @@
-	<!--breadcrumbs-->
-	<div class="breadcrumbs">
-		<div class="container">
-			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Beranda</a></li>
-				<li class="active">Detail Artikel</li>
-			</ol>
-		</div>
-	</div>
-	<!--//breadcrumbs-->
-	<!--products-->
-	<div class="products">	 
-		<div class="container">
-			<div class="col-md-3 rsidebar">
-				<div class="rsidebar-top">
-					<div class="sidebar-left">
-						<h4> Kategori Artikel </h4>
-						<ul class="faq">
-						<?php
-							$query56 = $db->query("SELECT id_kategori,nama_kategori,kategori_seo FROM kategori_artikel ORDER BY nama_kategori ASC");
-							while ( $row56   = $query56->fetch_assoc() ){
-						?>
-							<li class="item1"><a href="label-<?php echo $row56['id_kategori']; ?>-<?php echo $row56['kategori_seo']; ?>.html"><?php echo $row56['nama_kategori']; ?></a>
-						<?php
-							}
-						?>
-						</ul>
-					</div>		 
-				</div>
-				<div class="rsidebar-top" style="margin-top : 2em;">
-					<div class="sidebar-left">
-						<h4> Download </h4>
-						<ul class="faq">
-						<?php
-							$query1234         = $db->query("SELECT file, judul_file FROM file WHERE aktif = 'Y' ORDER BY id_file DESC");
-							while ( $row1234   = $query1234->fetch_assoc() ){
-								echo '<li><a href="file/'.$row1234['file'].'">'.$row1234['judul_file'].'</a></li>';
-							}
-						
-						?>						
-						</ul>
-					</div>		 
-				</div>
-				<?php 
-					$query17 = $db->query("SELECT produk.id_produk,produk.nama_produk,produk.produk_seo,produk.gambar,produk.harga,produk.stok,produk.diskon FROM produk ORDER BY dibeli DESC LIMIT 3");
-					while ( $row17 = $query17->fetch_assoc() ){
-					$harga17        = number_format( $row17['harga'],0,",","." );
-					$disc17         = ($row17['diskon']/100)*$row17['harga'];
-					$hargadisc17    = number_format(( $row17['harga']-$disc17),0,",","." );
-					
-					$cek_diskon17   = $row17['diskon'];
-					$harga_tetap17  = 'Rp. '.$hargadisc17.'';
-					$harga_diskon17 = 'Rp. <del>'.$harga17.'</del>  '.$hargadisc17.'';
-					if ( $cek_diskon17 == 0 ){
-						$harga_barang17 = $harga_tetap17;
-					} else {
-						$harga_barang17 = $harga_diskon17;
-					}
-					
-					$stok17     = $row17['stok'];
-					$tombolbeli17 = '<a class="item_add" href="aksi.php?module=keranjang&act=tambah&id='.$row17['id_produk'].'"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>';
-					$tombolhabis17 = '<a class="item_add" href="#"><span class="glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>';
-					if ( $stok17 == 0 ){
-						$tombol17 = $tombolhabis17;
-					} else {
-						$tombol17 = $tombolbeli17;
-					}
-				?>
-				<div class="gallery-grid">
-					<h6>PRODUK TERLARIS</h6>
-					<a href="produk-<?php echo $row17['id_produk']; ?>-<?php echo $row17['produk_seo']; ?>.html"><img src="gambar/thumb_produk1/<?php echo $row17['gambar']; ?>" class="img-responsive" alt=""/></a>
-					<div class="gallery-text simpleCart_shelfItem">
-						<h5><a class="name" href="produk-<?php echo $row17['id_produk']; ?>-<?php echo $row17['produk_seo']; ?>.html"><?php echo $row17['nama_produk']; ?></a></h5>
-						<p><span class="item_price"><?php echo $harga_barang17; ?></span></p>
-						<ul>
-							<li><a href="produk-<?php echo $row17['id_produk']; ?>-<?php echo $row17['produk_seo']; ?>.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
-							<li><?php echo $tombol17; ?></li>
-						</ul>
-					</div>
-				</div>
-				<?php
-					}
-				?>
-			</div>
-			<div class="col-md-9 product-model-sec-custom">
-			<?php
+<?php
 				include "config/tgl_indo.php";
 				$db->query("UPDATE artikel SET dibaca = dibaca + 1 WHERE id_artikel = '$_GET[id]'");
 				$query89     = $db->prepare("SELECT kategori_artikel.nama_kategori, artikel.judul_artikel, artikel.isi_artikel, artikel.tanggal, artikel.jam, artikel.dibaca, artikel.gambar, artikel.judul_seo, user.nama_lengkap FROM artikel INNER JOIN kategori_artikel ON artikel.id_kategori=kategori_artikel.id_kategori LEFT JOIN user ON artikel.id_user=user.id_user WHERE artikel.id_artikel = ?");
@@ -94,168 +9,300 @@
 				$row89       = $result89->fetch_assoc();
 				$tanggal     = tgl_indo( $row89['tanggal'] );
 			?>
-				<div class="rsidebar-top">	
-					<div class="row">
-						<center>
-							<h2> <?php echo $row89['judul_artikel']; ?>  </h2>
-							<p style="font-size : 10px; margin-top : 6px;"><?php echo 'Kategori : '.$row89['nama_kategori'].' | Tanggal : '.$tanggal.' | Jam : '.$row89['jam'].' WIB | Diposting : '.$row89['nama_lengkap'].' | Dibaca : '.$row89['dibaca'].' kali '; ?></p><br />
-							<img src="gambar/artikel/<?php echo $row89['gambar']; ?>" class="img-responsive" height="80%" width="80%" /><br/>
-						</center>
-						<p><?php echo $row89['isi_artikel']; ?></p>
-					</div>
-					<br />
-					<?php
-						$batas                   = 10;
-						if ( empty($_GET['halkomentar']) ){
-							$posisi              = 0;
-							$_GET['halkomentar'] = 1;
-						} else if ( $_GET['halkomentar'] > 0 ){
-							$posisi              = ( $_GET['halkomentar'] - 1 ) * $batas;
-						}
-						$query11  = $db->prepare("SELECT nama_lengkap, email, komentar, tanggal, jam FROM komentar WHERE id_artikel = ? AND aktif = ? ORDER BY id_komentar DESC limit $posisi,$batas");
-						$query11->bind_param("is", $id_artikel, $aktif11);
-						$aktif11  = "Y";
-						$query11->execute();
-						$result11 = $query11->get_result();
-						$row11    = $result11->num_rows;
-					?>
-					<h4><?php echo $row11 ?> Komentar</h4><br/>
-					<?php
-						while ( $row111 = $result11->fetch_assoc() ){
-					?>
-					<div class="row">
-						<div class="col-md-1">
-						<img src="images/poto.jpg" />
-						</div>
-						<div class="col-md-11">
-							<p><?php echo $row111['komentar']; ?></p>
-							<p><?php echo $row111['nama_lengkap'].' | '.$row111['tanggal'].' - '.$row111['jam'].' WIB' ?></p>
-						</div>
-					</div><hr />
-					<?php
-						}
-					?>
-					<div class="row">
-						<center>
-							<ul class="pagination pagination-lg">
-							<?php
-								$query27      = $db->prepare("SELECT id_komentar FROM komentar WHERE id_artikel = ? AND aktif = ?");
-								$query27->bind_param("is", $id_artikel, $aktif11);
-								$query27->execute();
-								$result27     = $query27->get_result();
-								$row27        = $result27->num_rows;
-								$jumlah_hal27 = ceil ($row27/$batas);
-							?>
-								<li class="<?php if ( $_GET['halkomentar'] <= 1 ) echo "disabled"; ?>"><a href="halkomentar-<?php echo $_GET['id']; ?>-<?php echo $_GET['halkomentar'] - 1; ?>.html"><i class="fa fa-angle-left">«</i></a></li>
+    
+    
+    <div data-elementor-type="single-post" data-elementor-id="2189" class="elementor elementor-2189 elementor-location-single post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-6a33dc2 elementor-section-height-min-height elementor-section-items-stretch elementor-section-boxed elementor-section-height-default" data-id="6a33dc2" data-element_type="section"
+            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-background-overlay"></div>
+            <div class="elementor-container elementor-column-gap-wider">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c072446" data-id="c072446" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-7fc51bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7fc51bb" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-91157ac" data-id="91157ac" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-cb8bfa3 elementor-icon-list--layout-inline elementor-align-left elementor-mobile-align-left elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" data-id="cb8bfa3"
+                                            data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items elementor-inline-items">
+                                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                                        <a href="<?= $row00['alamat_web']; ?>">
+
+                                                            <span class="elementor-icon-list-text">Home</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                                        <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+                                                        <span class="elementor-icon-list-text"><a href="#" rel="tag"><?= $row89['nama_kategori']; ?></a></span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                                        <a href="index.html">
+
+                                                            <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-chevron-right"></i>						</span>
+                                                            <span class="elementor-icon-list-text"><?php echo $row89['judul_artikel']; ?></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-7fb3864 elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="7fb3864" data-element_type="widget"
+                                            data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="theme-post-title.default">
+                                            <!-- <div class="elementor-widget-container">
+                                                <div class="elementor-heading-title elementor-size-default">6 Reasons Why A Full TOP Creative Agency Matters</div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-57b6bc4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="57b6bc4" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-wider">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-49fafe9" data-id="49fafe9" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-7576038 elementor-widget elementor-widget-theme-post-excerpt" data-id="7576038" data-element_type="widget" data-widget_type="theme-post-excerpt.default">
+                            <div class="elementor-widget-container">
+                                <!-- Duis id ipsum pellentesque, -->
+								<?php echo $row89['judul_artikel']; ?>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-36a2115 elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="36a2115" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
+                            <div class="elementor-widget-container">
+                                <img width="1920" height="1280" src="gambar/artikel/<?php echo $row89['gambar']; ?>" class="attachment-full size-full" alt="" loading="lazy" srcset="gambar/artikel/<?php echo $row89['gambar']; ?> 1920w, gambar/artikel/<?php echo $row89['gambar']; ?> 300w, gambar/artikel/<?php echo $row89['gambar']; ?> 1024w, gambar/artikel/<?php echo $row89['gambar']; ?> 768w, gambar/artikel/<?php echo $row89['gambar']; ?> 1536w, gambar/artikel/<?php echo $row89['gambar']; ?> 800w"
+                                    sizes="(max-width: 1920px) 100vw, 1920px" /> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-f56c877 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f56c877" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="elementor-container elementor-column-gap-wider">
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-da45baa" data-id="da45baa" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <!-- dead -->
+                    </div>
+                </div>
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-56c63af" data-id="56c63af" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-e9c4215 elementor-toc--minimized-on-tablet elementor-widget elementor-widget-table-of-contents" data-id="e9c4215" data-element_type="widget" data-settings="{&quot;headings_by_tags&quot;:[&quot;h1&quot;,&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;,&quot;h5&quot;,&quot;h6&quot;],&quot;exclude_headings_by_selector&quot;:[],&quot;marker_view&quot;:&quot;numbers&quot;,&quot;minimize_box&quot;:&quot;yes&quot;,&quot;minimized_on&quot;:&quot;tablet&quot;,&quot;min_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;min_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;min_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+                            data-widget_type="table-of-contents.default">
+							<?php echo $row89['isi_artikel']; ?>
+                        </div>
+                        
+                        <div class="elementor-element elementor-element-8990e20 elementor-widget elementor-widget-heading" data-id="8990e20" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-heading-title elementor-size-default">Dibuat: <?php echo ''.$tanggal.' | Jam : '.$row89['jam'].' WIB | Diposting : '.$row89['nama_lengkap'].'';?></div>
+                            </div>
+                        </div>
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-1dc39e9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1dc39e9" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-no">
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d0fe208" data-id="d0fe208" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-4cb6cb0 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="4cb6cb0" data-element_type="widget" data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <img src="https://secure.gravatar.com/avatar/adaf45d30ad5f49ad9468fb99ab7dc3c?s=96&amp;d=mm&amp;r=g" title="" alt="" /> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9458161" data-id="9458161" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-38ec43c elementor-widget elementor-widget-heading" data-id="38ec43c" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-heading-title elementor-size-default">Ditulis Oleh</div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-47466bd elementor-widget elementor-widget-heading" data-id="47466bd" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-heading-title elementor-size-default"><?= $row00['nama_toko']; ?></div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-256274b elementor-widget elementor-widget-text-editor" data-id="256274b" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+											Seorang pemimpi yang ingin membangun masa depan dengan berkontribusi menciptakan berbagai macam karya luar biasa yang membantu orang-orang dari seluruh dunia </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-a83eb59 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a83eb59" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                            <div class="elementor-container elementor-column-gap-wider">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-fe0840e" data-id="fe0840e" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-ea739f7 elementor-widget elementor-widget-heading" data-id="ea739f7" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-heading-title elementor-size-default">Do You Enjoyed This Article?</div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-3320864 elementor-widget elementor-widget-heading" data-id="3320864" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="elementor-heading-title elementor-size-default">Join our community of 3 million people and get updated every week We have a lot more just for you! Lets join us now</div>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-614a937 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="614a937" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;30&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_tablet&quot;:&quot;40&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
+                                            data-widget_type="form.default">
+                                            <div class="elementor-widget-container">
+                                                <form class="elementor-form" method="post" name="New Form">
+                                                    <input type="hidden" name="post_id" value="2189" />
+                                                    <input type="hidden" name="form_id" value="614a937" />
+                                                    <input type="hidden" name="referer_title" value="6 Reasons Why A Full Service Creative Agency Matters" />
+
+                                                    <input type="hidden" name="queried_id" value="1270" />
+
+                                                    <div class="elementor-form-fields-wrapper elementor-labels-">
+                                                        <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-70 elementor-md-60 elementor-field-required">
+                                                            <label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+                                                            <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Email" required="required" aria-required="true">
+                                                        </div>
+                                                        <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-30 e-form__buttons elementor-md-40">
+                                                            <button type="submit" class="elementor-button elementor-size-md">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Subscribe Now</span>
+													</span>
+					</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-8ffa5fb elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="8ffa5fb" data-element_type="widget" data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items elementor-inline-items">
+                                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                                        <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                                        <span class="elementor-icon-list-text">No charge</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item elementor-inline-item">
+                                                        <span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-check"></i>						</span>
+                                                        <span class="elementor-icon-list-text"> Unsubscribe anytime</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                 
+                    </div>
+                </div>
+
+				
+                <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-54ff14b" data-id="54ff14b" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-ae21663 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="ae21663" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-heading-title elementor-size-default">Artikel Saat ini</div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-06f9344 elementor-grid-1 elementor-posts--thumbnail-left elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-id="06f9344" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+                            data-widget_type="posts.classic">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+                                    
+								<!-- loop here -->
+
 								<?php
-									for ( $i = 1; $i <= $jumlah_hal27; $i++ ){
+								include "../config/tgl_indo.php";
+								$query0                  = $db->prepare("SELECT artikel.id_artikel, artikel.judul_artikel, artikel.judul_seo, artikel.isi_artikel, artikel.gambar, artikel.dibaca, artikel.tanggal, artikel.hari FROM artikel INNER JOIN kategori_artikel ON artikel.id_kategori=kategori_artikel.id_kategori ORDER BY artikel.id_artikel DESC LIMIT 4");
+								$query0->execute();
+								$result0                 = $query0->get_result();
+								while ( $row0            = $result0->fetch_assoc() ){
+									$tanggal             = tgl_indo($row0['tanggal']);
+									$isi_artikel         = $row0['isi_artikel'];
+									$isi                 = substr($isi_artikel,0,110); // ambil sebanyak 220 karakter
+									$isi                 = substr($isi_artikel,0,strrpos($isi," ")); // potong per spasi kalimat
+
 								?>
-									<li class="<?php if ( $_GET['halkomentar'] == $i ) echo "active"; ?>"><a href="<?php echo "halkomentar-$_GET[id]-$i.html"; ?>"><?php echo $i; ?></a></li>
-								<?php
-									}
-								?>
-								<li class="<?php if ( $_GET['halkomentar'] >= $jumlah_hal27 ) echo "disabled"; ?>"><a href="halkomentar-<?php echo $_GET['id']; ?>-<?php echo $_GET['halkomentar'] + 1; ?>.html"><i class="fa fa-angle-right">»</i></a></li>
-							</ul>
-						</center>
-					</div>
-					<div class="row">
-						<h4>Tambah Komentar</h4>
-						<form class="form-horizontal" method="POST" action="">
-						<?php 
-							if ( isset($_POST['komen']) ){
-								date_default_timezone_set('Asia/Jakarta');
-								$nama     = $_POST['nama'];
-								$email    = $_POST['email'];
-								$komentar = $_POST['komentar'];
-								$kode     = $_POST['kode'];
-								$aktif    = "Y";
-								$tanggal  = date("Y-m-d");
-								$jam      = date("H:i:s");
-								
-								if ( empty($nama) ){
-									echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>Peringatan!</strong> Nama Lengkap Tidak Boleh Kosong';
-									echo '</div>';
-								} else if ( empty($email) ){
-									echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>Peringatan!</strong> E-Mail Tidak Boleh Kosong';
-									echo '</div>';
-								} else if ( empty($komentar) ){
-									echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>Peringatan!</strong> Komentar Tidak Boleh Kosong';
-									echo '</div>';
-								} else if ( empty($kode) ){
-									echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>Peringatan!</strong> Kode Tidak Boleh Kosong';
-									echo '</div>';
-								} else if ( !preg_match("/^[a-zA-Z .,]*$/",$nama) ){
-									echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>Peringatan!</strong> Nama Tidak Boleh mengandung angka dan karakter';
-									echo '</div>';
-								} else if ( $kode <> $_SESSION['key'] ){
-									echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>Peringatan!</strong> Hasil hitung yang Anda masukan salah';
-									echo '</div>';
-								} else {
-									$query100 = $db->prepare("INSERT INTO komentar(id_artikel, nama_lengkap, email, komentar, tanggal, jam, aktif) VALUES (?,?,?,?,?,?,?)");
-									$query100->bind_param("issssss", $id_artikel, $nama, $email, $komentar, $tanggal, $jam, $aktif);
-									$query100->execute();
-									echo '<div class="alert alert-success" role="alert" style="font-size : 12px; padding : 5px;">';
-									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-									echo '<strong>SUKSES!</strong> Komentar Berhasil Ditambahkan';
-									echo '</div>';
-									echo "<meta http-equiv='refresh' content='1; url=artikel-$_GET[id]-$row89[judul_seo].html'>";
-								}
-							}
-							
-						?>
-							<div class="form-group">
-								<label class="control-label col-md-2">Nama Lengkap</label>
-								<div class="col-md-4">
-									<input type="text" class="form-control" name="nama" value="<?php echo isset($nama) ? $nama : ""; ?>" placeholder="Nama Lengkap" required />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-2">E-Mail</label>
-								<div class="col-md-5">
-									<input type="email" class="form-control" name="email" value="<?php echo isset($email) ? $email : ""; ?>" placeholder="E-Mail" required />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-2">Komentar</label>
-								<div class="col-md-8">
-									<textarea class="form-control" name="komentar" rows="5" placeholder="Komentar" required><?php echo isset($komentar) ? $komentar : ""; ?></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-2"></label>
-								<div class="col-md-8">
-									<img src="captcha/captcha.php" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-2">Hasil Hitung</label>
-								<div class="col-md-2">
-									<input type="text"  name="kode"class="form-control" placeholder="Hasil" required />
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="control-label col-md-2"></label>
-								<div class="col-md-8">
-									<input type="submit" name="komen" value="Komentar" class="btn btn-primary btn-block" />
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!--//products-->
+								<article class="elementor-post elementor-grid-item post-1281 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                        <a class="elementor-post__thumbnail__link" href="artikel-<?php echo $row0['id_artikel']; ?>-<?php echo $row0['judul_seo']; ?>">
+                                            <div class="elementor-post__thumbnail"><img width="300" height="200" src="gambar/thumb_artikel/<?php echo $row0['gambar']; ?>" class="attachment-medium size-medium" alt="" loading="lazy" /></div>
+                                        </a>
+                                        <div class="elementor-post__text">
+                                            <div class="elementor-post__title">
+                                                <a href="artikel-<?php echo $row0['id_artikel']; ?>-<?php echo $row0['judul_seo']; ?>">
+												<?php echo $row0['judul_artikel']; ?>			
+												</a>
+                                            </div>
+                                            <div class="elementor-post__meta-data">
+                                                <span class="elementor-post-date">
+												<?= $tanggal; ?>
+													</span>
+                                            </div>
+                                        </div>
+                                    </article>
+									<?php
+										}
+									?>
+									<!-- end here -->
+
+                                    <!-- <article class="elementor-post elementor-grid-item post-1278 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                        <a class="elementor-post__thumbnail__link" href="https://elementor.deverust.com/techvisio/2022/02/07/how-we-are-using-our-business-as-a-force-for-good/">
+                                            <div class="elementor-post__thumbnail"><img width="300" height="169" src="wp-content/uploads/sites/20/2022/02/innovative-business-technology-RW8XPGW-300x169.jpg" class="attachment-medium size-medium" alt="" loading="lazy" /></div>
+                                        </a>
+                                        <div class="elementor-post__text">
+                                            <div class="elementor-post__title">
+                                                <a href="https://elementor.deverust.com/techvisio/2022/02/07/how-we-are-using-our-business-as-a-force-for-good/">
+				How We Are Using Our Business as a Force For Good			</a>
+                                            </div>
+                                            <div class="elementor-post__meta-data">
+                                                <span class="elementor-post-date">
+			February 7, 2022		</span>
+                                            </div>
+                                        </div>
+                                    </article> -->
+                                    <!-- <article class="elementor-post elementor-grid-item post-1274 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                        <a class="elementor-post__thumbnail__link" href="https://elementor.deverust.com/techvisio/2022/02/07/why-the-digital-creative-agency-model-needs-a-rethink/">
+                                            <div class="elementor-post__thumbnail"><img width="300" height="200" src="wp-content/uploads/sites/20/2022/02/technologies-in-business-VSH2THX-300x200.jpg" class="attachment-medium size-medium" alt="" loading="lazy" /></div>
+                                        </a>
+                                        <div class="elementor-post__text">
+                                            <div class="elementor-post__title">
+                                                <a href="https://elementor.deverust.com/techvisio/2022/02/07/why-the-digital-creative-agency-model-needs-a-rethink/">
+				Why the digital creative agency model needs a rethink			</a>
+                                            </div>
+                                            <div class="elementor-post__meta-data">
+                                                <span class="elementor-post-date">
+			February 7, 2022		</span>
+                                            </div>
+                                        </div>
+                                    </article> -->
+                                    <!-- <article class="elementor-post elementor-grid-item post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                        <a class="elementor-post__thumbnail__link" href="index.html">
+                                            <div class="elementor-post__thumbnail"><img width="300" height="200" src="wp-content/uploads/sites/20/2022/02/developing-programming-working-in-a-software-engin-BEKL65Q-300x200.jpg" class="attachment-medium size-medium" alt="" loading="lazy" /></div>
+                                        </a>
+                                        <div class="elementor-post__text">
+                                            <div class="elementor-post__title">
+                                                <a href="index.html">
+				6 Reasons Why A Full Service Creative Agency Matters			</a>
+                                            </div>
+                                            <div class="elementor-post__meta-data">
+                                                <span class="elementor-post-date">
+			February 7, 2022		</span>
+                                            </div>
+                                        </div>
+                                    </article> -->
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    

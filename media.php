@@ -81,6 +81,14 @@
       <!-- karir -->
       <link rel='stylesheet' id='elementor-post-2462-css' href='wp-content/uploads/sites/20/elementor/css/post-24623eeb.css?ver=1653862049' type='text/css' media='all' />
       <!-- end karir -->
+
+      <!-- artikel -->
+      <link rel='stylesheet' id='elementor-post-2301-css' href='wp-content/uploads/sites/20/elementor/css/post-2301c661.css?ver=1653857462' type='text/css' media='all' />
+      <!-- end artikel -->
+
+      <!-- Detail artikel -->
+    <link rel='stylesheet' id='elementor-post-2189-css' href='wp-content/uploads/sites/20/elementor/css/post-2189f673.css?ver=1653842604' type='text/css' media='all' />
+      <!-- end Detail artikel -->
    
       <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -442,12 +450,12 @@
                               <div class="elementor-widget-wrap elementor-element-populated">
                                  <div class="elementor-element elementor-element-61dc0cf elementor-widget elementor-widget-heading" data-id="61dc0cf" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">Let's Discuss</h2>
+                                       <h2 class="elementor-heading-title elementor-size-default">Mari Berdiskusi</h2>
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-19c6139 elementor-widget elementor-widget-heading" data-id="19c6139" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">You Have Questions and We have answer</h2>
+                                       <h2 class="elementor-heading-title elementor-size-default">Anda Memiliki Pertanyaan Dan Kami Memiliki Jawaban</h2>
                                     </div>
                                  </div>
                               </div>
