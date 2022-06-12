@@ -98,6 +98,73 @@
 <script src="js/modernizr.custom.js"></script>
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> -->
 
+      <style>
+      .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: scroll;
+         -webkit-overflow-scrolling: touch;
+      }
+      .modalDialog:target {
+         opacity:1;
+         pointer-events: auto;
+      }
+      .modalDialog > div {
+         width: 720px;
+         position: relative;
+         margin: 10% auto;
+         padding: 5px 20px 13px 20px;
+         border-radius: 10px;
+         background: #fff;
+         background: -moz-linear-gradient(#fff, #999);
+         background: -webkit-linear-gradient(#fff, #999);
+         background: -o-linear-gradient(#fff, #999);
+      }
+      @media (max-width:780px){
+         .modalDialog > div {
+            /* width: 100%; */
+            width: 90% !important;
+            position: relative;
+            margin: 10% auto;
+            display: block;
+
+	}
+}
+      .close {
+         background: #606061;
+         color: #FFFFFF;
+         line-height: 25px;
+         position: absolute;
+         right: -12px;
+         text-align: center;
+         top: -10px;
+         width: 24px;
+         text-decoration: none;
+         font-weight: bold;
+         -webkit-border-radius: 12px;
+         -moz-border-radius: 12px;
+         border-radius: 12px;
+         -moz-box-shadow: 1px 1px 3px #000;
+         -webkit-box-shadow: 1px 1px 3px #000;
+         box-shadow: 1px 1px 3px #000;
+      }
+      .close:hover {
+         background: #00d9ff;
+      }
+      </style>
+
+
    </head>
    <body class="envato_tk_templates-template-default single single-envato_tk_templates postid-68 elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-68">
 	<!--header-->
@@ -477,7 +544,7 @@
                                              </div>
                                              <div class="elementor-element elementor-element-d242c7d elementor-widget elementor-widget-heading" data-id="d242c7d" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                   <h2 class="elementor-heading-title elementor-size-default">General Enquiries</h2>
+                                                   <h2 class="elementor-heading-title elementor-size-default">General Support</h2>
                                                 </div>
                                              </div>
                                              <div class="elementor-element elementor-element-a9e1118 elementor-widget elementor-widget-heading" data-id="a9e1118" data-element_type="widget" data-widget_type="heading.default">
@@ -487,7 +554,7 @@
                                              </div>
                                              <div class="elementor-element elementor-element-2d1c98a elementor-widget elementor-widget-heading" data-id="2d1c98a" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                   <h2 class="elementor-heading-title elementor-size-default">Service Complaint</h2>
+                                                   <h2 class="elementor-heading-title elementor-size-default">Layanan Terbaik</h2>
                                                 </div>
                                              </div>
                                              <div class="elementor-element elementor-element-48c6779 elementor-shape-circle e-grid-align-left e-grid-align-tablet-left e-grid-align-mobile-center elementor-widget-mobile__width-inherit elementor-grid-4 elementor-widget elementor-widget-social-icons" data-id="48c6779" data-element_type="widget" data-widget_type="social-icons.default">
@@ -802,7 +869,7 @@
                                           <div class="elementor-icon-box-content">
                                              <h3 class="elementor-icon-box-title">
                                                 <span  >
-                                                Get Quote					</span>
+                                                Gabung					</span>
                                              </h3>
                                           </div>
                                        </div>
@@ -818,7 +885,7 @@
                                           <div class="elementor-icon-box-content">
                                              <h3 class="elementor-icon-box-title">
                                                 <span  >
-                                                +92 296 387					</span>
+                                                <?= $row00['nomor_hp']; ?>					</span>
                                              </h3>
                                           </div>
                                        </div>
@@ -835,11 +902,18 @@
                                  <div class="elementor-element elementor-element-b261752 elementor-hidden-mobile elementor-widget elementor-widget-gallery" data-id="b261752" data-element_type="widget" data-settings="{&quot;columns&quot;:3,&quot;columns_tablet&quot;:3,&quot;columns_mobile&quot;:3,&quot;aspect_ratio&quot;:&quot;1:1&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-gallery__container">
-                                          <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="wp-content/uploads/sites/20/2022/03/playing-virtual-game-in-vr-goggles-ZQUNFS7.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="playing-virtual-game-in-vr-goggles-ZQUNFS7" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTYxNiwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIyXC8wM1wvcGxheWluZy12aXJ0dWFsLWdhbWUtaW4tdnItZ29nZ2xlcy1aUVVORlM3LmpwZyIsInNsaWRlc2hvdyI6ImFsbC1iMjYxNzUyIn0%3D">
-                                             <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="<?= $row00['alamat_web']; ?>/wp-content/uploads/sites/20/2022/03/playing-virtual-game-in-vr-goggles-ZQUNFS7.jpg" data-width="1885" data-height="1258" alt="" ></div>
+                                          <?php $beside = $db->query("SELECT * FROM `produk` WHERE `aktif`= 'Y' LIMIT 6");
+                                          while($sideimage       = $beside->fetch_assoc()) { ?>
+
+
+
+                                          <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="#" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="playing-virtual-game-in-vr-goggles-ZQUNFS7" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTYxNiwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIyXC8wM1wvcGxheWluZy12aXJ0dWFsLWdhbWUtaW4tdnItZ29nZ2xlcy1aUVVORlM3LmpwZyIsInNsaWRlc2hvdyI6ImFsbC1iMjYxNzUyIn0%3D">
+                                             <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="gambar/produk/<?= $sideimage['gambar']; ?>" data-width="1885" data-height="1258" alt="" ></div>
                                              <div class="elementor-gallery-item__overlay"></div>
                                           </a>
-                                          <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="wp-content/uploads/sites/20/2022/03/digital-business-and-technology-SNQVNDV.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="digital-business-and-technology-SNQVNDV" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTYwMCwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIyXC8wM1wvZGlnaXRhbC1idXNpbmVzcy1hbmQtdGVjaG5vbG9neS1TTlFWTkRWLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1iMjYxNzUyIn0%3D">
+
+                                          <?php } ?>
+                                          <!-- <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="wp-content/uploads/sites/20/2022/03/digital-business-and-technology-SNQVNDV.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="digital-business-and-technology-SNQVNDV" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTYwMCwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIyXC8wM1wvZGlnaXRhbC1idXNpbmVzcy1hbmQtdGVjaG5vbG9neS1TTlFWTkRWLmpwZyIsInNsaWRlc2hvdyI6ImFsbC1iMjYxNzUyIn0%3D">
                                              <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="<?= $row00['alamat_web']; ?>/wp-content/uploads/sites/20/2022/03/digital-business-and-technology-SNQVNDV.jpg" data-width="1900" data-height="1069" alt="" ></div>
                                              <div class="elementor-gallery-item__overlay"></div>
                                           </a>
@@ -854,11 +928,11 @@
                                           <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="wp-content/uploads/sites/20/2021/06/womans-hands-typing-on-keyboard-at-desk-working-in-JDKKPMP.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="womans-hands-typing-on-keyboard-at-desk-working-in-JDKKPMP" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU3MSwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIxXC8wNlwvd29tYW5zLWhhbmRzLXR5cGluZy1vbi1rZXlib2FyZC1hdC1kZXNrLXdvcmtpbmctaW4tSkRLS1BNUC5qcGciLCJzbGlkZXNob3ciOiJhbGwtYjI2MTc1MiJ9">
                                              <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="<?= $row00['alamat_web']; ?>/wp-content/uploads/sites/20/2021/06/womans-hands-typing-on-keyboard-at-desk-working-in-JDKKPMP.jpg" data-width="1823" data-height="1215" alt="" ></div>
                                              <div class="elementor-gallery-item__overlay"></div>
-                                          </a>
-                                          <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="wp-content/uploads/sites/20/2022/02/developing-programming-working-in-a-software-engin-BEKL65Q.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="developing-programming-working-in-a-software-engin-BEKL65Q" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU3MCwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIyXC8wMlwvZGV2ZWxvcGluZy1wcm9ncmFtbWluZy13b3JraW5nLWluLWEtc29mdHdhcmUtZW5naW4tQkVLTDY1US5qcGciLCJzbGlkZXNob3ciOiJhbGwtYjI2MTc1MiJ9">
+                                          </a> -->
+                                          <!-- <a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="wp-content/uploads/sites/20/2022/02/developing-programming-working-in-a-software-engin-BEKL65Q.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="all-b261752" data-elementor-lightbox-title="developing-programming-working-in-a-software-engin-BEKL65Q" e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTU3MCwidXJsIjoiaHR0cHM6XC9cL2VsZW1lbnRvci5kZXZlcnVzdC5jb21cL3RlY2h2aXNpb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzIwXC8yMDIyXC8wMlwvZGV2ZWxvcGluZy1wcm9ncmFtbWluZy13b3JraW5nLWluLWEtc29mdHdhcmUtZW5naW4tQkVLTDY1US5qcGciLCJzbGlkZXNob3ciOiJhbGwtYjI2MTc1MiJ9">
                                              <div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="<?= $row00['alamat_web']; ?>/wp-content/uploads/sites/20/2022/02/developing-programming-working-in-a-software-engin-BEKL65Q.jpg" data-width="1920" data-height="1280" alt="" ></div>
                                              <div class="elementor-gallery-item__overlay"></div>
-                                          </a>
+                                          </a> -->
                                        </div>
                                     </div>
                                  </div>
@@ -981,22 +1055,22 @@
                                  </div>
                                  <div class="elementor-element elementor-element-dc13a69 elementor-widget elementor-widget-heading" data-id="dc13a69" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">General Enquiries</h2>
+                                       <h2 class="elementor-heading-title elementor-size-default">General Support</h2>
                                     </div>
                                  </div>
-                                 <div class="elementor-element elementor-element-3f4e6a7 elementor-widget elementor-widget-heading" data-id="3f4e6a7" data-element_type="widget" data-widget_type="heading.default">
+                                 <!-- <div class="elementor-element elementor-element-3f4e6a7 elementor-widget elementor-widget-heading" data-id="3f4e6a7" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                        <h2 class="elementor-heading-title elementor-size-default">help@trinusatech.com</h2>
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-4e97ef5 elementor-widget elementor-widget-heading" data-id="4e97ef5" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">Service Complaint</h2>
+                                       <h2 class="elementor-heading-title elementor-size-default">Layanan Konsultan</h2>
                                     </div>
-                                 </div>
+                                 </div> -->
                                  <div class="elementor-element elementor-element-134e90c elementor-widget elementor-widget-text-editor" data-id="134e90c" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                       <p><em>Suzy Queue </em><em>4455 Landing Lange, </em><em>Louisville, KY 40018-1234</em></p>
+                                       <p><em><?= $row00['alamat']; ?></em></p>
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-b44321d elementor-shape-circle e-grid-align-left e-grid-align-tablet-left e-grid-align-mobile-center elementor-widget-mobile__width-inherit elementor-grid-4 elementor-widget elementor-widget-social-icons" data-id="b44321d" data-element_type="widget" data-widget_type="social-icons.default">

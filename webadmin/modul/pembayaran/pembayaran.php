@@ -9,7 +9,7 @@
 			<form method="POST" action="" class="form-horizontal">
 			<div class="row">
 				<div class="col-sm-8">
-				<span style="font-size : 30px;">Client</span> beranda / Client
+				<span style="font-size : 30px;">Karir</span> beranda / Karir
 				</div>
 				<div class="col-sm-4">
 					<p class="pull-right">
@@ -24,7 +24,7 @@
 			<div class="row">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h4><i class="glyphicon glyphicon-list"></i>Client</h4>
+					<h4><i class="glyphicon glyphicon-list"></i>Karir</h4>
 					
 				</div>
 				<div class="panel-body">	
@@ -120,8 +120,8 @@
 							<thead>
 								<tr class="bg-warning">
 									<th><label><input type="checkbox" name="semua" id="semua" /></label> NO</th>
-									<th>Nama Client</th>
-									<th>Minimun Budget</th>
+									<th>Nama Job</th>
+									<th>Job Type</th>
 									<th>Gambar</th>
 									<th>Urutan</th>
 									<th>Aktif</th>
@@ -162,7 +162,7 @@
 			<form method="POST" action="" class="form-horizontal" enctype="multipart/form-data">
 			<div class="row">
 				<div class="col-sm-10">
-				<span style="font-size : 30px;">Client</span> beranda / tambah Client
+				<span style="font-size : 30px;">Karir</span> beranda / tambah Karir
 				</div>
 				<div class="col-sm-2">
 					<p class="pull-right">
@@ -178,7 +178,7 @@
 			<div class="panel-group">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h4><i class="glyphicon glyphicon-pencil"></i>   Tambah Client</h4>
+					<h4><i class="glyphicon glyphicon-pencil"></i>   Tambah Karir</h4>
 					
 				</div>
 				<div class="panel-body">	 
@@ -204,31 +204,47 @@
 								echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
 								echo '<strong>PERINGATAN!</strong> Rincian Pembayaran Harus Diisi';
 								echo '</div>';
-							} else if ( !preg_match("/^[0-9]*$/",$minimum) ){
+							} else if ( empty($minimum) ){
 								echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
 								echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-								echo '<strong>PERINGATAN!</strong> Budget Minimum Harus Angka';
+								echo '<strong>PERINGATAN!</strong> Jenis Pekerjaan Harus Dipilih';
 								echo '</div>';
 							} else if ( !preg_match("/^[0-9]*$/",$urutan) ) {
 								echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
 								echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
 								echo '<strong>PERINGATAN!</strong> Urutan Harus Angka';
 								echo '</div>';
-							} else if ( $tfoto != 'image/jpeg' AND $tfoto != 'image/jpg' AND $tfoto != 'image/png'  ){
-								echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
-								echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-								echo '<strong>PERINGATAN!</strong> Gambar Harus Berekstensi Jpeg/png';
-								echo '</div>';
-							} else {
-								move_uploaded_file($lfoto, $folder.$unik);
-								$query = $db->prepare("INSERT INTO pembayaran (metode_pembayaran,rincian_pembayaran,total_minimum,urutan,aktif,gambar) VALUES (?,?,?,?,?,?)");
-								$query->bind_param("ssiiss", $metode,$rincian,$minimum,$urutan,$aktif,$unik);
-								$query->execute();
-								echo '<div class="alert alert-success" role="alert" style="font-size : 12px; padding : 5px;">';
-								echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-								echo '<strong>SUKSES!</strong> Data Berhasil Disimpan';
-								echo '</div>';
-								echo "<meta http-equiv='refresh' content='1; url=?module=pembayaran&act=tambahpembayaran'>";
+							}  else {
+								if ( empty($foto) ){
+									$query1 = $db->prepare("INSERT INTO pembayaran (metode_pembayaran,rincian_pembayaran,total_minimum,urutan,aktif) VALUES (?,?,?,?,?)");
+									$query1->bind_param("sssis", $metode,$rincian,$minimum,$urutan,$aktif);
+									$query1->execute();
+									echo '<div class="alert alert-success" role="alert" style="font-size : 12px; padding : 5px;">';
+									echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+									echo '<strong>SUKSES!</strong> Data Berhasil Disimpan Tanpa Gambar';
+									echo '</div>';
+									echo "<meta http-equiv='refresh' content='1; url=?module=pembayaran&act=tambahpembayaran'>";
+								} else {
+									if ( $tfoto != 'image/jpeg' AND $tfoto != 'image/jpg' AND $tfoto != 'image/png'  ){
+										echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
+										echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+										echo '<strong>PERINGATAN!</strong> Gambar Harus Berekstensi Jpeg/png';
+										echo '</div>';
+									} else {
+										move_uploaded_file($lfoto, $folder.$unik);
+										$query = $db->prepare("INSERT INTO pembayaran (metode_pembayaran,rincian_pembayaran,total_minimum,urutan,aktif,gambar) VALUES (?,?,?,?,?,?)");
+										$query->bind_param("sssiss", $metode,$rincian,$minimum,$urutan,$aktif,$unik);
+										$query->execute();
+										echo '<div class="alert alert-success" role="alert" style="font-size : 12px; padding : 5px;">';
+										echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
+										echo '<strong>SUKSES!</strong> Data Berhasil Disimpan';
+										echo '</div>';
+										echo "<meta http-equiv='refresh' content='1; url=?module=pembayaran&act=tambahpembayaran'>";
+
+									}
+
+								}
+								
 								
 							}
 							
@@ -239,22 +255,28 @@
 					
 					?>
 						<div class="form-group">
-							<label class="control-label col-sm-4">Nama Client</label>
+							<label class="control-label col-sm-4">Nama Karir</label>
 							<div class="col-sm-5">
-								<input type="text"  class="form-control" value="<?php echo isset ($metode) ? $metode : ""; ?>" name="metode" placeholder="Nama Client" maxlength="100" required autofocus />
+								<input type="text"  class="form-control" value="<?php echo isset ($metode) ? $metode : ""; ?>" name="metode" placeholder="Nama Karir" maxlength="100" required autofocus />
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-4">Deskripsi Client</label>
+							<label class="control-label col-sm-4">Deskripsi Karir</label>
 							<div class="col-sm-8">
 								<textarea name="rincian" rows="10" id="tinymce_basic"><?php echo isset ($rincian) ? $rincian : ""; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-4">Budget Minimum</label>
+							<label class="control-label col-sm-4">Jenis Pekerjaan</label>
 							<div class="col-sm-2">
-								<input type="text"  class="form-control" value="<?php echo isset ($minimum) ? $minimum : ""; ?>" name="minimum" placeholder="Budget Minimum" maxlength="11" required />
+							<select class="form-control" name="minimum">
+									<option value="FullTime"> -- FullTime -- </option>
+									<option value="Kontrak"> -- Kontrak -- </option>
+								</select>
 							</div>
+							<!-- <div class="col-sm-2">
+								<input type="text"  class="form-control" value="<?php echo isset ($minimum) ? $minimum : ""; ?>" name="minimum" placeholder="Jenis Pekerjaan"  required />
+							</div> -->
 						</div>
 						<div class="form-group">
 							<label class="control-label col-sm-4">Urutan</label>
@@ -276,7 +298,7 @@
 						<div class="form-group">
 							<label class="control-label col-sm-4">Gambar</label>
 							<div class="col-sm-4">
-								<input type="file" name="foto" class="form-control" required />
+								<input type="file" name="foto" class="form-control" />
 								<p class="help-block"><i>Masukan Gambar Kecil dengan tinggi : 50 dan l00 pixel</i></p>
 							</div>
 						</div>
@@ -346,7 +368,7 @@
 							} else if ( !preg_match("/^[0-9]*$/",$minimum) ){
 								echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
 								echo '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-								echo '<strong>PERINGATAN!</strong> Budget Minimum Harus Angka';
+								echo '<strong>PERINGATAN!</strong> Jenis Pekerjaan Harus Angka';
 								echo '</div>';
 							} else if ( !preg_match("/^[0-9]*$/",$urutan) ) {
 								echo '<div class="alert alert-danger" role="alert" style="font-size : 12px; padding : 5px;">';
@@ -397,7 +419,7 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-4">Budget Minimum</label>
+							<label class="control-label col-sm-4">Jenis Pekerjaan</label>
 							<div class="col-sm-2">
 								<input type="text"  class="form-control" value="<?php echo $row['total_minimum']; ?>" name="minimum" maxlength="11" required />
 							</div>

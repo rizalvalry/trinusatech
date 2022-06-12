@@ -525,40 +525,49 @@
                                                         </div>
                                                         <div class="elementor-element elementor-element-32cac47 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="32cac47" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Choose your career path</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">Pilih Jalur Karir Anda</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-ea4db54 elementor-widget elementor-widget-heading" data-id="ea4db54" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">decide what comes next</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">Putuskan Sesuai Keterampilanmu</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-066c22f elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="066c22f" data-element_type="widget" data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
-                                                                <p>We want to offer our team members personalized opportunities for growth, based on their level of experience. There is always room for development.</p>
+                                                                <p>Kami ingin menawarkan kepada anggota tim kami peluang yang dipersonalisasi untuk berkembang, berdasarkan tingkat pengalaman mereka. Selalu ada ruang untuk pengembangan.</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </section>
+                                        <!-- loop here -->
+                                        <?php
+                                        $karir = $db->query("SELECT * FROM pembayaran ORDER BY urutan ASC");
+                                        while ($job = $karir->fetch_assoc() ) {
+                                            $isi_job         = $job['rincian_pembayaran'];
+                                            $isi_desc                 = substr($isi_job,0,150); // ambil sebanyak 220 karakter
+                                            $isi_desc                 = substr($isi_job,0,strrpos($isi_desc," ")); // potong per spasi kalimat
+                                            ?>
+
                                         <section class="elementor-section elementor-inner-section elementor-element elementor-element-3245845 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3245845" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-wider">
                                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2fbf59b" data-id="2fbf59b" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
                                                         <div class="elementor-element elementor-element-02ea1be elementor-widget elementor-widget-heading" data-id="02ea1be" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Senior Data Engineer</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default"><?= $job['metode_pembayaran']; ?></h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-71f50dc elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="71f50dc" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Job Type:</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">Jenis:</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-d467a06 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="d467a06" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Full time</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default"><?= $job['total_minimum']; ?></h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-2d6d3f8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="2d6d3f8" data-element_type="widget" data-widget_type="divider.default">
@@ -571,12 +580,12 @@
                                                         </div>
                                                         <div class="elementor-element elementor-element-091d2a7 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="091d2a7" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Work Experience:</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">Pengalaman:</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-a449461 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="a449461" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">2-4 years</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">1-4 years/Fresh Graduate</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-244d5d1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="244d5d1" data-element_type="widget" data-widget_type="divider.default">
@@ -587,38 +596,38 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="elementor-element elementor-element-43ef1f0 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="43ef1f0" data-element_type="widget" data-widget_type="heading.default">
+                                                        <!-- <div class="elementor-element elementor-element-43ef1f0 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="43ef1f0" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
                                                                 <h2 class="elementor-heading-title elementor-size-default">Date Opened:</h2>
                                                             </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-90c3977 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="90c3977" data-element_type="widget" data-widget_type="heading.default">
+                                                        </div> -->
+                                                        <!-- <div class="elementor-element elementor-element-90c3977 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="90c3977" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
                                                                 <h2 class="elementor-heading-title elementor-size-default">03/11/2022</h2>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-adb6e44" data-id="adb6e44" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
                                                         <div class="elementor-element elementor-element-68e4ad5 elementor-widget elementor-widget-heading" data-id="68e4ad5" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Job Description:</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">Deskripsi Pekerjaan:</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-6e3f64f elementor-widget elementor-widget-text-editor" data-id="6e3f64f" data-element_type="widget" data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                                                            <p><?php echo 'Buka dan Lihat'; ?></p>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-71ae894 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="71ae894" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Remote Job:</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default">Status:</h2>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-1ab9bae elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="1ab9bae" data-element_type="widget" data-widget_type="heading.default">
                                                             <div class="elementor-widget-container">
-                                                                <h2 class="elementor-heading-title elementor-size-default">Yes</h2>
+                                                                <h2 class="elementor-heading-title elementor-size-default"><?= $job['aktif'] == 'Y' ? 'Dibuka' : 'Kadaluarsa'; ?></h2>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -628,9 +637,9 @@
                                                         <div class="elementor-element elementor-element-9b70529 elementor-align-center elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="9b70529" data-element_type="widget" data-widget_type="button.default">
                                                             <div class="elementor-widget-container">
                                                                 <div class="elementor-button-wrapper">
-                                                                    <a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
+                                                                    <a href="#openModal<?= $job['id_pembayaran'] ?>" class="elementor-button-link elementor-button elementor-size-md" role="button">
                                                                         <span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Apply Now</span>
+						<span class="elementor-button-text">Lihat dan Lamar</span>
                                                                         </span>
                                                                     </a>
                                                                 </div>
@@ -640,7 +649,24 @@
                                                 </div>
                                             </div>
                                         </section>
-                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-28974a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28974a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+
+                                        <!-- <a href="#openModal">Open Modal</a> -->
+                                        <!-- <div class="container"> -->
+                                            <div id="openModal<?= $job['id_pembayaran'] ?>" class="modalDialog">
+                                                <div>	<a href="#close" title="Close" class="close">X</a>
+
+                                                        <h2><?= $job['metode_pembayaran']; ?></h2>
+
+                                                    <?= $job['rincian_pembayaran']; ?>
+                                                </div>
+                                            </div>
+                                        <!-- </div> -->
+                                        <?php } ?>
+                                        <!-- end loop here -->
+
+                                        
+
+                                        <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-28974a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28974a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-wider">
                                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-51b5ffe" data-id="51b5ffe" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -737,8 +763,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-155d6d9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="155d6d9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        </section> -->
+                                        <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-155d6d9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="155d6d9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-wider">
                                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-09183f4" data-id="09183f4" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -835,8 +861,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-56ff05d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="56ff05d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        </section> -->
+                                        <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-56ff05d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="56ff05d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-wider">
                                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-405e455" data-id="405e455" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -933,8 +959,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <section class="elementor-section elementor-inner-section elementor-element elementor-element-ab15249 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ab15249" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        </section> -->
+                                        <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-ab15249 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ab15249" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                             <div class="elementor-container elementor-column-gap-wider">
                                                 <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-91db886" data-id="91db886" data-element_type="column">
                                                     <div class="elementor-widget-wrap elementor-element-populated">
@@ -1031,7 +1057,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </section> -->
                                     </div>
                                 </div>
                             </div>
