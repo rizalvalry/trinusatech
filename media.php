@@ -89,6 +89,10 @@
       <!-- Detail artikel -->
     <link rel='stylesheet' id='elementor-post-2189-css' href='wp-content/uploads/sites/20/elementor/css/post-2189f673.css?ver=1653842604' type='text/css' media='all' />
       <!-- end Detail artikel -->
+
+      <!-- Galeri -->
+      <link rel='stylesheet' id='elementor-post-2337-css' href='wp-content/uploads/sites/20/elementor/css/post-23375004.css?ver=1653842176' type='text/css' media='all' />
+      <!-- End Galeri -->
    
       <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -98,71 +102,6 @@
 <script src="js/modernizr.custom.js"></script>
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"> -->
 
-      <style>
-      .modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-    overflow: scroll;
-         -webkit-overflow-scrolling: touch;
-      }
-      .modalDialog:target {
-         opacity:1;
-         pointer-events: auto;
-      }
-      .modalDialog > div {
-         width: 720px;
-         position: relative;
-         margin: 10% auto;
-         padding: 5px 20px 13px 20px;
-         border-radius: 10px;
-         background: #fff;
-         background: -moz-linear-gradient(#fff, #999);
-         background: -webkit-linear-gradient(#fff, #999);
-         background: -o-linear-gradient(#fff, #999);
-      }
-      @media (max-width:780px){
-         .modalDialog > div {
-            /* width: 100%; */
-            width: 90% !important;
-            position: relative;
-            margin: 10% auto;
-            display: block;
-
-	}
-}
-      .close {
-         background: #606061;
-         color: #FFFFFF;
-         line-height: 25px;
-         position: absolute;
-         right: -12px;
-         text-align: center;
-         top: -10px;
-         width: 24px;
-         text-decoration: none;
-         font-weight: bold;
-         -webkit-border-radius: 12px;
-         -moz-border-radius: 12px;
-         border-radius: 12px;
-         -moz-box-shadow: 1px 1px 3px #000;
-         -webkit-box-shadow: 1px 1px 3px #000;
-         box-shadow: 1px 1px 3px #000;
-      }
-      .close:hover {
-         background: #00d9ff;
-      }
-      </style>
 
 
    </head>
@@ -332,16 +271,23 @@
 
 											 <!-- code -->
 											 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
-                                                <a href="" class="elementor-item elementor-item-anchor">Partnerships</a>
+                                                <a href="galeri" class="elementor-item elementor-item-anchor">Partnerships</a>
                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
 												<?php
-											$query3 = $db->prepare("SELECT judul_galeri FROM galeri");
-											$query3->bind_param("s", $aktif3);
-											$aktif3 = "Y";
-											$query3->execute();
-											$result3= $query3->get_result();
-											while ( $row3 = $result3->fetch_assoc() ){ ?>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="label-<?= $row3['id_kategori']; ?>-<?= $row3['kategori_seo']; ?>" class="elementor-sub-item"><?= $row3['judul_galeri']; ?></a></li>
+											// $query3 = $db->prepare("SELECT judul_galeri FROM galeri");
+											// $query3->bind_param("s", $aktif3);
+											// $aktif3 = "Y";
+											// $query3->execute();
+											// $result3= $query3->get_result();
+											// while ( $row3 = $result3->fetch_assoc() ){
+                                     ?>
+                                       <?php
+                                          $query1234      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri DESC");
+                                          while( $row1234 = $query1234->fetch_assoc() ){
+                                             $query12345 = $db->query("SELECT COUNT(id_foto) AS jumlah FROM foto WHERE id_galeri = '$row1234[id_galeri]'");
+                                             $row12345   = $query12345->fetch_assoc();
+                                       ?>
+                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>.html" class="elementor-sub-item"><?php echo $row1234['judul_galeri']; ?></a></li>
                                                   
 											<?php } ?> 
                                                 </ul>
