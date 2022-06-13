@@ -796,3 +796,63 @@ img.contain-gall {
     margin-top: 35px;
     text-align: center;
 }
+
+i.fa.fa-paper-plane {
+    font-size: 15px;
+    margin: 12px;
+    padding: 4px;
+    display: grid;
+    cursor: pointer;
+}
+
+
+/* translate google */
+
+.translated-ltr {
+    margin-top: -40px;
+}
+
+.translated-ltr {
+    margin-top: -40px;
+}
+
+.goog-te-banner-frame {
+    display: none;
+    margin-top: -20px;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    margin: 5px 0 5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #3242b0;
+    border: 0px;
+    padding: 7px 2px 8px 7px;
+    display: flex;
+    color: #eaeaea;
+    /* -webkit-box-shadow: 0px 9px 0px #c9dc6f; */
+    -moz-box-shadow: 0px 9px 0px #16a085;
+    box-shadow: 2px -2px 3px #328fb0;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}

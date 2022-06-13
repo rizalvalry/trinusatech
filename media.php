@@ -405,7 +405,7 @@
                                  <div class="elementor-element elementor-element-d441c8d elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="d441c8d" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-button-wrapper">
-                                          <a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
+                                          <a href="hubungi-kami" class="elementor-button-link elementor-button elementor-size-md" role="button">
                                           <span class="elementor-button-content-wrapper">
                                           <span class="elementor-button-text">Hubungi</span>
                                           </span>
@@ -461,16 +461,15 @@
                         <div class="elementor-container elementor-column-gap-wider">
                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-0c5c0f2" data-id="0c5c0f2" data-element_type="column">
                               <div class="elementor-widget-wrap elementor-element-populated">
-                                 <div class="elementor-element elementor-element-61dc0cf elementor-widget elementor-widget-heading" data-id="61dc0cf" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">Mari Berdiskusi</h2>
-                                    </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-19c6139 elementor-widget elementor-widget-heading" data-id="19c6139" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                       <h2 class="elementor-heading-title elementor-size-default">Anda Memiliki Pertanyaan Dan Kami Memiliki Jawaban</h2>
-                                    </div>
-                                 </div>
+                                
+                              <?php
+                                 $footer = $db->query("SELECT testimoni FROM testimoni");
+                                 $endfooter = $footer->fetch_assoc();
+                               ?>
+                               
+                               <?= $endfooter['testimoni'] ?>
+                              
+
                               </div>
                            </div>
                         </div>
@@ -485,7 +484,7 @@
                                           <div class="elementor-widget-wrap elementor-element-populated">
                                              <div class="elementor-element elementor-element-bed0287 elementor-widget elementor-widget-heading" data-id="bed0287" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                   <h2 class="elementor-heading-title elementor-size-default">hi@trinusatech.com</h2>
+                                                   <h2 class="elementor-heading-title elementor-size-default"><?= $row00['email_pengelola']; ?></h2>
                                                 </div>
                                              </div>
                                              <div class="elementor-element elementor-element-d242c7d elementor-widget elementor-widget-heading" data-id="d242c7d" data-element_type="widget" data-widget_type="heading.default">
@@ -495,7 +494,12 @@
                                              </div>
                                              <div class="elementor-element elementor-element-a9e1118 elementor-widget elementor-widget-heading" data-id="a9e1118" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                   <h2 class="elementor-heading-title elementor-size-default">help@trinusatech.com</h2>
+                                                <?php
+                                                   $homepage1 = $db->query("SELECT email FROM user WHERE nama_lengkap LIKE '%direktur%' ");
+                                                   $contentone = $homepage1->fetch_assoc();?>
+
+                                                   
+                                                   <h2 class="elementor-heading-title elementor-size-default"><?= $contentone['email']; ?></h2>
                                                 </div>
                                              </div>
                                              <div class="elementor-element elementor-element-2d1c98a elementor-widget elementor-widget-heading" data-id="2d1c98a" data-element_type="widget" data-widget_type="heading.default">
@@ -535,7 +539,7 @@
                                           <div class="elementor-widget-wrap elementor-element-populated">
                                              <div class="elementor-element elementor-element-b9e1d4a elementor-widget elementor-widget-text-editor" data-id="b9e1d4a" data-element_type="widget" data-widget_type="text-editor.default">
                                                 <div class="elementor-widget-container">
-                                                   <p><em>Jl. Pancoran </em><em>- 23770 WISMA NA, </em><em>Jakarta Selatan 40018-1234</em></p>
+                                                   <p><?= $row00['alamat']; ?></p>
                                                 </div>
                                              </div>
                                              <div class="elementor-element elementor-element-c1e5cd3 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c1e5cd3" data-element_type="widget" data-widget_type="counter.default">
@@ -543,15 +547,15 @@
                                                    <div class="elementor-counter">
                                                       <div class="elementor-counter-number-wrapper">
                                                          <span class="elementor-counter-number-prefix"></span>
-                                                         <span class="elementor-counter-number" data-duration="2000" data-to-value="1415" data-from-value="0" data-delimiter=",">0</span>
-                                                         <span class="elementor-counter-number-suffix">+ Customer</span>
+                                                         <!-- <span class="elementor-counter-number" data-duration="2000" data-to-value="1415" data-from-value="0" data-delimiter=",">0</span> -->
+                                                         <span class="elementor-counter-number-suffix"><?= $row00['nama_toko']; ?></span>
                                                       </div>
                                                    </div>
                                                 </div>
                                              </div>
                                              <div class="elementor-element elementor-element-dfda685 elementor-widget elementor-widget-heading" data-id="dfda685" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                   <h2 class="elementor-heading-title elementor-size-default">Registered during 2022</h2>
+                                                   <h2 class="elementor-heading-title elementor-size-default"><?= $row00['meta_deskripsi']; ?></h2>
                                                 </div>
                                              </div>
                                           </div>
@@ -570,26 +574,16 @@
                                              <div class="elementor-element elementor-element-6385073 elementor-tablet-align-left elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6385073" data-element_type="widget" data-widget_type="icon-list.default">
                                                 <div class="elementor-widget-container">
                                                    <ul class="elementor-icon-list-items">
+                                                   <?php
+                                                   $urutanmenu = $db->query("SELECT nama_menu FROM menuutama WHERE link <> ''  AND aktif='Y' ORDER BY urutan");
+                                                   while( $menulinks = $urutanmenu->fetch_assoc() ) {?>
                                                       <li class="elementor-icon-list-item">
                                                          <a href="#">
-                                                         <span class="elementor-icon-list-text">About</span>
+                                                         <span class="elementor-icon-list-text"><?= $menulinks['nama_menu']; ?></span>
                                                          </a>
                                                       </li>
-                                                      <li class="elementor-icon-list-item">
-                                                         <a href="#">
-                                                         <span class="elementor-icon-list-text">News</span>
-                                                         </a>
-                                                      </li>
-                                                      <li class="elementor-icon-list-item">
-                                                         <a href="#">
-                                                         <span class="elementor-icon-list-text">Pricing</span>
-                                                         </a>
-                                                      </li>
-                                                      <li class="elementor-icon-list-item">
-                                                         <a href="#">
-                                                         <span class="elementor-icon-list-text">Team</span>
-                                                         </a>
-                                                      </li>
+                                                      <?php } ?>
+                                                      
                                                    </ul>
                                                 </div>
                                              </div>
@@ -605,26 +599,19 @@
                                              <div class="elementor-element elementor-element-d2790e4 elementor-tablet-align-left elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d2790e4" data-element_type="widget" data-widget_type="icon-list.default">
                                                 <div class="elementor-widget-container">
                                                    <ul class="elementor-icon-list-items">
+
+                                                   <?php
+                                                   $urutanmenu2 = $db->query("SELECT `nama_menu` FROM `menuutama` WHERE aktif='Y' AND link NOT LIKE '%#%' AND link NOT LIKE ''");
+                                                   while( $menulinks2 = $urutanmenu2->fetch_assoc() ) {?>
+                                                      
+
                                                       <li class="elementor-icon-list-item">
                                                          <a href="#">
-                                                         <span class="elementor-icon-list-text">Blog</span>
+                                                         <span class="elementor-icon-list-text"><?= $menulinks2['nama_menu']; ?></span>
                                                          </a>
                                                       </li>
-                                                      <li class="elementor-icon-list-item">
-                                                         <a href="#">
-                                                         <span class="elementor-icon-list-text">Career</span>
-                                                         </a>
-                                                      </li>
-                                                      <li class="elementor-icon-list-item">
-                                                         <a href="#">
-                                                         <span class="elementor-icon-list-text">FAQ</span>
-                                                         </a>
-                                                      </li>
-                                                      <li class="elementor-icon-list-item">
-                                                         <a href="#">
-                                                         <span class="elementor-icon-list-text">Testimonials</span>
-                                                         </a>
-                                                      </li>
+                                                    
+                                                      <?php } ?>
                                                    </ul>
                                                 </div>
                                              </div>
@@ -640,7 +627,7 @@
                                              <div class="elementor-element elementor-element-194442b elementor-tablet-align-left elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="194442b" data-element_type="widget" data-widget_type="icon-list.default">
                                                 <div class="elementor-widget-container">
                                                    <ul class="elementor-icon-list-items">
-                                                      <li class="elementor-icon-list-item">
+                                                      <!-- <li class="elementor-icon-list-item">
                                                          <a href="#">
                                                          <span class="elementor-icon-list-text">Help Center</span>
                                                          </a>
@@ -649,12 +636,13 @@
                                                          <a href="#">
                                                          <span class="elementor-icon-list-text">Knowledgebase</span>
                                                          </a>
-                                                      </li>
+                                                      </li> -->
                                                       <li class="elementor-icon-list-item">
-                                                         <a href="#">
+                                                         <a href="hubungi-kami">
                                                          <span class="elementor-icon-list-text">Contact Us</span>
                                                          </a>
                                                       </li>
+                                                      <div id="google_translate_element"></div>
                                                    </ul>
                                                 </div>
                                              </div>
@@ -848,7 +836,7 @@
                                  <div class="elementor-element elementor-element-b261752 elementor-hidden-mobile elementor-widget elementor-widget-gallery" data-id="b261752" data-element_type="widget" data-settings="{&quot;columns&quot;:3,&quot;columns_tablet&quot;:3,&quot;columns_mobile&quot;:3,&quot;aspect_ratio&quot;:&quot;1:1&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-gallery__container">
-                                          <?php $beside = $db->query("SELECT * FROM `produk` WHERE `aktif`= 'Y' LIMIT 6");
+                                          <?php $beside = $db->query("SELECT * FROM produk WHERE aktif= 'Y' LIMIT 6");
                                           while($sideimage       = $beside->fetch_assoc()) { ?>
 
 
@@ -1141,7 +1129,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="elementor-element elementor-element-5a19e07 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-none elementor-hidden-mobile elementor-grid-mobile-1 elementor-invisible elementor-widget elementor-widget-posts" data-id="5a19e07" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+                                 <!-- <div class="elementor-element elementor-element-5a19e07 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-none elementor-hidden-mobile elementor-grid-mobile-1 elementor-invisible elementor-widget elementor-widget-posts" data-id="5a19e07" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
                                           <article class="elementor-post elementor-grid-item post-1281 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
@@ -1154,8 +1142,8 @@
                                           </article>
                                        </div>
                                     </div>
-                                 </div>
-                                 <div class="elementor-element elementor-element-fd36b2a elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-none elementor-hidden-mobile elementor-grid-mobile-1 elementor-invisible elementor-widget elementor-widget-posts" data-id="fd36b2a" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+                                 </div> -->
+                                 <!-- <div class="elementor-element elementor-element-fd36b2a elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-none elementor-hidden-mobile elementor-grid-mobile-1 elementor-invisible elementor-widget elementor-widget-posts" data-id="fd36b2a" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
                                           <article class="elementor-post elementor-grid-item post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
@@ -1168,7 +1156,7 @@
                                           </article>
                                        </div>
                                     </div>
-                                 </div>
+                                 </div> -->
                                  <div class="elementor-element elementor-element-3d592a6 elementor-grid-1 elementor-grid-tablet-1 elementor-posts--thumbnail-none elementor-hidden-mobile elementor-grid-mobile-1 elementor-invisible elementor-widget elementor-widget-posts" data-id="3d592a6" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
@@ -1176,7 +1164,7 @@
                                              <div class="elementor-post__text">
                                                 <h3 class="elementor-post__title">
                                                    <a href="#" >
-                                                   6 Reasons Why A Full Service Creative Agency Matters			</a>
+                                                   Merasa lama mendapatkan respon kami ? chat via whatsapp aja			</a>
                                                 </h3>
                                              </div>
                                           </article>
@@ -1193,12 +1181,16 @@
                               <div class="elementor-widget-wrap elementor-element-populated">
                                  <div class="elementor-element elementor-element-6c6d55a elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form" data-id="6c6d55a" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;classic&quot;}" data-widget_type="search-form.default">
                                     <div class="elementor-widget-container">
-                                       <form class="elementor-search-form" role="search" action="https://elementor.deverust.com/techvisio" method="get">
+                                       <form class="elementor-search-form" role="search" onsubmit="return showInput()">
                                           <div class="elementor-search-form__container">
-                                             <input placeholder="What can we help for you?" class="elementor-search-form__input" type="search" name="s" title="Search" value="">
-                                             <button class="elementor-search-form__submit" type="submit" title="Search" aria-label="Search">
-                                             <i aria-hidden="true" class="fas fa-search"></i>							<span class="elementor-screen-only">Search</span>
+                                             
+                                             <input placeholder="apa bisa kami bantu?" class="elementor-search-form__input" type="search" id="user_pesan">
+                                             <a onclick="showInput();" id="link2" target="_blank">
+                                             <!-- <button class="elementor-search-form__submit" type="submit" title="Search" aria-label="Search"> -->
+                                             <i class="fa fa-paper-plane" aria-hidden="true"></i>						
+                                             <!-- <span class="elementor-screen-only">Search</span> -->
                                              </button>
+                                             </a>
                                           </div>
                                        </form>
                                     </div>
@@ -1304,6 +1296,7 @@
             </div>
          </section>
       </div>
+      
       <link rel='stylesheet' id='elementor-post-2111-css'  href='wp-content/uploads/sites/20/elementor/css/post-2111eb25.css?ver=1652314470' type='text/css' media='all' />
       <link rel='stylesheet' id='elementor-gallery-css'  href='wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.min7359.css?ver=1.2.0' type='text/css' media='all' />
       <link rel='stylesheet' id='elementor-post-2146-css'  href='wp-content/uploads/sites/20/elementor/css/post-2146ed6f.css?ver=1652314471' type='text/css' media='all' />
@@ -1323,10 +1316,45 @@
       <script type='text/javascript' src='wp-includes/js/dist/i18n.mina28b.js?ver=30fcecb428a0e8383d3776bcdd3a7834' id='wp-i18n-js'></script>
       <!-- <script type='text/javascript' src='wp-includes/js/dist/hooks.mincbb5.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3' id='wp-hooks-js'></script> -->
       <!-- <script type='text/javascript' src='wp-includes/js/dist/i18n.min771a.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script> -->
+      <script type="text/javascript">
+      function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'id', includedLanguages : 'ar,en,id'}, 'google_translate_element');
+      }
+      </script>
+
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
     <script type='text/javascript' id='wp-i18n-js-after'>
         wp.i18n.setLocaleData({
             'text direction\u0004ltr': ['ltr']
         });
+    </script>
+    <script type='text/javascript' id='whatsapp'>
+    var str = "<?php echo $row00['nomor_hp']; ?>";
+
+function showInput() {
+
+   //  var a = document.getElementById("user_input").value;
+   //  var b = document.getElementById("user_email").value;
+   //  var c = document.getElementById("user_goal").value;
+    var d = document.getElementById("user_pesan").value;
+    var wa = "https://api.whatsapp.com/send?phone=";
+    var sap = "&text=Halo%20*Trinusa Technologies*,%20";
+	var enter = "%0A";
+	
+ if(d == "") {
+		alert("Mohon isi pesan Anda");
+		return false;
+  	} else {
+		var strLink = wa + str + sap + d;
+		document.getElementById("link2").setAttribute("href", strLink);
+		console.log(strLink);
+	}
+
+}
     </script>
     <script type='text/javascript' id='elementor-pro-frontend-js-before'>
         var ElementorProFrontendConfig = {

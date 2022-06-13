@@ -205,128 +205,13 @@
 </section>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-dc23ec4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="dc23ec4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
    <div class="elementor-container elementor-column-gap-wider">
-      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c8a8465" data-id="c8a8465" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <h4 class="elementor-heading-title elementor-size-default">Jelas Dengan memilih kami,</h4>
-            <div class="elementor-element elementor-element-8aae533 elementor-widget elementor-widget-heading" data-id="8aae533" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Kami Membantu Startup Di Tahap Awal.</h2>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-b443012 elementor-widget elementor-widget-text-editor" data-id="b443012" data-element_type="widget" data-widget_type="text-editor.default">
-               <div class="elementor-widget-container">
-                  <p>Rasa sakit itu sendiri adalah cinta, sistem penyimpanan utama. Saat bumi tumbuh, atau menanggung banyak rasa sakit, dampak singa di sofa.</p>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-ef44db8 elementor-widget__width-auto elementor-mobile-align-center elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button" data-id="ef44db8" data-element_type="widget" data-widget_type="button.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-button-wrapper">
-                     <a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-                     <span class="elementor-button-content-wrapper">
-                     <span class="elementor-button-text">Learn More</span>
-                     </span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-85ba56b elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="85ba56b" data-element_type="widget" data-widget_type="button.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-button-wrapper">
-                     <a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-                     <span class="elementor-button-content-wrapper">
-                     <span class="elementor-button-icon elementor-align-icon-left">
-                     <i aria-hidden="true" class="fas fa-phone-alt"></i>			</span>
-                     <span class="elementor-button-text">+Get In Touch</span>
-                     </span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-aa7afd6" data-id="aa7afd6" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-e6a6f16 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="e6a6f16" data-element_type="widget" data-widget_type="icon-box.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                     <div class="elementor-icon-box-icon">
-                        <span class="elementor-icon elementor-animation-" >
-                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                              <path d="M43.0001 45.92V47H5.00012V45.92C4.99149 44.5271 5.46773 43.1747 6.34716 42.0946C7.2266 41.0144 8.45444 40.2739 9.82011 40L20.0001 38L22.4401 41C22.6275 41.2336 22.865 41.4221 23.135 41.5516C23.405 41.6812 23.7006 41.7484 24.0001 41.7484C24.2996 41.7484 24.5952 41.6812 24.8652 41.5516C25.1352 41.4221 25.3727 41.2336 25.5601 41L28.0001 38L38.1801 40C39.5458 40.2739 40.7736 41.0144 41.6531 42.0946C42.5325 43.1747 43.0087 44.5271 43.0001 45.92Z" fill="#BFBFBF"></path>
-                              <path d="M35 48C34.7348 48 34.4804 47.8946 34.2929 47.7071C34.1054 47.5196 34 47.2652 34 47V45C34 44.7348 34.1054 44.4804 34.2929 44.2929C34.4804 44.1054 34.7348 44 35 44C35.2652 44 35.5196 44.1054 35.7071 44.2929C35.8946 44.4804 36 44.7348 36 45V47C36 47.2652 35.8946 47.5196 35.7071 47.7071C35.5196 47.8946 35.2652 48 35 48Z" fill="#232529"></path>
-                              <path d="M13 48C12.7348 48 12.4804 47.8946 12.2929 47.7071C12.1054 47.5196 12 47.2652 12 47V45C12 44.7348 12.1054 44.4804 12.2929 44.2929C12.4804 44.1054 12.7348 44 13 44C13.2652 44 13.5196 44.1054 13.7071 44.2929C13.8946 44.4804 14 44.7348 14 45V47C14 47.2652 13.8946 47.5196 13.7071 47.7071C13.5196 47.8946 13.2652 48 13 48Z" fill="#232529"></path>
-                              <path d="M36.0002 16.81V22.28C35.9981 23.404 35.683 24.5051 35.0902 25.46L31.2902 31.53C31.201 31.6727 31.0773 31.7906 30.9304 31.8727C30.7836 31.9549 30.6184 31.9987 30.4502 32H29.0002C28.7349 32 28.4806 31.8947 28.293 31.7071C28.1055 31.5196 28.0002 31.2652 28.0002 31C27.8657 30.074 28.0157 29.129 28.4302 28.29C30.6702 24.55 31.0002 24.29 31.0002 23.17V19L27.8002 21.4C27.2809 21.7895 26.6493 22 26.0002 22H22.0002C21.351 22 20.7194 21.7895 20.2002 21.4L17.0002 19C17.0002 23.36 16.8602 23.77 17.4302 24.71C19.6702 28.45 20.0002 28.71 20.0002 29.83V31C20.0002 31.2652 19.8948 31.5196 19.7073 31.7071C19.5197 31.8947 19.2654 32 19.0002 32H17.5502C17.3819 31.9987 17.2167 31.9549 17.0699 31.8727C16.9231 31.7906 16.7993 31.6727 16.7102 31.53L12.9102 25.46C12.3173 24.5051 12.0022 23.404 12.0002 22.28C12.0002 16.68 11.8202 15.48 12.6402 13.28L13.0502 12.17C13.6253 10.6492 14.6502 9.3398 15.9883 8.41617C17.3264 7.49253 18.9142 6.99855 20.5402 7.00003H27.4602C29.097 6.98987 30.6975 7.48202 32.0458 8.41009C33.3941 9.33817 34.4252 10.6575 35.0002 12.19C35.6443 13.646 35.9846 15.218 36.0002 16.81V16.81Z" fill="#BFBFBF"></path>
-                              <path d="M38.76 21H38C37.7348 21 37.4804 20.8946 37.2929 20.7071C37.1054 20.5196 37 20.2652 37 20C37 19.7348 37.1054 19.4804 37.2929 19.2929C37.4804 19.1054 37.7348 19 38 19H38.76C39.2896 18.9978 39.7966 18.7856 40.17 18.41L41.41 17.17C41.7856 16.7966 41.9978 16.2896 42 15.76V5C42 4.46957 41.7893 3.96086 41.4142 3.58579C41.0391 3.21071 40.5304 3 40 3H25C24.7348 3 24.4804 2.89464 24.2929 2.70711C24.1054 2.51957 24 2.26522 24 2C24 1.73478 24.1054 1.48043 24.2929 1.29289C24.4804 1.10536 24.7348 1 25 1H40C41.0609 1 42.0783 1.42143 42.8284 2.17157C43.5786 2.92172 44 3.93913 44 5V15.76C43.9944 16.8199 43.5745 17.8356 42.83 18.59C41.56 19.85 40.7 21 38.76 21Z" fill="#BFBFBF"></path>
-                              <path d="M10 21H9.24C8.71456 21.0004 8.19418 20.8973 7.7086 20.6965C7.22302 20.4958 6.78175 20.2013 6.41 19.83C5.16 18.57 4 17.7 4 15.76V5C4 3.93913 4.42143 2.92172 5.17157 2.17157C5.92172 1.42143 6.93913 1 8 1H23C23.2652 1 23.5196 1.10536 23.7071 1.29289C23.8946 1.48043 24 1.73478 24 2C24 2.26522 23.8946 2.51957 23.7071 2.70711C23.5196 2.89464 23.2652 3 23 3H8C7.46957 3 6.96086 3.21071 6.58579 3.58579C6.21071 3.96086 6 4.46957 6 5V15.76C6.00223 16.2896 6.21441 16.7966 6.59 17.17L7.83 18.41C8.20335 18.7856 8.71042 18.9978 9.24 19H10C10.2652 19 10.5196 19.1054 10.7071 19.2929C10.8946 19.4804 11 19.7348 11 20C11 20.2652 10.8946 20.5196 10.7071 20.7071C10.5196 20.8946 10.2652 21 10 21Z" fill="#BFBFBF"></path>
-                              <path d="M38.37 39.05L29 37.18V34.41C29.4838 33.9672 29.9413 33.4964 30.37 33C30.7216 33.0129 31.0705 32.9327 31.3812 32.7677C31.692 32.6027 31.9537 32.3585 32.14 32.06L35.94 26C36.4949 25.088 36.8368 24.0625 36.94 23H37.94C38.2052 23 38.4596 22.8946 38.6471 22.7071C38.8346 22.5196 38.94 22.2652 38.94 22V18C38.94 17.7348 38.8346 17.4804 38.6471 17.2929C38.4596 17.1054 38.2052 17 37.94 17H37C37.0085 15.2188 36.6261 13.4574 35.88 11.84C35.7307 11.4398 35.5501 11.0519 35.34 10.68L37.78 7.62C37.9187 7.41136 37.974 7.15827 37.935 6.91079C37.896 6.66332 37.7656 6.43949 37.5695 6.2836C37.3733 6.12771 37.1258 6.05112 36.8759 6.06897C36.6261 6.08682 36.392 6.19782 36.22 6.38L34.12 9C33.2812 8.06221 32.2552 7.31069 31.108 6.79396C29.9609 6.27723 28.7181 6.00675 27.46 6H25V3C25 2.73478 24.8946 2.48043 24.7071 2.29289C24.5196 2.10536 24.2652 2 24 2C23.7348 2 23.4804 2.10536 23.2929 2.29289C23.1054 2.48043 23 2.73478 23 3V6H20.54C19.2819 6.00675 18.0391 6.27723 16.892 6.79396C15.7448 7.31069 14.7188 8.06221 13.88 9L11.78 6.38C11.608 6.19782 11.3739 6.08682 11.1241 6.06897C10.8742 6.05112 10.6267 6.12771 10.4306 6.2836C10.2344 6.43949 10.104 6.66332 10.065 6.91079C10.026 7.15827 10.0813 7.41136 10.22 7.62L12.66 10.68C12.448 11.051 12.2674 11.439 12.12 11.84C11.3717 13.4567 10.9893 15.2186 11 17H10C9.73479 17 9.48043 17.1054 9.2929 17.2929C9.10536 17.4804 9 17.7348 9 18V22C9 22.2652 9.10536 22.5196 9.2929 22.7071C9.48043 22.8946 9.73479 23 10 23H11.05C11.1532 24.0625 11.4951 25.088 12.05 26L15.85 32.07C16.0363 32.3685 16.298 32.6127 16.6088 32.7777C16.9195 32.9427 17.2684 33.0229 17.62 33.01C18.0545 33.5011 18.5152 33.9685 19 34.41V37.18L9.63 39.05C8.04168 39.367 6.61242 40.2249 5.58581 41.4777C4.5592 42.7304 3.99876 44.3004 4 45.92V47C4 47.2652 4.10536 47.5196 4.2929 47.7071C4.48043 47.8946 4.73479 48 5 48C5.26522 48 5.51957 47.8946 5.70711 47.7071C5.89464 47.5196 6 47.2652 6 47V45.92C5.99514 44.7639 6.39106 43.6419 7.12035 42.7448C7.84965 41.8478 8.86727 41.2312 10 41L19.6 39.1L21.66 41.67C21.9411 42.0204 22.2973 42.3032 22.7023 42.4975C23.1073 42.6918 23.5508 42.7927 24 42.7927C24.4492 42.7927 24.8927 42.6918 25.2977 42.4975C25.7027 42.3032 26.0589 42.0204 26.34 41.67L28.4 39.1L38 41C39.1294 41.2305 40.1444 41.8442 40.8733 42.7371C41.6022 43.63 42.0002 44.7473 42 45.9V47C42 47.2652 42.1054 47.5196 42.2929 47.7071C42.4804 47.8946 42.7348 48 43 48C43.2652 48 43.5196 47.8946 43.7071 47.7071C43.8946 47.5196 44 47.2652 44 47V45.92C44.0012 44.3004 43.4408 42.7304 42.4142 41.4777C41.3876 40.2249 39.9583 39.367 38.37 39.05ZM19 31H17.55L13.76 24.93C13.2633 24.1353 13 23.2171 13 22.28C13 15.08 12.8 15.67 14 12.54C14.4998 11.2085 15.3934 10.0608 16.5617 9.24971C17.7301 8.43866 19.1177 8.00274 20.54 8H27.46C28.8823 8.00274 30.2699 8.43866 31.4383 9.24971C32.6066 10.0608 33.5002 11.2085 34 12.54C35.19 15.69 35 15.13 35 22.28C35 23.2171 34.7367 24.1353 34.24 24.93L30.45 31H29C29 28.84 28.67 29.84 31.43 25.23C32.18 24 32 23.2 32 19C32 18.8143 31.9483 18.6322 31.8507 18.4743C31.753 18.3163 31.6133 18.1886 31.4472 18.1056C31.2811 18.0225 31.0952 17.9874 30.9102 18.004C30.7252 18.0207 30.5486 18.0886 30.4 18.2L27.2 20.6C26.52 21.12 26.26 21 22 21C21.5673 21 21.1462 20.8596 20.8 20.6L17.6 18.2C17.4514 18.0886 17.2748 18.0207 17.0898 18.004C16.9048 17.9874 16.7189 18.0225 16.5528 18.1056C16.3867 18.1886 16.247 18.3163 16.1494 18.4743C16.0517 18.6322 16 18.8143 16 19C16 25.21 15.54 23.51 18.71 28.8C19.08 29.4 19 29.88 19 31ZM27 37.65L24.78 40.42C24.6863 40.5368 24.5676 40.6311 24.4326 40.6958C24.2976 40.7606 24.1497 40.7942 24 40.7942C23.8503 40.7942 23.7024 40.7606 23.5674 40.6958C23.4324 40.6311 23.3137 40.5368 23.22 40.42L21 37.65V36.16C21.9043 36.7091 22.942 36.9995 24 36.9995C25.058 36.9995 26.0957 36.7091 27 36.16V37.65ZM27.91 32.65L26.7 33.88C25.9837 34.5957 25.0126 34.9977 24 34.9977C22.9874 34.9977 22.0163 34.5957 21.3 33.88L20.09 32.67C20.3684 32.489 20.5973 32.2416 20.7562 31.9501C20.9151 31.6585 20.9989 31.332 21 31C21 28.27 21.14 29 18.29 24.2C18.1067 23.8981 18.0067 23.5531 18 23.2V21C19.45 22.09 20.35 23 22 23C27.72 23 26.88 23.34 30 21C30 23.18 30.1 23.57 29.71 24.2C26.87 28.94 27 28.25 27 31C27.0011 31.332 27.0849 31.6585 27.2438 31.9501C27.4027 32.2416 27.6316 32.489 27.91 32.67V32.65Z" fill="#232529"></path>
-                              <path d="M24 4C25.1046 4 26 3.10457 26 2C26 0.89543 25.1046 0 24 0C22.8954 0 22 0.89543 22 2C22 3.10457 22.8954 4 24 4Z" fill="#C44FAB"></path>
-                              <path d="M11 9C12.1046 9 13 8.10457 13 7C13 5.89543 12.1046 5 11 5C9.89543 5 9 5.89543 9 7C9 8.10457 9.89543 9 11 9Z" fill="#C44FAB"></path>
-                              <path d="M37 9C38.1046 9 39 8.10457 39 7C39 5.89543 38.1046 5 37 5C35.8954 5 35 5.89543 35 7C35 8.10457 35.8954 9 37 9Z" fill="#C44FAB"></path>
-                           </svg>
-                        </span>
-                     </div>
-                     <div class="elementor-icon-box-content">
-                        <h3 class="elementor-icon-box-title">
-                           <span>Pendekatan Berorientasi User</span>
-                        </h3>
-                        <p class="elementor-icon-box-description">
-                           Layanan konsultasi strategi kami membantu Anda mengidentifikasi dan merencanakan layanan TIK yang kuat dan inovatif.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-44bc2fe elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="44bc2fe" data-element_type="widget" data-widget_type="icon-box.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                     <div class="elementor-icon-box-icon">
-                        <span class="elementor-icon elementor-animation-" >
-                           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                              <g clip-path="url(#clip0_801_668)">
-                                 <path d="M23.43 34C11 33.7 1 24 1 24C1 24 11 14.3 23.43 14C20.7778 14 18.2343 15.0536 16.3589 16.9289C14.4836 18.8043 13.43 21.3478 13.43 24C13.43 26.6522 14.4836 29.1957 16.3589 31.0711C18.2343 32.9464 20.7778 34 23.43 34V34Z" fill="#BFBFBF"></path>
-                                 <path d="M24.5703 34C37.0003 33.7 47.0003 24 47.0003 24C47.0003 24 37.0003 14.3 24.5703 14C27.2225 14 29.766 15.0536 31.6414 16.9289C33.5167 18.8043 34.5703 21.3478 34.5703 24C34.5703 26.6522 33.5167 29.1957 31.6414 31.0711C29.766 32.9464 27.2225 34 24.5703 34V34Z" fill="#BFBFBF"></path>
-                                 <path d="M24 17C22.6155 17 21.2622 17.4105 20.111 18.1797C18.9599 18.9489 18.0627 20.0421 17.5328 21.3212C17.003 22.6003 16.8644 24.0078 17.1345 25.3656C17.4046 26.7235 18.0713 27.9708 19.0503 28.9497C20.0292 29.9287 21.2765 30.5954 22.6344 30.8655C23.9922 31.1356 25.3997 30.997 26.6788 30.4672C27.9579 29.9373 29.0511 29.0401 29.8203 27.889C30.5895 26.7378 31 25.3845 31 24C31 22.1435 30.2625 20.363 28.9498 19.0503C27.637 17.7375 25.8565 17 24 17V17ZM26 26.21C26.2505 25.9766 26.4601 25.7028 26.62 25.4C27.4169 25.3516 28.1943 25.1334 28.9 24.76C28.7541 25.7178 28.3299 26.6115 27.68 27.33C27.0277 27.1182 26.4464 26.7307 26 26.21V26.21ZM19.06 23.21C19.2059 22.2522 19.6301 21.3585 20.28 20.64C20.9503 20.8535 21.5466 21.2521 22 21.79C21.7525 22.0261 21.5433 22.2994 21.38 22.6C20.5765 22.6468 19.7922 22.865 19.08 23.24L19.06 23.21ZM23 24C23 23.8022 23.0587 23.6089 23.1685 23.4444C23.2784 23.28 23.4346 23.1518 23.6173 23.0761C23.8 23.0004 24.0011 22.9806 24.1951 23.0192C24.3891 23.0578 24.5673 23.153 24.7071 23.2929C24.847 23.4327 24.9422 23.6109 24.9808 23.8049C25.0194 23.9989 24.9996 24.2 24.9239 24.3827C24.8482 24.5654 24.72 24.7216 24.5556 24.8315C24.3911 24.9414 24.1978 25 24 25C23.7348 25 23.4804 24.8946 23.2929 24.7071C23.1054 24.5196 23 24.2652 23 24ZM28.73 22.46C28.2226 22.9156 27.6001 23.2234 26.93 23.35C26.8523 23.0206 26.7205 22.7063 26.54 22.42C26.8832 21.7026 27.0803 20.9242 27.12 20.13C27.8743 20.7313 28.4344 21.5418 28.73 22.46V22.46ZM25 19.11C25.1405 19.776 25.0955 20.4678 24.87 21.11C24.5496 20.9961 24.2094 20.9484 23.87 20.97C23.4231 20.306 22.8444 19.741 22.17 19.31C23.073 18.9657 24.0576 18.8961 25 19.11V19.11ZM19.24 25.54C19.7499 25.0881 20.3714 24.7808 21.04 24.65C21.1166 24.9798 21.2485 25.2942 21.43 25.58C21.0855 26.3004 20.8884 27.0824 20.85 27.88C20.1095 27.268 19.5609 26.4556 19.27 25.54H19.24ZM23 28.89C22.8595 28.224 22.9045 27.5322 23.13 26.89C23.4504 27.0039 23.7906 27.0516 24.13 27.03C24.5769 27.694 25.1556 28.259 25.83 28.69C24.9266 29.0325 23.9426 29.1021 23 28.89V28.89Z" fill="#C44FAB"></path>
-                                 <path d="M47.7002 23.28C47.5902 23.18 46.9302 22.55 45.8102 21.64C44.4502 12.12 35.1802 5 24.0002 5C12.8202 5 3.55017 12.12 2.19017 21.64C1.07017 22.55 0.410167 23.18 0.300167 23.28C0.203384 23.3733 0.126402 23.4851 0.0738216 23.6088C0.0212409 23.7325 -0.00585937 23.8656 -0.00585938 24C-0.00585937 24.1344 0.0212409 24.2675 0.0738216 24.3912C0.126402 24.5149 0.203384 24.6267 0.300167 24.72C0.410167 24.82 1.07017 25.45 2.19017 26.36C3.55017 35.88 12.8202 43 24.0002 43C35.1802 43 44.4502 35.88 45.8102 26.36C46.9302 25.45 47.5902 24.82 47.7002 24.72C47.797 24.6267 47.8739 24.5149 47.9265 24.3912C47.9791 24.2675 48.0062 24.1344 48.0062 24C48.0062 23.8656 47.9791 23.7325 47.9265 23.6088C47.8739 23.4851 47.797 23.3733 47.7002 23.28V23.28ZM2.50017 24C6.52217 20.562 11.1708 17.9338 16.1902 16.26C14.1505 18.3197 13.0063 21.1013 13.0063 24C13.0063 26.8987 14.1505 29.6803 16.1902 31.74C11.1708 30.0662 6.52217 27.438 2.50017 24V24ZM15.0002 24C15.0002 22.22 15.528 20.4799 16.5169 18.9999C17.5059 17.5198 18.9115 16.3663 20.556 15.6851C22.2005 15.0039 24.0102 14.8257 25.756 15.1729C27.5018 15.5202 29.1055 16.3774 30.3641 17.636C31.6228 18.8947 32.48 20.4984 32.8272 22.2442C33.1745 23.99 32.9963 25.7996 32.3151 27.4442C31.6339 29.0887 30.4803 30.4943 29.0003 31.4832C27.5203 32.4722 25.7802 33 24.0002 33C21.6132 33 19.324 32.0518 17.6362 30.364C15.9484 28.6761 15.0002 26.3869 15.0002 24V24ZM31.8102 16.26C36.8296 17.9338 41.4782 20.562 45.5002 24C41.4774 27.4422 36.8247 30.0708 31.8002 31.74C33.8411 29.6816 34.9871 26.9008 34.989 24.0021C34.9909 21.1033 33.8485 18.321 31.8102 16.26V16.26ZM24.0002 7C33.3102 7 41.1602 12.35 43.3602 19.8C30.6602 10.92 17.7902 10.6 4.64017 19.8C6.84017 12.35 14.6902 7 24.0002 7ZM24.0002 41C14.6902 41 6.84017 35.65 4.64017 28.2C17.3402 37.08 30.2102 37.4 43.3602 28.2C41.1602 35.65 33.3102 41 24.0002 41Z" fill="#232529"></path>
-                              </g>
-                              <defs>
-                                 <clipPath id="clip0_801_668">
-                                    <rect width="48" height="48" fill="white"></rect>
-                                 </clipPath>
-                              </defs>
-                           </svg>
-                        </span>
-                     </div>
-                     <div class="elementor-icon-box-content">
-                        <h3 class="elementor-icon-box-title">
-                           <span>Pengambilan Keputusan Berbasis Agile</span>
-                        </h3>
-                        <p class="elementor-icon-box-description">
-                           Kami bekerja dengan Anda untuk mengembangkan strategi yang didasarkan pada pengalaman implementasi praktis kami sebagai salah satu integrator sistem infrastruktur TIK terbesar di dunia.					
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-b08b1b6 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="b08b1b6" data-element_type="widget" data-widget_type="icon-box.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                     <div class="elementor-icon-box-icon">
-                        <span class="elementor-icon elementor-animation-" >
-                        </span>
-                     </div>
-                     <div class="elementor-icon-box-content">
-                        <h3 class="elementor-icon-box-title">
-                           <span>Augmentasi Tim</span>
-                        </h3>
-                        <p class="elementor-icon-box-description">
-                           Dengan pengalaman telah mengerjakan beberapa proyek di bidang Teknologi Informasi selama ini, PT. MSI selalu menyertai perjalanan bisnis para pelanggannya. Tangan-tangan profesional setiap karyawan PT. MSI terus berkarya menghasilkan inovasi untuk menjawab tantangan perubahan zaman.					
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+   
+   <?php
+   $homepage1 = $db->query("SELECT * FROM `halaman_statis` WHERE `link_halaman` LIKE '%homepage%' ORDER BY `id_halaman` LIMIT 1");
+   $contentone = $homepage1->fetch_assoc();?>
+
+   <?= $contentone['isi_halaman']; ?>
+
    </div>
 </section>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-9b65b01 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="9b65b01" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1030,7 +915,7 @@
          <div class="elementor-widget-wrap elementor-element-populated">
             <section class="elementor-section elementor-inner-section elementor-element elementor-element-96ad70b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="96ad70b" data-element_type="section">
                <div class="elementor-container elementor-column-gap-wider">
-                  <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-66ac490" data-id="66ac490" data-element_type="column">
+                  <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-66ac490" data-id="66ac490" data-element_type="column">
                      <div class="elementor-widget-wrap elementor-element-populated">
                         <div class="elementor-element elementor-element-fcb29f7 elementor-widget__width-initial elementor-align-center elementor-widget elementor-widget-lottie" data-id="fcb29f7" data-element_type="widget" data-settings="{&quot;source_json&quot;:{&quot;url&quot;:&quot;https:\/\/elementor.deverust.com\/techvisio\/wp-content\/uploads\/sites\/20\/2022\/03\/lf20_vsg5kswn.json&quot;,&quot;id&quot;:1638,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;loop&quot;:&quot;yes&quot;,&quot;source&quot;:&quot;media_file&quot;,&quot;caption_source&quot;:&quot;none&quot;,&quot;link_to&quot;:&quot;none&quot;,&quot;trigger&quot;:&quot;arriving_to_viewport&quot;,&quot;viewport&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;play_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;0&quot;,&quot;sizes&quot;:[]},&quot;end_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;100&quot;,&quot;sizes&quot;:[]},&quot;renderer&quot;:&quot;svg&quot;}" data-widget_type="lottie.default">
                            <div class="elementor-widget-container">
@@ -1039,264 +924,12 @@
                               </div>
                            </div>
                         </div>
-                        <div class="elementor-element elementor-element-9fdd993 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="9fdd993" data-element_type="widget" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">milestone and achievement</h2>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-337deba elementor-widget elementor-widget-heading" data-id="337deba" data-element_type="widget" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">Pelan Tapi Pasti Terus Berkembang Setiap Saat.</h2>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-13403ba elementor-widget elementor-widget-text-editor" data-id="13403ba" data-element_type="widget" data-widget_type="text-editor.default">
-                           <div class="elementor-widget-container">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-005213f elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-divider" data-id="005213f" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       Core Infra		
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-9f83f36 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget__width-inherit elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-divider" data-id="9f83f36" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       1998				
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-627dbdd elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="627dbdd" data-element_type="widget" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-" >
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                          <g clip-path="url(#clip0_805_87)">
-                                             <path d="M27 20H21C21.1067 18.5095 21.5995 17.0724 22.43 15.83C22.5997 15.5742 22.83 15.3644 23.1004 15.2193C23.3709 15.0741 23.6731 14.9982 23.98 14.9982C24.2869 14.9982 24.5891 15.0741 24.8596 15.2193C25.13 15.3644 25.3603 15.5742 25.53 15.83C26.3746 17.0684 26.8813 18.5058 27 20Z" fill="#BFBFBF"></path>
-                                             <path d="M21 27V39H12V37L16 34L21 27Z" fill="#BFBFBF"></path>
-                                             <path d="M36 37V39H27V27L32 34L36 37Z" fill="#BFBFBF"></path>
-                                             <path d="M36.6 36.1999L33 33.4999C33 25.3499 33.36 26.2299 31.41 23.3199C31.0529 22.7736 30.5225 22.3632 29.9041 22.1546C29.2856 21.9461 28.615 21.9514 28 22.1699C28 20.1699 28.15 17.9199 26.39 15.2799C26.1281 14.886 25.7728 14.5629 25.3558 14.3394C24.9389 14.1159 24.4731 13.9989 24 13.9989C23.5269 13.9989 23.0611 14.1159 22.6442 14.3394C22.2272 14.5629 21.8719 14.886 21.61 15.2799C19.87 17.8999 20 20.0999 20 22.1699C19.3848 21.9533 18.7148 21.9488 18.0968 22.1572C17.4788 22.3656 16.9483 22.775 16.59 23.3199C14.66 26.1999 15 25.2799 15 33.4999L11.4 36.1999C11.2758 36.2931 11.175 36.4139 11.1056 36.5527C11.0361 36.6916 11 36.8447 11 36.9999V38.9999C11 39.2652 11.1054 39.5195 11.2929 39.707C11.4804 39.8946 11.7348 39.9999 12 39.9999H15.22L16 43.2399C16.0548 43.4618 16.1838 43.6582 16.3658 43.7965C16.5477 43.9348 16.7716 44.0066 17 43.9999H21C21.2284 44.0066 21.4523 43.9348 21.6342 43.7965C21.8162 43.6582 21.9452 43.4618 22 43.2399L22.78 39.9999H25.22L26 43.2399C26.0548 43.4618 26.1838 43.6582 26.3658 43.7965C26.5477 43.9348 26.7716 44.0066 27 43.9999H31C31.2284 44.0066 31.4523 43.9348 31.6342 43.7965C31.8162 43.6582 31.9452 43.4618 32 43.2399L32.78 39.9999H36C36.2652 39.9999 36.5196 39.8946 36.7071 39.707C36.8946 39.5195 37 39.2652 37 38.9999V36.9999C37 36.8447 36.9639 36.6916 36.8944 36.5527C36.825 36.4139 36.7242 36.2931 36.6 36.1999ZM18.25 24.4199C18.3795 24.2717 18.5499 24.165 18.7399 24.1132C18.9298 24.0614 19.1308 24.0668 19.3176 24.1287C19.5045 24.1906 19.6689 24.3063 19.7903 24.4613C19.9117 24.6163 19.9847 24.8037 20 24.9999V26.6799L17 30.8799C17 25.8599 16.75 26.6799 18.25 24.4199ZM13 37.9999V37.4999L16.6 34.7999C16.94 34.4599 16.69 34.7999 20 30.1199V37.9999H13ZM20.22 41.9999H17.78L17.28 39.9999H20.72L20.22 41.9999ZM23.28 16.3899C23.3626 16.2763 23.4708 16.1839 23.596 16.1201C23.7211 16.0563 23.8596 16.0231 24 16.0231C24.1404 16.0231 24.2789 16.0563 24.404 16.1201C24.5292 16.1839 24.6374 16.2763 24.72 16.3899C25.2478 17.1818 25.6179 18.0679 25.81 18.9999H22.19C22.3821 18.0679 22.7522 17.1818 23.28 16.3899V16.3899ZM26 37.9999H22V20.9999H26V37.9999ZM28 24.9999C28.0238 24.8078 28.1028 24.6267 28.2275 24.4786C28.3522 24.3305 28.5173 24.2218 28.7026 24.1656C28.8879 24.1095 29.0855 24.1084 29.2714 24.1624C29.4574 24.2164 29.6236 24.3233 29.75 24.4699C31.26 26.6999 31 25.8699 31 30.8799L28 26.6799V24.9999ZM30.22 41.9999H27.78L27.28 39.9999H30.72L30.22 41.9999ZM35 37.9999H28V30.1199C31.34 34.7899 31.05 34.4499 31.4 34.7999L35 37.4999V37.9999Z" fill="#373B40"></path>
-                                             <path d="M22 48H16L17 44H21L22 48Z" fill="#C44FAB"></path>
-                                             <path d="M26 48H32L31 44H27L26 48Z" fill="#C44FAB"></path>
-                                             <path d="M39 18C37.22 18 35.4799 17.4722 33.9999 16.4832C32.5198 15.4943 31.3663 14.0887 30.6851 12.4442C30.0039 10.7996 29.8257 8.99002 30.1729 7.24419C30.5202 5.49836 31.3774 3.89472 32.636 2.63604C33.8947 1.37737 35.4984 0.520203 37.2442 0.172937C38.99 -0.17433 40.7996 0.00389957 42.4442 0.685088C44.0887 1.36628 45.4943 2.51983 46.4832 3.99987C47.4722 5.47991 48 7.21997 48 9C48 11.387 47.0518 13.6761 45.364 15.364C43.6761 17.0518 41.387 18 39 18V18ZM39 2C37.6155 2 36.2622 2.41055 35.111 3.17972C33.9599 3.94889 33.0627 5.04214 32.5328 6.32122C32.003 7.6003 31.8644 9.00777 32.1345 10.3656C32.4046 11.7235 33.0713 12.9708 34.0503 13.9498C35.0292 14.9287 36.2765 15.5954 37.6344 15.8655C38.9922 16.1356 40.3997 15.997 41.6788 15.4672C42.9579 14.9373 44.0511 14.0401 44.8203 12.889C45.5895 11.7379 46 10.3845 46 9C46 7.14349 45.2625 5.36301 43.9498 4.05026C42.637 2.7375 40.8565 2 39 2V2Z" fill="#373B40"></path>
-                                             <path d="M37 7C37.5523 7 38 6.55228 38 6C38 5.44772 37.5523 5 37 5C36.4477 5 36 5.44772 36 6C36 6.55228 36.4477 7 37 7Z" fill="#BFBFBF"></path>
-                                             <path d="M42 11C43.1046 11 44 10.1046 44 9C44 7.89543 43.1046 7 42 7C40.8954 7 40 7.89543 40 9C40 10.1046 40.8954 11 42 11Z" fill="#BFBFBF"></path>
-                                             <path d="M37 14C38.1046 14 39 13.1046 39 12C39 10.8954 38.1046 10 37 10C35.8954 10 35 10.8954 35 12C35 13.1046 35.8954 14 37 14Z" fill="#BFBFBF"></path>
-                                             <path d="M10 19C13.866 19 17 15.866 17 12C17 8.13401 13.866 5 10 5C6.13401 5 3 8.13401 3 12C3 15.866 6.13401 19 10 19Z" fill="#BFBFBF"></path>
-                                             <path d="M19.8805 7.85005C19.1305 5.85005 16.0005 5.85005 13.8805 6.16005C14.6128 6.64838 15.2443 7.27307 15.7405 8.00005C16.4199 7.95957 17.1005 8.05826 17.7405 8.29005C17.9305 8.38005 18.0205 8.46005 18.0405 8.52005C18.1405 8.79005 17.7405 9.44005 16.8205 10.24C12.7305 13.87 4.58049 15.75 2.36049 14.71C2.17049 14.62 2.08049 14.54 2.06049 14.48C1.97049 14.23 2.31049 13.64 3.12049 12.9C2.98887 12.0013 3.04678 11.085 3.29049 10.21C-0.999514 13.11 -0.489514 15.6 1.46049 16.53C2.61266 16.9432 3.84341 17.0902 5.06049 16.96C9.33453 16.5279 13.4358 15.0474 17.0005 12.65C18.5505 11.54 20.5605 9.66005 19.8805 7.85005Z" fill="#373B40"></path>
-                                          </g>
-                                          <defs>
-                                             <clipPath id="clip0_805_87">
-                                                <rect width="48" height="48" fill="white"></rect>
-                                             </clipPath>
-                                          </defs>
-                                       </svg>
-                                    </span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       We start our Business					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-715cd2e elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-divider" data-id="715cd2e" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       Medium Business				
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-7238613 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-divider" data-id="7238613" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       2013				
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-c8df85a elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="c8df85a" data-element_type="widget" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-" >
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                          <g clip-path="url(#clip0_806_138)">
-                                             <path d="M35.71 27.28L34.24 33.93L33 33V47H15V33L13.76 33.93L12.29 27.28C14.43 25.68 14.52 25.92 21 25C21.3111 25.5177 21.7509 25.9461 22.2766 26.2435C22.8023 26.5409 23.396 26.6972 24 26.6972C24.604 26.6972 25.1978 26.5409 25.7234 26.2435C26.2491 25.9461 26.6889 25.5177 27 25C33.42 25.91 33.56 25.67 35.71 27.28Z" fill="#BFBFBF"></path>
-                                             <path d="M16 8V6C16 4.4087 16.6321 2.88258 17.7574 1.75736C18.8826 0.632143 20.4087 1.87941e-06 22 1.87941e-06H24.17C25.0671 -0.000664058 25.9554 0.175649 26.7842 0.518841C27.613 0.862034 28.366 1.36536 29 2C29.7956 2 30.5587 2.31607 31.1213 2.87868C31.6839 3.44129 32 4.20435 32 5V8H16Z" fill="#C44FAB"></path>
-                                             <path d="M4.00001 21.59C3.85852 21.5894 3.71877 21.5587 3.59001 21.5C2.36797 20.9664 1.35853 20.0408 0.721109 18.8696C0.0836858 17.6983 -0.145395 16.3481 0.0700439 15.0321C0.285483 13.7161 0.933165 12.5094 1.9108 11.6026C2.88844 10.6957 4.14032 10.1404 5.46874 10.0243C6.79715 9.90814 8.1264 10.2379 9.24655 10.9613C10.3667 11.6848 11.2139 12.7609 11.6544 14.0195C12.0949 15.2781 12.1036 16.6476 11.679 17.9117C11.2545 19.1758 10.4209 20.2624 9.31001 21C9.20047 21.0733 9.07753 21.1241 8.94827 21.1497C8.81901 21.1752 8.68597 21.175 8.55681 21.149C8.42764 21.123 8.30488 21.0717 8.1956 20.9981C8.08632 20.9244 7.99266 20.83 7.92001 20.72C7.84725 20.6099 7.79702 20.4864 7.77222 20.3568C7.74741 20.2271 7.74852 20.0938 7.77548 19.9646C7.80244 19.8354 7.85472 19.7128 7.9293 19.6039C8.00388 19.495 8.09928 19.4019 8.21001 19.33C8.94963 18.8358 9.50339 18.1091 9.78374 17.2649C10.0641 16.4206 10.055 15.507 9.75796 14.6685C9.46091 13.83 8.89283 13.1145 8.14354 12.635C7.39425 12.1556 6.50651 11.9395 5.6207 12.0211C4.73489 12.1027 3.90155 12.4772 3.25245 13.0855C2.60334 13.6938 2.17552 14.5011 2.03663 15.3797C1.89774 16.2584 2.05569 17.1582 2.48553 17.9371C2.91537 18.7159 3.59255 19.3292 4.41001 19.68C4.61747 19.7746 4.78641 19.9371 4.88883 20.1408C4.99125 20.3445 5.021 20.577 4.97315 20.7999C4.9253 21.0228 4.80273 21.2227 4.62574 21.3664C4.44876 21.5101 4.22798 21.589 4.00001 21.59V21.59Z" fill="#BFBFBF"></path>
-                                             <path d="M44 21.59C43.772 21.589 43.5512 21.5101 43.3743 21.3664C43.1973 21.2227 43.0747 21.0228 43.0269 20.7999C42.979 20.577 43.0088 20.3445 43.1112 20.1408C43.2136 19.9371 43.3825 19.7746 43.59 19.68C44.4075 19.3292 45.0846 18.7159 45.5145 17.9371C45.9443 17.1582 46.1023 16.2584 45.9634 15.3797C45.8245 14.5011 45.3967 13.6938 44.7476 13.0855C44.0985 12.4772 43.2651 12.1027 42.3793 12.0211C41.4935 11.9395 40.6058 12.1556 39.8565 12.635C39.1072 13.1145 38.5391 13.83 38.242 14.6685C37.945 15.507 37.9359 16.4206 38.2163 17.2649C38.4966 18.1091 39.0504 18.8358 39.79 19.33C39.8999 19.4027 39.9944 19.4963 40.068 19.6056C40.1416 19.7149 40.1929 19.8377 40.2189 19.9668C40.245 20.096 40.2452 20.229 40.2196 20.3583C40.1941 20.4876 40.1432 20.6105 40.07 20.72C39.9234 20.9392 39.6961 21.0917 39.4376 21.1441C39.1792 21.1965 38.9105 21.1448 38.69 21C37.5791 20.2624 36.7455 19.1758 36.321 17.9117C35.8965 16.6476 35.9051 15.2781 36.3456 14.0195C36.7861 12.7609 37.6333 11.6848 38.7535 10.9613C39.8736 10.2379 41.2029 9.90814 42.5313 10.0243C43.8597 10.1404 45.1116 10.6957 46.0892 11.6026C47.0668 12.5094 47.7145 13.7161 47.93 15.0321C48.1454 16.3481 47.9163 17.6983 47.2789 18.8696C46.6415 20.0408 45.632 20.9664 44.41 21.5C44.2812 21.5587 44.1415 21.5894 44 21.59V21.59Z" fill="#BFBFBF"></path>
-                                             <path d="M44.9996 18C44.9996 17.2044 44.6836 16.4413 44.1209 15.8787C43.5583 15.3161 42.7953 15 41.9996 15C41.204 15 40.4409 15.3161 39.8783 15.8787C39.3157 16.4413 38.9996 17.2044 38.9996 18V18.62C38.3492 19.4038 37.9952 20.3915 37.9996 21.41C37.9996 23.41 38.1396 22.11 37.2796 27.21C35.5296 25.89 34.5796 25.08 32.6196 24.79L27.9996 24.13V22.74C28.925 22.0956 29.6811 21.2372 30.2034 20.2378C30.7257 19.2384 30.9989 18.1277 30.9996 17C31.7953 17 32.5583 16.6839 33.1209 16.1213C33.6836 15.5587 33.9996 14.7956 33.9996 14V10C33.9996 9.20435 33.6836 8.44129 33.1209 7.87868C32.5583 7.31607 31.7953 7 30.9996 7H16.9996C16.204 7 15.4409 7.31607 14.8783 7.87868C14.3157 8.44129 13.9996 9.20435 13.9996 10V14C13.9996 14.7956 14.3157 15.5587 14.8783 16.1213C15.4409 16.6839 16.204 17 16.9996 17C17.0004 18.1277 17.2735 19.2384 17.7958 20.2378C18.3182 21.2372 19.0742 22.0956 19.9996 22.74V24.13C13.0896 25.13 13.9196 24.83 10.7196 27.21L9.99963 22.92C9.99963 21.28 10.1496 20 8.99963 18.62V18C8.99963 17.2044 8.68356 16.4413 8.12095 15.8787C7.55834 15.3161 6.79528 15 5.99963 15C5.20398 15 4.44092 15.3161 3.87831 15.8787C3.3157 16.4413 2.99963 17.2044 2.99963 18C2.99963 24.72 2.63963 20.74 4.45963 32.59C4.64446 33.8196 5.26541 34.9417 6.2091 35.7514C7.15278 36.561 8.35622 37.0042 9.59963 37C11.5996 37 12.7296 36 13.9996 35V47C13.9996 47.2652 14.105 47.5196 14.2925 47.7071C14.4801 47.8946 14.7344 48 14.9996 48H32.9996C33.2648 48 33.5192 47.8946 33.7067 47.7071C33.8943 47.5196 33.9996 47.2652 33.9996 47V35L35.2796 36C35.9984 36.5391 36.8445 36.8829 37.7356 36.9976C38.6268 37.1124 39.5324 36.9943 40.3643 36.6549C41.1962 36.3155 41.926 35.7664 42.4825 35.061C43.0389 34.3556 43.4032 33.5181 43.5396 32.63C45.1996 21.76 44.9996 23.29 44.9996 23.08C44.9996 22.87 44.9996 23.43 44.9996 18ZM4.99963 18C4.99963 17.7348 5.10499 17.4804 5.29252 17.2929C5.48006 17.1054 5.73441 17 5.99963 17C6.26485 17 6.5192 17.1054 6.70674 17.2929C6.89427 17.4804 6.99963 17.7348 6.99963 18C6.99963 18.93 6.91963 19.32 7.28963 19.71C7.51546 19.9316 7.69463 20.1962 7.81658 20.4882C7.93852 20.7802 8.00076 21.0936 7.99963 21.41V22H4.99963V18ZM11.5196 34.36C11.0776 34.691 10.5575 34.9019 10.0098 34.9724C9.46209 35.0428 8.90549 34.9703 8.39412 34.7619C7.88275 34.5535 7.434 34.2164 7.09151 33.7832C6.74902 33.3501 6.52445 32.8356 6.43963 32.29L5.16963 24H8.16963L8.99963 29.16C9.0269 29.3303 9.09778 29.4907 9.20537 29.6256C9.31296 29.7605 9.45362 29.8652 9.61366 29.9296C9.7737 29.994 9.94768 30.0159 10.1187 29.9932C10.2897 29.9705 10.4519 29.904 10.5896 29.8L11.6496 29L12.6496 33.51L11.5196 34.36ZM15.9996 14V10C15.9996 9.73478 16.105 9.48043 16.2925 9.29289C16.4801 9.10536 16.7344 9 16.9996 9H30.9996C31.2648 9 31.5192 9.10536 31.7067 9.29289C31.8943 9.48043 31.9996 9.73478 31.9996 10V14C31.9996 14.2652 31.8943 14.5196 31.7067 14.7071C31.5192 14.8946 31.2648 15 30.9996 15H26.4096L25.4096 14C25.0349 13.6275 24.528 13.4184 23.9996 13.4184C23.4713 13.4184 22.9644 13.6275 22.5896 14L21.5896 15H16.9996C16.7344 15 16.4801 14.8946 16.2925 14.7071C16.105 14.5196 15.9996 14.2652 15.9996 14ZM18.9996 17C22.7696 17 22.1496 17.26 23.9996 15.41L24.9996 16.41C25.373 16.7856 25.8801 16.9978 26.4096 17H28.9996C28.9996 18.3261 28.4728 19.5979 27.5352 20.5355C26.5975 21.4732 25.3257 22 23.9996 22C22.6735 22 21.4018 21.4732 20.4641 20.5355C19.5264 19.5979 18.9996 18.3261 18.9996 17V17ZM25.9996 23.71V24.71C25.7668 25.0205 25.4648 25.2725 25.1177 25.4461C24.7705 25.6196 24.3877 25.71 23.9996 25.71C23.6115 25.71 23.2287 25.6196 22.8816 25.4461C22.5345 25.2725 22.2325 25.0205 21.9996 24.71V23.71C23.3052 24.095 24.6941 24.095 25.9996 23.71V23.71ZM33.5996 32.2L33.3096 32.06L32.9996 32H32.7296C32.6104 32.0289 32.5003 32.0873 32.4096 32.17C32.2363 32.2752 32.1108 32.4438 32.0596 32.64C31.9996 33 31.9996 32.09 31.9996 46H15.9996C15.9996 31.82 16.0596 32.92 15.8496 32.5V32.4C15.7412 32.2897 15.6204 32.1924 15.4896 32.11C15.3331 32.0478 15.1677 32.0106 14.9996 32H14.8896C14.7516 32.014 14.6184 32.0584 14.4996 32.13L14.3996 32.18L13.3996 27.68C14.7596 26.68 15.7196 26.74 20.5396 26.05C20.958 26.5606 21.4844 26.972 22.081 27.2545C22.6777 27.537 23.3295 27.6835 23.9896 27.6835C24.6497 27.6835 25.3016 27.537 25.8982 27.2545C26.4948 26.972 27.0213 26.5606 27.4396 26.05C32.2696 26.74 33.2396 26.68 34.5796 27.68L33.5996 32.2ZM41.5996 32.29C41.5148 32.8356 41.2902 33.3501 40.9478 33.7832C40.6053 34.2164 40.1565 34.5535 39.6451 34.7619C39.1338 34.9703 38.5772 35.0428 38.0295 34.9724C37.4818 34.9019 36.9617 34.691 36.5196 34.36L35.3896 33.52L36.3896 29.01L37.3896 29.8C37.5274 29.909 37.6914 29.9797 37.8651 30.0052C38.0389 30.0307 38.2163 30.0099 38.3795 29.945C38.5427 29.8802 38.6859 29.7734 38.7948 29.6356C38.9036 29.4978 38.9743 29.3338 38.9996 29.16L39.8496 24H42.8496L41.5996 32.29ZM42.9996 22H39.9996V21.41C39.9985 21.0936 40.0607 20.7802 40.1827 20.4882C40.3046 20.1962 40.4838 19.9316 40.7096 19.71C41.0596 19.34 40.9996 19.1 40.9996 18C40.9996 17.7348 41.105 17.4804 41.2925 17.2929C41.4801 17.1054 41.7344 17 41.9996 17C42.2648 17 42.5192 17.1054 42.7067 17.2929C42.8943 17.4804 42.9996 17.7348 42.9996 18V22Z" fill="#373B40"></path>
-                                             <path d="M18 12C18.5523 12 19 11.5523 19 11C19 10.4477 18.5523 10 18 10C17.4477 10 17 10.4477 17 11C17 11.5523 17.4477 12 18 12Z" fill="#BFBFBF"></path>
-                                             <path d="M21 12C21.5523 12 22 11.5523 22 11C22 10.4477 21.5523 10 21 10C20.4477 10 20 10.4477 20 11C20 11.5523 20.4477 12 21 12Z" fill="#BFBFBF"></path>
-                                          </g>
-                                          <defs>
-                                             <clipPath id="clip0_806_138">
-                                                <rect width="48" height="48" fill="white"></rect>
-                                             </clipPath>
-                                          </defs>
-                                       </svg>
-                                    </span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Massive transformation					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4ac740a elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-divider" data-id="4ac740a" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       Big Data Cloud 			
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-9e6e1c9 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-divider" data-id="9e6e1c9" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       2020				
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-0551beb elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="0551beb" data-element_type="widget" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-" >
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                          <g clip-path="url(#clip0_806_137)">
-                                             <path d="M30 6H18C16.8954 6 16 6.89543 16 8V10C16 11.1046 16.8954 12 18 12H30C31.1046 12 32 11.1046 32 10V8C32 6.89543 31.1046 6 30 6Z" fill="#BFBFBF"></path>
-                                             <path d="M27 16.0699L25 19.9999H23L21 16.0699C21.8764 16.6926 22.9249 17.0271 24 17.0271C25.0751 17.0271 26.1236 16.6926 27 16.0699Z" fill="#BFBFBF"></path>
-                                             <path d="M15 24H14C13.2044 24 12.4413 23.6839 11.8787 23.1213C11.3161 22.5587 11 21.7956 11 21C11 20.2044 11.3161 19.4413 11.8787 18.8787C12.4413 18.3161 13.2044 18 14 18H15V24Z" fill="#BFBFBF"></path>
-                                             <path d="M33 24H34C34.7956 24 35.5587 23.6839 36.1213 23.1213C36.6839 22.5587 37 21.7956 37 21C37 20.2044 36.6839 19.4413 36.1213 18.8787C35.5587 18.3161 34.7956 18 34 18H33V24Z" fill="#BFBFBF"></path>
-                                             <path d="M24 47C23.4696 47 22.9609 46.7893 22.5858 46.4142C22.2107 46.0391 22 45.5304 22 45V43H26V45C26 45.5304 25.7893 46.0391 25.4142 46.4142C25.0391 46.7893 24.5304 47 24 47Z" fill="#BFBFBF"></path>
-                                             <path d="M20 39V43H18C17.4696 43 16.9609 42.7893 16.5858 42.4142C16.2107 42.0391 16 41.5304 16 41V35L20 39Z" fill="#BFBFBF"></path>
-                                             <path d="M32 35V41C32 41.5304 31.7893 42.0391 31.4142 42.4142C31.0391 42.7893 30.5304 43 30 43H28V39L32 35Z" fill="#BFBFBF"></path>
-                                             <path d="M27 31L25 35H23L21 31H27Z" fill="#BFBFBF"></path>
-                                             <path d="M26 23H22C21.4477 23 21 23.4477 21 24V26C21 26.5523 21.4477 27 22 27H26C26.5523 27 27 26.5523 27 26V24C27 23.4477 26.5523 23 26 23Z" fill="#C44FAB"></path>
-                                             <path d="M21 10C21.5523 10 22 9.55228 22 9C22 8.44772 21.5523 8 21 8C20.4477 8 20 8.44772 20 9C20 9.55228 20.4477 10 21 10Z" fill="#373B40"></path>
-                                             <path d="M27 10C27.5523 10 28 9.55228 28 9C28 8.44772 27.5523 8 27 8C26.4477 8 26 8.44772 26 9C26 9.55228 26.4477 10 27 10Z" fill="#373B40"></path>
-                                             <path d="M44.7099 32.29L42.9999 30.59V24C43.0002 22.9125 42.646 21.8547 41.9909 20.9867C41.3359 20.1187 40.4157 19.4879 39.3699 19.19L37.1599 18.56C36.7873 18.0759 36.3087 17.6836 35.761 17.4132C35.2132 17.1428 34.6108 17.0014 33.9999 17C32.8799 17 33.8299 17.22 28.9999 15.66C29.7715 14.8325 30.4061 13.8873 30.8799 12.86C31.4923 12.672 32.0285 12.293 32.41 11.7784C32.7915 11.2638 32.9982 10.6406 32.9999 9.99996C33.0752 9.11649 33.0484 8.22728 32.9199 7.34996C33.3248 5.99835 33.6585 4.62647 33.9199 3.23996C33.944 3.00093 33.8812 2.76125 33.743 2.56473C33.6048 2.36821 33.4005 2.22799 33.1675 2.16973C32.9344 2.11147 32.6882 2.13905 32.4738 2.24743C32.2594 2.35581 32.0912 2.53774 31.9999 2.75996L31.4699 4.99996C29.0499 -1.68004 18.9999 -1.69004 16.5299 4.99996L15.9999 2.75996C15.9684 2.62863 15.9113 2.50481 15.832 2.39554C15.7526 2.28628 15.6525 2.19372 15.5373 2.12314C15.4222 2.05257 15.2943 2.00537 15.1609 1.98423C15.0275 1.9631 14.8912 1.96844 14.7599 1.99996C14.6286 2.03147 14.5048 2.08855 14.3955 2.16792C14.2862 2.24729 14.1937 2.34741 14.1231 2.46256C14.0525 2.5777 14.0053 2.70562 13.9842 2.839C13.9631 2.97239 13.9684 3.10863 13.9999 3.23996C15.1199 7.69996 14.9999 7.23996 15.0499 7.34996C14.932 8.22847 14.9152 9.11762 14.9999 9.99996C15.0023 10.6418 15.2105 11.266 15.5939 11.7808C15.9772 12.2956 16.5156 12.6738 17.1299 12.86C17.6007 13.8866 18.2319 14.8318 18.9999 15.66C14.1599 17.22 15.1199 17 13.9999 17C13.3874 17.0038 12.7839 17.1482 12.236 17.4222C11.6881 17.6961 11.2105 18.0922 10.8399 18.58L8.62992 19.21C7.58739 19.507 6.66963 20.1347 6.01491 20.9987C5.36018 21.8626 5.00396 22.916 4.99992 24V30.57L3.28992 32.27C3.1631 32.3993 3.07379 32.5606 3.03152 32.7367C2.98925 32.9129 2.99561 33.0972 3.04992 33.27L4.04992 36.27C4.12816 36.5285 4.30591 36.7455 4.54409 36.873C4.78226 37.0005 5.06133 37.0282 5.31992 36.95C5.5785 36.8717 5.79542 36.694 5.92294 36.4558C6.05047 36.2176 6.07816 35.9385 5.99992 35.68L5.18992 33.27L6.40992 32H9.58992L10.8599 33.27L10.0499 35.68C10.0079 35.8047 9.99086 35.9365 9.99977 36.0679C10.0087 36.1992 10.0434 36.3275 10.1019 36.4454C10.1604 36.5634 10.2415 36.6686 10.3407 36.7552C10.4399 36.8418 10.5552 36.9079 10.6799 36.95C10.8047 36.992 10.9365 37.009 11.0678 37.0001C11.1992 36.9912 11.3275 36.9565 11.4454 36.898C11.5633 36.8395 11.6686 36.7583 11.7551 36.6591C11.8417 36.56 11.9079 36.4447 11.9499 36.32L12.9499 33.32C13.0042 33.1472 13.0106 32.9629 12.9683 32.7867C12.926 32.6106 12.8367 32.4493 12.7099 32.32L10.9999 30.59V24.72L11.9399 24.41C12.632 24.8369 13.4378 25.0427 14.2499 25L15.9999 31C15.5973 32.2711 15.2635 33.5629 14.9999 34.87C14.9999 35.45 14.9999 32.73 14.9999 41C14.9999 41.7956 15.316 42.5587 15.8786 43.1213C16.4412 43.6839 17.2043 44 17.9999 44H20.9999V45C20.9999 45.7956 21.316 46.5587 21.8786 47.1213C22.4412 47.6839 23.2043 48 23.9999 48C24.7956 48 25.5586 47.6839 26.1212 47.1213C26.6838 46.5587 26.9999 45.7956 26.9999 45V44H29.9999C30.7956 44 31.5586 43.6839 32.1212 43.1213C32.6838 42.5587 32.9999 41.7956 32.9999 41C32.9999 36.44 32.9999 34.88 32.9999 34.76L31.9999 31L33.7099 25C34.522 25.0427 35.3278 24.8369 36.0199 24.41L36.9599 24.72V30.59L35.2499 32.29C35.1231 32.4193 35.0338 32.5806 34.9915 32.7567C34.9492 32.9329 34.9556 33.1172 35.0099 33.29L36.0099 36.29C36.0948 36.5419 36.2763 36.7498 36.5144 36.868C36.7526 36.9861 37.028 37.0048 37.2799 36.92C37.5319 36.8351 37.7398 36.6536 37.8579 36.4154C37.9761 36.1773 37.9948 35.9019 37.9099 35.65L37.0999 33.24L38.4099 32H41.5899L42.8599 33.27L42.0499 35.68C42.0079 35.8047 41.9909 35.9365 41.9998 36.0679C42.0087 36.1992 42.0434 36.3275 42.1019 36.4454C42.1604 36.5634 42.2415 36.6686 42.3407 36.7552C42.4399 36.8418 42.5552 36.9079 42.6799 36.95C42.8047 36.992 42.9365 37.009 43.0678 37.0001C43.1992 36.9912 43.3275 36.9565 43.4454 36.898C43.5633 36.8395 43.6686 36.7583 43.7551 36.6591C43.8417 36.56 43.9079 36.4447 43.9499 36.32L44.9499 33.32C45.0102 33.143 45.0196 32.9527 44.9772 32.7706C44.9348 32.5886 44.8422 32.4221 44.7099 32.29ZM8.99992 24.72V30H6.99992V24C6.99899 23.3466 7.21142 22.7107 7.6049 22.1891C7.99838 21.6675 8.5514 21.2886 9.17992 21.11C10.1799 20.82 9.99992 20.84 9.99992 20.98C10.0029 21.6074 10.1573 22.2249 10.4499 22.78C10.0293 22.9002 9.65976 23.1551 9.39786 23.5055C9.13597 23.8559 8.99618 24.2825 8.99992 24.72V24.72ZM13.9999 23C13.4695 23 12.9608 22.7892 12.5857 22.4142C12.2106 22.0391 11.9999 21.5304 11.9999 21C11.9999 20.4695 12.2106 19.9608 12.5857 19.5857C12.9608 19.2107 13.4695 19 13.9999 19V23ZM29.2999 4.99996H18.6999C20.7599 0.999957 27.2399 0.999957 29.2999 4.99996ZM17.9999 11C17.7347 11 17.4803 10.8946 17.2928 10.7071C17.1053 10.5195 16.9999 10.2652 16.9999 9.99996V7.99996C16.9999 7.73474 17.1053 7.48039 17.2928 7.29285C17.4803 7.10531 17.7347 6.99996 17.9999 6.99996H29.9999C30.2651 6.99996 30.5195 7.10531 30.707 7.29285C30.8946 7.48039 30.9999 7.73474 30.9999 7.99996V9.99996C30.9999 10.2652 30.8946 10.5195 30.707 10.7071C30.5195 10.8946 30.2651 11 29.9999 11H17.9999ZM19.4799 13H28.4799C25.9999 17 21.9999 17 19.4799 13ZM24.9199 17.91L24.3799 19H23.6199L23.0799 17.91C23.6874 18.0299 24.3124 18.0299 24.9199 17.91V17.91ZM18.9999 42H17.9999C17.7347 42 17.4803 41.8946 17.2928 41.7071C17.1053 41.5195 16.9999 41.2652 16.9999 41V37.41L18.9999 39.41V42ZM24.9999 45C24.9999 45.2652 24.8946 45.5195 24.707 45.7071C24.5195 45.8946 24.2651 46 23.9999 46C23.7347 46 23.4803 45.8946 23.2928 45.7071C23.1053 45.5195 22.9999 45.2652 22.9999 45V44H24.9999V45ZM26.9999 39V42H20.9999C20.9999 38.82 21.0999 38.7 20.7099 38.29L17.1099 34.69L17.7799 32H20.3799L22.1099 35.45C22.193 35.6149 22.3202 35.7536 22.4773 35.8506C22.6343 35.9477 22.8153 35.9994 22.9999 36H24.9999C25.1846 35.9994 25.3655 35.9477 25.5226 35.8506C25.6797 35.7536 25.8068 35.6149 25.8899 35.45L27.6199 32H30.2199L30.8899 34.69L27.2899 38.29C27.1972 38.3834 27.1239 38.4942 27.0741 38.6161C27.0244 38.7379 26.9992 38.8684 26.9999 39V39ZM22.6199 32H25.3799L24.3799 34H23.6199L22.6199 32ZM30.9999 41C30.9999 41.2652 30.8946 41.5195 30.707 41.7071C30.5195 41.8946 30.2651 42 29.9999 42H28.9999V39.41L30.9999 37.41V41ZM31.9999 23.86L30.2499 30H17.7499L15.9999 23.86V18.73L20.5299 17.28L22.0999 20.45C22.1838 20.6164 22.3125 20.7561 22.4715 20.8533C22.6305 20.9504 22.8136 21.0013 22.9999 21H24.9999C25.1863 21.0013 25.3693 20.9504 25.5283 20.8533C25.6874 20.7561 25.8161 20.6164 25.8999 20.45L27.4699 17.28L31.9999 18.73V23.86ZM33.9999 23V19C34.5304 19 35.0391 19.2107 35.4141 19.5857C35.7892 19.9608 35.9999 20.4695 35.9999 21C35.9999 21.5304 35.7892 22.0391 35.4141 22.4142C35.0391 22.7892 34.5304 23 33.9999 23ZM40.9999 30H38.9999V24.72C38.9993 24.2859 38.8575 23.8639 38.5959 23.5175C38.3344 23.1712 37.9672 22.9193 37.5499 22.8C37.8425 22.2449 37.9969 21.6274 37.9999 21C37.9999 21 37.9999 20.93 37.9999 20.89L38.8299 21.13C39.4533 21.3094 40.0017 21.6861 40.3929 22.2035C40.7842 22.721 40.9971 23.3513 40.9999 24V30Z" fill="#373B40"></path>
-                                          </g>
-                                          <defs>
-                                             <clipPath id="clip0_806_137">
-                                                <rect width="48" height="48" fill="white"></rect>
-                                             </clipPath>
-                                          </defs>
-                                       </svg>
-                                    </span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Leading Tech Company					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-4ac740a elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-divider" data-id="4ac740a" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       Big Data Cloud 			
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-9e6e1c9 elementor-widget-divider--view-line_text elementor-widget-divider--element-align-left elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-divider" data-id="9e6e1c9" data-element_type="widget" data-widget_type="divider.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-divider">
-                                 <span class="elementor-divider-separator">
-                                    <div class="elementor-divider__text elementor-divider__element">
-                                       2020				
-                                    </div>
-                                 </span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-0551beb elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="0551beb" data-element_type="widget" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-" >
-                                       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                          <g clip-path="url(#clip0_806_137)">
-                                             <path d="M30 6H18C16.8954 6 16 6.89543 16 8V10C16 11.1046 16.8954 12 18 12H30C31.1046 12 32 11.1046 32 10V8C32 6.89543 31.1046 6 30 6Z" fill="#BFBFBF"></path>
-                                             <path d="M27 16.0699L25 19.9999H23L21 16.0699C21.8764 16.6926 22.9249 17.0271 24 17.0271C25.0751 17.0271 26.1236 16.6926 27 16.0699Z" fill="#BFBFBF"></path>
-                                             <path d="M15 24H14C13.2044 24 12.4413 23.6839 11.8787 23.1213C11.3161 22.5587 11 21.7956 11 21C11 20.2044 11.3161 19.4413 11.8787 18.8787C12.4413 18.3161 13.2044 18 14 18H15V24Z" fill="#BFBFBF"></path>
-                                             <path d="M33 24H34C34.7956 24 35.5587 23.6839 36.1213 23.1213C36.6839 22.5587 37 21.7956 37 21C37 20.2044 36.6839 19.4413 36.1213 18.8787C35.5587 18.3161 34.7956 18 34 18H33V24Z" fill="#BFBFBF"></path>
-                                             <path d="M24 47C23.4696 47 22.9609 46.7893 22.5858 46.4142C22.2107 46.0391 22 45.5304 22 45V43H26V45C26 45.5304 25.7893 46.0391 25.4142 46.4142C25.0391 46.7893 24.5304 47 24 47Z" fill="#BFBFBF"></path>
-                                             <path d="M20 39V43H18C17.4696 43 16.9609 42.7893 16.5858 42.4142C16.2107 42.0391 16 41.5304 16 41V35L20 39Z" fill="#BFBFBF"></path>
-                                             <path d="M32 35V41C32 41.5304 31.7893 42.0391 31.4142 42.4142C31.0391 42.7893 30.5304 43 30 43H28V39L32 35Z" fill="#BFBFBF"></path>
-                                             <path d="M27 31L25 35H23L21 31H27Z" fill="#BFBFBF"></path>
-                                             <path d="M26 23H22C21.4477 23 21 23.4477 21 24V26C21 26.5523 21.4477 27 22 27H26C26.5523 27 27 26.5523 27 26V24C27 23.4477 26.5523 23 26 23Z" fill="#C44FAB"></path>
-                                             <path d="M21 10C21.5523 10 22 9.55228 22 9C22 8.44772 21.5523 8 21 8C20.4477 8 20 8.44772 20 9C20 9.55228 20.4477 10 21 10Z" fill="#373B40"></path>
-                                             <path d="M27 10C27.5523 10 28 9.55228 28 9C28 8.44772 27.5523 8 27 8C26.4477 8 26 8.44772 26 9C26 9.55228 26.4477 10 27 10Z" fill="#373B40"></path>
-                                             <path d="M44.7099 32.29L42.9999 30.59V24C43.0002 22.9125 42.646 21.8547 41.9909 20.9867C41.3359 20.1187 40.4157 19.4879 39.3699 19.19L37.1599 18.56C36.7873 18.0759 36.3087 17.6836 35.761 17.4132C35.2132 17.1428 34.6108 17.0014 33.9999 17C32.8799 17 33.8299 17.22 28.9999 15.66C29.7715 14.8325 30.4061 13.8873 30.8799 12.86C31.4923 12.672 32.0285 12.293 32.41 11.7784C32.7915 11.2638 32.9982 10.6406 32.9999 9.99996C33.0752 9.11649 33.0484 8.22728 32.9199 7.34996C33.3248 5.99835 33.6585 4.62647 33.9199 3.23996C33.944 3.00093 33.8812 2.76125 33.743 2.56473C33.6048 2.36821 33.4005 2.22799 33.1675 2.16973C32.9344 2.11147 32.6882 2.13905 32.4738 2.24743C32.2594 2.35581 32.0912 2.53774 31.9999 2.75996L31.4699 4.99996C29.0499 -1.68004 18.9999 -1.69004 16.5299 4.99996L15.9999 2.75996C15.9684 2.62863 15.9113 2.50481 15.832 2.39554C15.7526 2.28628 15.6525 2.19372 15.5373 2.12314C15.4222 2.05257 15.2943 2.00537 15.1609 1.98423C15.0275 1.9631 14.8912 1.96844 14.7599 1.99996C14.6286 2.03147 14.5048 2.08855 14.3955 2.16792C14.2862 2.24729 14.1937 2.34741 14.1231 2.46256C14.0525 2.5777 14.0053 2.70562 13.9842 2.839C13.9631 2.97239 13.9684 3.10863 13.9999 3.23996C15.1199 7.69996 14.9999 7.23996 15.0499 7.34996C14.932 8.22847 14.9152 9.11762 14.9999 9.99996C15.0023 10.6418 15.2105 11.266 15.5939 11.7808C15.9772 12.2956 16.5156 12.6738 17.1299 12.86C17.6007 13.8866 18.2319 14.8318 18.9999 15.66C14.1599 17.22 15.1199 17 13.9999 17C13.3874 17.0038 12.7839 17.1482 12.236 17.4222C11.6881 17.6961 11.2105 18.0922 10.8399 18.58L8.62992 19.21C7.58739 19.507 6.66963 20.1347 6.01491 20.9987C5.36018 21.8626 5.00396 22.916 4.99992 24V30.57L3.28992 32.27C3.1631 32.3993 3.07379 32.5606 3.03152 32.7367C2.98925 32.9129 2.99561 33.0972 3.04992 33.27L4.04992 36.27C4.12816 36.5285 4.30591 36.7455 4.54409 36.873C4.78226 37.0005 5.06133 37.0282 5.31992 36.95C5.5785 36.8717 5.79542 36.694 5.92294 36.4558C6.05047 36.2176 6.07816 35.9385 5.99992 35.68L5.18992 33.27L6.40992 32H9.58992L10.8599 33.27L10.0499 35.68C10.0079 35.8047 9.99086 35.9365 9.99977 36.0679C10.0087 36.1992 10.0434 36.3275 10.1019 36.4454C10.1604 36.5634 10.2415 36.6686 10.3407 36.7552C10.4399 36.8418 10.5552 36.9079 10.6799 36.95C10.8047 36.992 10.9365 37.009 11.0678 37.0001C11.1992 36.9912 11.3275 36.9565 11.4454 36.898C11.5633 36.8395 11.6686 36.7583 11.7551 36.6591C11.8417 36.56 11.9079 36.4447 11.9499 36.32L12.9499 33.32C13.0042 33.1472 13.0106 32.9629 12.9683 32.7867C12.926 32.6106 12.8367 32.4493 12.7099 32.32L10.9999 30.59V24.72L11.9399 24.41C12.632 24.8369 13.4378 25.0427 14.2499 25L15.9999 31C15.5973 32.2711 15.2635 33.5629 14.9999 34.87C14.9999 35.45 14.9999 32.73 14.9999 41C14.9999 41.7956 15.316 42.5587 15.8786 43.1213C16.4412 43.6839 17.2043 44 17.9999 44H20.9999V45C20.9999 45.7956 21.316 46.5587 21.8786 47.1213C22.4412 47.6839 23.2043 48 23.9999 48C24.7956 48 25.5586 47.6839 26.1212 47.1213C26.6838 46.5587 26.9999 45.7956 26.9999 45V44H29.9999C30.7956 44 31.5586 43.6839 32.1212 43.1213C32.6838 42.5587 32.9999 41.7956 32.9999 41C32.9999 36.44 32.9999 34.88 32.9999 34.76L31.9999 31L33.7099 25C34.522 25.0427 35.3278 24.8369 36.0199 24.41L36.9599 24.72V30.59L35.2499 32.29C35.1231 32.4193 35.0338 32.5806 34.9915 32.7567C34.9492 32.9329 34.9556 33.1172 35.0099 33.29L36.0099 36.29C36.0948 36.5419 36.2763 36.7498 36.5144 36.868C36.7526 36.9861 37.028 37.0048 37.2799 36.92C37.5319 36.8351 37.7398 36.6536 37.8579 36.4154C37.9761 36.1773 37.9948 35.9019 37.9099 35.65L37.0999 33.24L38.4099 32H41.5899L42.8599 33.27L42.0499 35.68C42.0079 35.8047 41.9909 35.9365 41.9998 36.0679C42.0087 36.1992 42.0434 36.3275 42.1019 36.4454C42.1604 36.5634 42.2415 36.6686 42.3407 36.7552C42.4399 36.8418 42.5552 36.9079 42.6799 36.95C42.8047 36.992 42.9365 37.009 43.0678 37.0001C43.1992 36.9912 43.3275 36.9565 43.4454 36.898C43.5633 36.8395 43.6686 36.7583 43.7551 36.6591C43.8417 36.56 43.9079 36.4447 43.9499 36.32L44.9499 33.32C45.0102 33.143 45.0196 32.9527 44.9772 32.7706C44.9348 32.5886 44.8422 32.4221 44.7099 32.29ZM8.99992 24.72V30H6.99992V24C6.99899 23.3466 7.21142 22.7107 7.6049 22.1891C7.99838 21.6675 8.5514 21.2886 9.17992 21.11C10.1799 20.82 9.99992 20.84 9.99992 20.98C10.0029 21.6074 10.1573 22.2249 10.4499 22.78C10.0293 22.9002 9.65976 23.1551 9.39786 23.5055C9.13597 23.8559 8.99618 24.2825 8.99992 24.72V24.72ZM13.9999 23C13.4695 23 12.9608 22.7892 12.5857 22.4142C12.2106 22.0391 11.9999 21.5304 11.9999 21C11.9999 20.4695 12.2106 19.9608 12.5857 19.5857C12.9608 19.2107 13.4695 19 13.9999 19V23ZM29.2999 4.99996H18.6999C20.7599 0.999957 27.2399 0.999957 29.2999 4.99996ZM17.9999 11C17.7347 11 17.4803 10.8946 17.2928 10.7071C17.1053 10.5195 16.9999 10.2652 16.9999 9.99996V7.99996C16.9999 7.73474 17.1053 7.48039 17.2928 7.29285C17.4803 7.10531 17.7347 6.99996 17.9999 6.99996H29.9999C30.2651 6.99996 30.5195 7.10531 30.707 7.29285C30.8946 7.48039 30.9999 7.73474 30.9999 7.99996V9.99996C30.9999 10.2652 30.8946 10.5195 30.707 10.7071C30.5195 10.8946 30.2651 11 29.9999 11H17.9999ZM19.4799 13H28.4799C25.9999 17 21.9999 17 19.4799 13ZM24.9199 17.91L24.3799 19H23.6199L23.0799 17.91C23.6874 18.0299 24.3124 18.0299 24.9199 17.91V17.91ZM18.9999 42H17.9999C17.7347 42 17.4803 41.8946 17.2928 41.7071C17.1053 41.5195 16.9999 41.2652 16.9999 41V37.41L18.9999 39.41V42ZM24.9999 45C24.9999 45.2652 24.8946 45.5195 24.707 45.7071C24.5195 45.8946 24.2651 46 23.9999 46C23.7347 46 23.4803 45.8946 23.2928 45.7071C23.1053 45.5195 22.9999 45.2652 22.9999 45V44H24.9999V45ZM26.9999 39V42H20.9999C20.9999 38.82 21.0999 38.7 20.7099 38.29L17.1099 34.69L17.7799 32H20.3799L22.1099 35.45C22.193 35.6149 22.3202 35.7536 22.4773 35.8506C22.6343 35.9477 22.8153 35.9994 22.9999 36H24.9999C25.1846 35.9994 25.3655 35.9477 25.5226 35.8506C25.6797 35.7536 25.8068 35.6149 25.8899 35.45L27.6199 32H30.2199L30.8899 34.69L27.2899 38.29C27.1972 38.3834 27.1239 38.4942 27.0741 38.6161C27.0244 38.7379 26.9992 38.8684 26.9999 39V39ZM22.6199 32H25.3799L24.3799 34H23.6199L22.6199 32ZM30.9999 41C30.9999 41.2652 30.8946 41.5195 30.707 41.7071C30.5195 41.8946 30.2651 42 29.9999 42H28.9999V39.41L30.9999 37.41V41ZM31.9999 23.86L30.2499 30H17.7499L15.9999 23.86V18.73L20.5299 17.28L22.0999 20.45C22.1838 20.6164 22.3125 20.7561 22.4715 20.8533C22.6305 20.9504 22.8136 21.0013 22.9999 21H24.9999C25.1863 21.0013 25.3693 20.9504 25.5283 20.8533C25.6874 20.7561 25.8161 20.6164 25.8999 20.45L27.4699 17.28L31.9999 18.73V23.86ZM33.9999 23V19C34.5304 19 35.0391 19.2107 35.4141 19.5857C35.7892 19.9608 35.9999 20.4695 35.9999 21C35.9999 21.5304 35.7892 22.0391 35.4141 22.4142C35.0391 22.7892 34.5304 23 33.9999 23ZM40.9999 30H38.9999V24.72C38.9993 24.2859 38.8575 23.8639 38.5959 23.5175C38.3344 23.1712 37.9672 22.9193 37.5499 22.8C37.8425 22.2449 37.9969 21.6274 37.9999 21C37.9999 21 37.9999 20.93 37.9999 20.89L38.8299 21.13C39.4533 21.3094 40.0017 21.6861 40.3929 22.2035C40.7842 22.721 40.9971 23.3513 40.9999 24V30Z" fill="#373B40"></path>
-                                          </g>
-                                          <defs>
-                                             <clipPath id="clip0_806_137">
-                                                <rect width="48" height="48" fill="white"></rect>
-                                             </clipPath>
-                                          </defs>
-                                       </svg>
-                                    </span>
-                                 </div>
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Leading Tech Company					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                       
+                        <?php
+                        $homepage2 = $db->query("SELECT * FROM `halaman_statis` WHERE `link_halaman` LIKE '%homepage%' ORDER BY id_halaman DESC LIMIT 1,1");
+                        $contenttwo = $homepage2->fetch_assoc();?>
+
+                        <?= $contenttwo['isi_halaman']; ?>
                      </div>
                   </div>
                   <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9d2d76d" data-id="9d2d76d" data-element_type="column">
@@ -2056,110 +1689,30 @@
                               </div>
                            </div>
                         </div>
-                        <div class="elementor-element elementor-element-5e5022e elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="5e5022e" data-element_type="widget" data-widget_type="heading.default">
+                        <!-- <div class="elementor-element elementor-element-5e5022e elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="5e5022e" data-element_type="widget" data-widget_type="heading.default">
                            <div class="elementor-widget-container">
                               <h2 class="elementor-heading-title elementor-size-default">How We Work</h2>
                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-99556e2 elementor-widget elementor-widget-heading" data-id="99556e2" data-element_type="widget" data-widget_type="heading.default">
+                        </div> -->
+                        <!-- <div class="elementor-element elementor-element-99556e2 elementor-widget elementor-widget-heading" data-id="99556e2" data-element_type="widget" data-widget_type="heading.default">
                            <div class="elementor-widget-container">
                               <h2 class="elementor-heading-title elementor-size-default">We'll show our process.</h2>
                            </div>
-                        </div>
+                        </div> -->
                      </div>
                   </div>
                </div>
             </section>
-            <section class="elementor-section elementor-inner-section elementor-element elementor-element-0eff63b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0eff63b" data-element_type="section">
-               <div class="elementor-container elementor-column-gap-no">
-                  <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-294adff" data-id="294adff" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-f3b16b5 elementor-widget__width-auto elementor-absolute elementor-view-default elementor-widget elementor-widget-icon" data-id="f3b16b5" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-wrapper">
-                                 <a class="elementor-icon" href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkIn0%3D">
-                                    <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe> -->
-                                    <i aria-hidden="true" class="fas fa-play"></i>			
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-252f632 elementor-widget elementor-widget-spacer" data-id="252f632" data-element_type="widget" data-widget_type="spacer.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-spacer">
-                                 <div class="elementor-spacer-inner"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
+          
             <section class="elementor-section elementor-inner-section elementor-element elementor-element-d2a4a80 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d2a4a80" data-element_type="section">
                <div class="elementor-container elementor-column-gap-wider">
-                  <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b62bfa1" data-id="b62bfa1" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-09f943d elementor-cta--skin-cover elementor-widget__width-initial elementor-widget elementor-widget-call-to-action" data-id="09f943d" data-element_type="widget" data-widget_type="call-to-action.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-cta">
-                                 <div class="elementor-cta__bg-wrapper">
-                                    <div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
-                                    <div class="elementor-cta__bg-overlay"></div>
-                                 </div>
-                                 <div class="elementor-cta__content">
-                                    <h2 class="elementor-cta__title elementor-cta__content-item elementor-content-item">Discover More</h2>
-                                    <div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-                                       Lorem ipsum dolor sit amet consectetur adipiscing elit dolor					
-                                    </div>
-                                    <div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-                                       <a class="elementor-cta__button elementor-button elementor-size-lg">
-                                       Learn More					</a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0e4fc0d" data-id="0e4fc0d" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-16aff3c elementor-widget elementor-widget-heading" data-id="16aff3c" data-element_type="widget" data-widget_type="heading.default">
-                           <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">Our key expertise</h2>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-e77485b elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="e77485b" data-element_type="widget" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Startups					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       Helps startups in the early stages, including concept validation, MVP creation					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-da81e4e elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="da81e4e" data-element_type="widget" data-widget_type="icon-box.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-icon-box-wrapper">
-                                 <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                       <span  >
-                                       Custom Software					</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">
-                                       help our clients create custom software that improves their operations					
-                                    </p>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+               
+               <?php
+               $homepage1 = $db->query("SELECT * FROM `halaman_statis` WHERE `link_halaman` LIKE '%homepage%' ORDER BY id_halaman LIMIT 1 OFFSET 2");
+               $contentone = $homepage1->fetch_assoc();?>
+
+               <?= $contentone['isi_halaman']; ?>
+
                </div>
             </section>
          </div>
@@ -2217,25 +1770,37 @@
                         <div class="elementor-element elementor-element-7d0f8d0 elementor-grid-1 elementor-posts--thumbnail-none elementor-grid-tablet-1 elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-id="7d0f8d0" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_columns_tablet&quot;:&quot;1&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
                            <div class="elementor-widget-container">
                               <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
-                                 <article class="elementor-post elementor-grid-item post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 
+                              
+                              <?php
+                                 $hotnews = $db->query("SELECT * FROM `artikel` ORDER BY `id_artikel` DESC  LIMIT 1");
+                                 $artikelutama = $hotnews->fetch_assoc();
+                                 $isi_artikel_hot         = $artikelutama['isi_artikel'];
+					                  $isi_utama                 = substr($isi_artikel_hot,0,110); // ambil sebanyak 220 karakter
+					                  $isi_utama                 = substr($isi_artikel_hot,0,strrpos($isi_utama," ")); // potong per spasi kalimat
+                                 ?>
+
+
+                              <article class="elementor-post elementor-grid-item post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
-                                          <a href="https://elementor.deverust.com/techvisio/2021/06/18/business-trend-in-financial-field/" >
-                                          Business Trend In Financial Field			</a>
+                                          <a href="artikel-<?php echo $artikelutama['id_artikel']; ?>-<?php echo $artikelutama['judul_seo']; ?>" >
+                                          <?= $artikelutama['judul_artikel'] ?>			</a>
                                        </h3>
                                        <div class="elementor-post__meta-data">
                                           <span class="elementor-post-date">
-                                          June 18, 2021		</span>
-                                          <span class="elementor-post-avatar">
-                                          No Comments		</span>
+                                          <?= $artikelutama['tanggal'] ?>		</span>
+                                         
                                        </div>
                                        <div class="elementor-post__excerpt">
-                                          <p>Quisque semper leo ac condimentum suscipit. Fusce lacinia lectus vitae vulputate lobortis. Nullam nunc ex, sagittis eu lorem sed, dapibus dictum odio. Pellentesque lobortis eget dolor at egestas.</p>
+                                          <p><?php echo $isi_utama.' ...'; ?></p>
                                        </div>
-                                       <a class="elementor-post__read-more" href="https://elementor.deverust.com/techvisio/2021/06/18/business-trend-in-financial-field/" >
+                                       <a class="elementor-post__read-more" href="artikel-<?php echo $artikelutama['id_artikel']; ?>-<?php echo $artikelutama['judul_seo']; ?>" >
                                        Read More			</a>
                                     </div>
                                  </article>
+
+                                 
                               </div>
                            </div>
                         </div>
@@ -2247,8 +1812,8 @@
                            <div class="elementor-widget-container">
                               <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
                                  <article class="elementor-post elementor-grid-item post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
-                                    <a class="elementor-post__thumbnail__link" href="https://elementor.deverust.com/techvisio/2021/06/18/business-trend-in-financial-field/" >
-                                       <div class="elementor-post__thumbnail"><img width="1752" height="1168" src="wp-content/uploads/sites/20/2021/06/business-solutions-technology-and-strategy-concept-LZCD7LG.jpg" class="attachment-full size-full" alt="" loading="lazy" /></div>
+                                    <a class="elementor-post__thumbnail__link" href="artikel-<?php echo $artikelutama['id_artikel']; ?>-<?php echo $artikelutama['judul_seo']; ?>" >
+                                       <div class="elementor-post__thumbnail"><img width="1752" height="1168" src="gambar/artikel/<?php echo $artikelutama['gambar']; ?>" class="attachment-full size-full" alt="" loading="lazy" /></div>
                                     </a>
                                     <div class="elementor-post__text"></div>
                                  </article>
@@ -2269,7 +1834,7 @@
                                  <!-- loop here -->
                                  <?php
                                     include "config/tgl_indo.php";
-                                    $query0                  = $db->prepare("SELECT artikel.id_artikel, artikel.tag, artikel.judul_artikel, artikel.judul_seo, artikel.isi_artikel, artikel.gambar, artikel.dibaca, artikel.tanggal, artikel.hari FROM artikel INNER JOIN kategori_artikel ON artikel.id_kategori=kategori_artikel.id_kategori ORDER BY artikel.id_artikel DESC LIMIT 5");
+                                    $query0                  = $db->prepare("SELECT artikel.id_artikel, artikel.tag, artikel.judul_artikel, artikel.judul_seo, artikel.isi_artikel, artikel.gambar, artikel.dibaca, artikel.tanggal, artikel.hari FROM artikel INNER JOIN kategori_artikel ON artikel.id_kategori=kategori_artikel.id_kategori ORDER BY artikel.id_artikel DESC LIMIT 1,5");
                                     $query0->execute();
                                     $result0                 = $query0->get_result();
                                     while ( $row0            = $result0->fetch_assoc() ){
@@ -2369,21 +1934,37 @@
                         <div class="elementor-element elementor-element-580c453 elementor-grid-1 elementor-posts--thumbnail-none elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-id="580c453" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:8,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
                            <div class="elementor-widget-container">
                               <div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
-                                 <article class="elementor-post elementor-grid-item post-1281 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 
+                              <?php
+								include "../config/tgl_indo.php";
+								$query0                  = $db->prepare("SELECT artikel.id_artikel, artikel.judul_artikel, artikel.judul_seo, artikel.isi_artikel, artikel.gambar, artikel.dibaca, artikel.tanggal, artikel.hari FROM artikel INNER JOIN kategori_artikel ON artikel.id_kategori=kategori_artikel.id_kategori ORDER BY artikel.id_artikel DESC LIMIT 4");
+								$query0->execute();
+								$result0                 = $query0->get_result();
+								while ( $row0            = $result0->fetch_assoc() ){
+									$tanggal             = tgl_indo($row0['tanggal']);
+									$isi_artikel         = $row0['isi_artikel'];
+									$isi                 = substr($isi_artikel,0,110); // ambil sebanyak 220 karakter
+									$isi                 = substr($isi_artikel,0,strrpos($isi," ")); // potong per spasi kalimat
+
+								?>
+                              <article class="elementor-post elementor-grid-item post-1281 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
-                                          The Ultimate Guide to Email Marketing Benchmarks for 2022			</a>
+                                          <?php echo $row0['judul_artikel']; ?>				</a>
                                        </h3>
                                        <div class="elementor-post__meta-data">
                                           <span class="elementor-post-date">
-                                          February 7, 2022		</span>
-                                          <span class="elementor-post-avatar">
-                                          No Comments		</span>
+                                          <?= $tanggal; ?>		</span>
+                                          
                                        </div>
                                     </div>
                                  </article>
-                                 <article class="elementor-post elementor-grid-item post-1278 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+
+                                 <?php
+										}
+									?>
+                                 <!-- <article class="elementor-post elementor-grid-item post-1278 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2396,8 +1977,8 @@
                                           No Comments		</span>
                                        </div>
                                     </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-1274 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 </article> -->
+                                 <!-- <article class="elementor-post elementor-grid-item post-1274 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2410,8 +1991,8 @@
                                           No Comments		</span>
                                        </div>
                                     </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 </article> -->
+                                 <!-- <article class="elementor-post elementor-grid-item post-1270 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2424,8 +2005,8 @@
                                           No Comments		</span>
                                        </div>
                                     </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-1111 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 </article> -->
+                                 <!-- <article class="elementor-post elementor-grid-item post-1111 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2438,8 +2019,8 @@
                                           1 Comment		</span>
                                        </div>
                                     </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-1260 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 </article> -->
+                                 <!-- <article class="elementor-post elementor-grid-item post-1260 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2452,8 +2033,8 @@
                                           No Comments		</span>
                                        </div>
                                     </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-1259 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 </article> -->
+                                 <!-- <article class="elementor-post elementor-grid-item post-1259 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2466,8 +2047,8 @@
                                           No Comments		</span>
                                        </div>
                                     </div>
-                                 </article>
-                                 <article class="elementor-post elementor-grid-item post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
+                                 </article> -->
+                                 <!-- <article class="elementor-post elementor-grid-item post-374 post type-post status-publish format-standard has-post-thumbnail hentry category-optimization tag-business tag-creative tag-deadline tag-insight tag-marketing">
                                     <div class="elementor-post__text">
                                        <h3 class="elementor-post__title">
                                           <a href="#" >
@@ -2480,7 +2061,7 @@
                                           No Comments		</span>
                                        </div>
                                     </div>
-                                 </article>
+                                 </article> -->
                               </div>
                            </div>
                         </div>
@@ -2540,13 +2121,13 @@
          <div class="elementor-widget-wrap elementor-element-populated">
             <div class="elementor-element elementor-element-4586b7f elementor-widget elementor-widget-heading" data-id="4586b7f" data-element_type="widget" data-widget_type="heading.default">
                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Do you have a project to start?</h2>
+                  <h2 class="elementor-heading-title elementor-size-default">Ingin Berencana Memulai Project baru Anda ?</h2>
                </div>
             </div>
             <div class="elementor-element elementor-element-560ed19 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="560ed19" data-element_type="widget" data-settings="{&quot;highlighted_text&quot;:&quot;info@trinusatech.com&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;marker&quot;:&quot;circle&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
                <div class="elementor-widget-container">
                   <h3 class="elementor-headline">
-                     <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Send us your requirements on</span>
+                     <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Biarkan kami membantu Anda</span>
                      <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                      <span class="elementor-headline-dynamic-text elementor-headline-text-active">info@trinusatech.com</span>
                      </span>
