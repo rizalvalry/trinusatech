@@ -149,13 +149,7 @@
     <p><?php echo $row10['deskripsi']; ?></p>
   </div>
   
-  <input type="radio" name="tabs" id="tabtwo">
-  <label for="tabtwo">Quotation</label>
-  <div class="tab">
-  <?php if($disc != 0) {
-	  echo "Promo Tersedia, Hubungi Admin kami untuk mengajukan penawaran";
-  } ?>			
-  </div>
+  
   
   <!-- <input type="radio" name="tabs" id="tabthree">
   <label for="tabthree">Tab Three</label>

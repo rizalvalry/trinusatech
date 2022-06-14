@@ -45,45 +45,32 @@
                                  <!-- disini bro -->
                                  <!-- disini -->
                                  <!-- isi disini -->
-                                 <div class="slideshow-container">
+                                
+                                    <div id="slideshow">
                                     <?php 
                                        $no = 1; 
-                                       $query37 = $db->query("SELECT nama_slide, link_slide, gambar_slide FROM slide WHERE aktif = 'Y' ORDER BY id_slide ASC");
-                                       $row37   = $query37->fetch_assoc();
+                                       $query37 = $db->query("SELECT nama_slide, link_slide, gambar_slide FROM slide WHERE aktif = 'Y' ORDER BY id_slide DESC");
+                                  
                                        while ( $row337 = $query37->fetch_assoc() ){ ?>
-                                    <div class="mySlides fade">
-                                       <div class="numbertext">
+                                       <div>
+                                       <img src="gambar/thumb_slide/<?= $row337['gambar_slide']; ?>">
                                        </div>
-                                       <img src="gambar/slide/<?= $row337['gambar_slide']; ?>" style="width:100%">
-                                       <div class="text"><?= $row337['nama_slide']; ?></div>
+                                       
+                                       <?php } ?>
                                     </div>
-                                    <?php } ?>
-                                 </div>
-                                 <div style="text-align:center">
-                                    <span class="dot"></span> 
-                                    <span class="dot"></span> 
-                                    <span class="dot"></span> 
-                                 </div>
+                              
+                                 
                                  <script>
-                                    let slideIndex = 0;
-                                    showSlides();
-                                    
-                                    function showSlides() {
-                                    let i;
-                                    let slides = document.getElementsByClassName("mySlides");
-                                    let dots = document.getElementsByClassName("dot");
-                                    for (i = 0; i < slides.length; i++) {
-                                    slides[i].style.display = "none";  
-                                    }
-                                    slideIndex++;
-                                    if (slideIndex > slides.length) {slideIndex = 1}    
-                                    for (i = 0; i < dots.length; i++) {
-                                    dots[i].className = dots[i].className.replace(" active", "");
-                                    }
-                                    slides[slideIndex-1].style.display = "block";  
-                                    dots[slideIndex-1].className += " active";
-                                    setTimeout(showSlides, 2000); // Change image every 2 seconds
-                                    }
+                                    $("#slideshow > div:gt(0)").hide();
+
+                                    setInterval(function() {
+                                    $('#slideshow > div:first')
+                                       .fadeOut(1000)
+                                       .next()
+                                       .fadeIn(1000)
+                                       .end()
+                                       .appendTo('#slideshow');
+                                    }, 5000);
                                  </script>
                               </div>
                            </div>
@@ -757,198 +744,7 @@
       </div>
    </div>
    </section> -->
-<section class="elementor-section elementor-top-section elementor-element elementor-element-224be63 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="224be63" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-   <div class="elementor-container elementor-column-gap-wider">
-      <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-690c6eb" data-id="690c6eb" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-31174b4 elementor-widget__width-initial elementor-align-center elementor-widget elementor-widget-lottie" data-id="31174b4" data-element_type="widget" data-settings="{&quot;source_json&quot;:{&quot;url&quot;:&quot;https:\/\/elementor.deverust.com\/techvisio\/wp-content\/uploads\/sites\/20\/2022\/03\/lf20_vsg5kswn.json&quot;,&quot;id&quot;:1638,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;loop&quot;:&quot;yes&quot;,&quot;source&quot;:&quot;media_file&quot;,&quot;caption_source&quot;:&quot;none&quot;,&quot;link_to&quot;:&quot;none&quot;,&quot;trigger&quot;:&quot;arriving_to_viewport&quot;,&quot;viewport&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;play_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;0&quot;,&quot;sizes&quot;:[]},&quot;end_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;100&quot;,&quot;sizes&quot;:[]},&quot;renderer&quot;:&quot;svg&quot;}" data-widget_type="lottie.default">
-               <div class="elementor-widget-container">
-                  <div class="e-lottie__container">
-                     <div class="e-lottie__animation"></div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-4d06915 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="4d06915" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Produk Kami</h2>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-b273545 elementor-widget elementor-widget-heading" data-id="b273545" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Berbagai Layanan Terbaik Kami untuk Anda</h2>
-               </div>
-            </div>
-            <section class="elementor-section elementor-inner-section elementor-element elementor-element-7bdb2fc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7bdb2fc" data-element_type="section">
-               <div class="elementor-container elementor-column-gap-no">
-                  <!-- loop here -->
-                  <?php
-                     $users = [
-                     	'wp-content/uploads/sites/20/2022/03/hardware.png', 
-                     	'wp-content/uploads/sites/20/2022/03/software.png'];
-                     $i = 0;
-                     $query1234      = $db->query("SELECT nama_kategori FROM kategori_produk");
-                     while( $rowkategoriproduct = $query1234->fetch_assoc() ){
-                     	
-                     ?>
-                  <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ae8bf1e" data-id="ae8bf1e" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-7746943 elementor-cta--skin-cover elementor-cta--valign-bottom elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action" data-id="7746943" data-element_type="widget" data-widget_type="call-to-action.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-cta">
-                                 <div class="elementor-cta__bg-wrapper">
-                                    <div class="elementor-cta__bg elementor-bg" style="background-image: url(<?= $users[$i]; $i++; ?>);"></div>
-                                    <div class="elementor-cta__bg-overlay"></div>
-                                 </div>
-                                 <div class="elementor-cta__content">
-                                    <h2 class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--move-up">
-                                       <?= $rowkategoriproduct['nama_kategori']; ?>
-                                    </h2>
-                                    <!-- <div class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--move-up"> -->
-                                    <!--text here  -->
-                                    <!-- </div> -->
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <?php } ?>
-                  <!-- end here -->
-                  <!-- <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-44f40b2" data-id="44f40b2" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-e07c680 elementor-cta--skin-cover elementor-cta--valign-bottom elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action" data-id="e07c680" data-element_type="widget" data-widget_type="call-to-action.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-cta">
-                                 <div class="elementor-cta__bg-wrapper">
-                                    <div class="elementor-cta__bg elementor-bg" style="background-image: url(wp-content/uploads/sites/20/2022/03/african-american-woman-in-beige-suit-portrait-L73F7LP-684x1024.jpg);"></div>
-                                    <div class="elementor-cta__bg-overlay"></div>
-                                 </div>
-                                 <div class="elementor-cta__content">
-                                    <h2 class="elementor-cta__title elementor-cta__content-item elementor-content-item elementor-animated-item--move-up">Bestie Clann</h2>
-                                    <div class="elementor-cta__description elementor-cta__content-item elementor-content-item elementor-animated-item--move-up">
-                                       Business Intelligence 					
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     </div> -->
-                  <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4dc2dde" data-id="4dc2dde" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-94891a2 elementor-widget elementor-widget-text-editor" data-id="94891a2" data-element_type="widget" data-widget_type="text-editor.default">
-                           <div class="elementor-widget-container">
-                              <p>Trinusa akan bekerja dengan Anda untuk menghadirkan infrastruktur Data Center yang efisien dan gesit, yang memungkinkan Anda memberikan layanan aplikasi dan bisnis yang lebih otomatis dan responsif dari sebelumnya.</p>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-e176ff1 elementor-widget elementor-widget-progress" data-id="e176ff1" data-element_type="widget" data-widget_type="progress.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="98" aria-valuetext="Web Development">
-                                 <div class="elementor-progress-bar" data-max="98">
-                                    <span class="elementor-progress-text">Web Development</span>
-                                    <span class="elementor-progress-percentage">98%</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-7e13f5e elementor-widget elementor-widget-progress" data-id="7e13f5e" data-element_type="widget" data-widget_type="progress.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="89" aria-valuetext="Business Plan">
-                                 <div class="elementor-progress-bar" data-max="89">
-                                    <span class="elementor-progress-text">Business Plan</span>
-                                    <span class="elementor-progress-percentage">89%</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-7f566f2 elementor-widget elementor-widget-progress" data-id="7f566f2" data-element_type="widget" data-widget_type="progress.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="83" aria-valuetext="Machine Learning">
-                                 <div class="elementor-progress-bar" data-max="83">
-                                    <span class="elementor-progress-text">Machine Learning</span>
-                                    <span class="elementor-progress-percentage">83%</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-e31ffba elementor-widget__width-auto elementor-widget elementor-widget-button" data-id="e31ffba" data-element_type="widget" data-widget_type="button.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper">
-                                 <a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-                                 <span class="elementor-button-content-wrapper">
-                                 <span class="elementor-button-text">Meet Our Team</span>
-                                 </span>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="elementor-element elementor-element-607d024 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline" data-id="607d024" data-element_type="widget" data-settings="{&quot;highlighted_text&quot;:&quot;Join Us&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;marker&quot;:&quot;circle&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
-                           <div class="elementor-widget-container">
-                              <a href="#">
-                                 <h3 class="elementor-headline">
-                                    <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Apa kamu Tertarik?</span>
-                                    <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
-                                    <span class="elementor-headline-dynamic-text elementor-headline-text-active">Join Us</span>
-                                    </span>
-                                 </h3>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <div class="elementor-element elementor-element-a2308af elementor-widget__width-initial elementor-absolute elementor-align-center elementor-widget elementor-widget-lottie" data-id="a2308af" data-element_type="widget" data-settings="{&quot;source_json&quot;:{&quot;url&quot;:&quot;https:\/\/elementor.deverust.com\/techvisio\/wp-content\/uploads\/sites\/20\/2022\/03\/lf20_pbmohvcz.json&quot;,&quot;id&quot;:1359,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;loop&quot;:&quot;yes&quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;source&quot;:&quot;media_file&quot;,&quot;caption_source&quot;:&quot;none&quot;,&quot;link_to&quot;:&quot;none&quot;,&quot;trigger&quot;:&quot;arriving_to_viewport&quot;,&quot;viewport&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;play_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;0&quot;,&quot;sizes&quot;:[]},&quot;end_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;100&quot;,&quot;sizes&quot;:[]},&quot;renderer&quot;:&quot;svg&quot;}" data-widget_type="lottie.default">
-               <div class="elementor-widget-container">
-                  <div class="e-lottie__container">
-                     <div class="e-lottie__animation"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-a0c3156 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a0c3156" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-   <div class="elementor-container elementor-column-gap-no">
-      <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c5c783" data-id="7c5c783" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <section class="elementor-section elementor-inner-section elementor-element elementor-element-96ad70b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="96ad70b" data-element_type="section">
-               <div class="elementor-container elementor-column-gap-wider">
-                  <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-66ac490" data-id="66ac490" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-fcb29f7 elementor-widget__width-initial elementor-align-center elementor-widget elementor-widget-lottie" data-id="fcb29f7" data-element_type="widget" data-settings="{&quot;source_json&quot;:{&quot;url&quot;:&quot;https:\/\/elementor.deverust.com\/techvisio\/wp-content\/uploads\/sites\/20\/2022\/03\/lf20_vsg5kswn.json&quot;,&quot;id&quot;:1638,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;loop&quot;:&quot;yes&quot;,&quot;source&quot;:&quot;media_file&quot;,&quot;caption_source&quot;:&quot;none&quot;,&quot;link_to&quot;:&quot;none&quot;,&quot;trigger&quot;:&quot;arriving_to_viewport&quot;,&quot;viewport&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;play_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;0&quot;,&quot;sizes&quot;:[]},&quot;end_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;100&quot;,&quot;sizes&quot;:[]},&quot;renderer&quot;:&quot;svg&quot;}" data-widget_type="lottie.default">
-                           <div class="elementor-widget-container">
-                              <div class="e-lottie__container">
-                                 <div class="e-lottie__animation"></div>
-                              </div>
-                           </div>
-                        </div>
-                       
-                        <?php
-                        $homepage2 = $db->query("SELECT * FROM `halaman_statis` WHERE `link_halaman` LIKE '%homepage%' ORDER BY id_halaman DESC LIMIT 1,1");
-                        $contenttwo = $homepage2->fetch_assoc();?>
 
-                        <?= $contenttwo['isi_halaman']; ?>
-                     </div>
-                  </div>
-                  <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-9d2d76d" data-id="9d2d76d" data-element_type="column">
-                     <div class="elementor-widget-wrap elementor-element-populated">
-                        <div class="elementor-element elementor-element-f016fa1 elementor-widget elementor-widget-spacer" data-id="f016fa1" data-element_type="widget" data-widget_type="spacer.default">
-                           <div class="elementor-widget-container">
-                              <div class="elementor-spacer">
-                                 <div class="elementor-spacer-inner"></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </div>
-      </div>
-   </div>
-</section>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-42c25e2 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="42c25e2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
    <div class="elementor-container elementor-column-gap-no">
    <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7112921" data-id="7112921" data-element_type="column">
@@ -1399,94 +1195,7 @@
 </div>
 </div>
 </section>
-<!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-90df197 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="90df197" data-element_type="section">
-   <div class="elementor-container elementor-column-gap-no">
-      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7056761" data-id="7056761" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-48fdd13 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="48fdd13" data-element_type="widget" data-widget_type="counter.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-counter">
-                     <div class="elementor-counter-number-wrapper">
-                        <span class="elementor-counter-number-prefix"></span>
-                        <span class="elementor-counter-number" data-duration="2000" data-to-value="9763" data-from-value="0" data-delimiter=",">0</span>
-                        <span class="elementor-counter-number-suffix">+</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-f0e24f8 elementor-widget elementor-widget-heading" data-id="f0e24f8" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Project Completed</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f8a4c63" data-id="f8a4c63" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-8dec6cf elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="8dec6cf" data-element_type="widget" data-widget_type="counter.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-counter">
-                     <div class="elementor-counter-number-wrapper">
-                        <span class="elementor-counter-number-prefix"></span>
-                        <span class="elementor-counter-number" data-duration="2000" data-to-value="289" data-from-value="0" data-delimiter=",">0</span>
-                        <span class="elementor-counter-number-suffix">+</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-a743f8c elementor-widget elementor-widget-heading" data-id="a743f8c" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Community Network</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   </section>
-   <section class="elementor-section elementor-inner-section elementor-element elementor-element-3720e37 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3720e37" data-element_type="section">
-   <div class="elementor-container elementor-column-gap-no">
-      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b49f30f" data-id="b49f30f" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-c9c7cdd elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="c9c7cdd" data-element_type="widget" data-widget_type="counter.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-counter">
-                     <div class="elementor-counter-number-wrapper">
-                        <span class="elementor-counter-number-prefix"></span>
-                        <span class="elementor-counter-number" data-duration="2000" data-to-value="156" data-from-value="0" data-delimiter=",">0</span>
-                        <span class="elementor-counter-number-suffix"></span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-3e09c19 elementor-widget elementor-widget-heading" data-id="3e09c19" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">On Going Contract</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6c2acfd" data-id="6c2acfd" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-fb89930 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="fb89930" data-element_type="widget" data-widget_type="counter.default">
-               <div class="elementor-widget-container">
-                  <div class="elementor-counter">
-                     <div class="elementor-counter-number-wrapper">
-                        <span class="elementor-counter-number-prefix"></span>
-                        <span class="elementor-counter-number" data-duration="2000" data-to-value="25" data-from-value="0" data-delimiter=",">0</span>
-                        <span class="elementor-counter-number-suffix">+</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="elementor-element elementor-element-7021cc6 elementor-widget elementor-widget-heading" data-id="7021cc6" data-element_type="widget" data-widget_type="heading.default">
-               <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">Years Experience</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   </section> -->
+
 </div>
 </div>
 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-892f01f" data-id="892f01f" data-element_type="column">
@@ -1529,8 +1238,7 @@
    	'wp-content/uploads/sites/20/2022/03/hardware.png', 
    	'wp-content/uploads/sites/20/2022/03/software.png'];
    $i = 0;
-   $query1234      = $db->query("SELECT nama_kategori FROM kategori_produk");
-   while( $rowkategoriproduct = $query1234->fetch_assoc() ){
+   
    	
    ?>
 <div class="elementor-element elementor-element-f886a39 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="f886a39" data-element_type="widget" data-widget_type="image-box.default">
@@ -1538,7 +1246,7 @@
 <div class="elementor-image-box-wrapper">
 <figure class="elementor-image-box-img"><a href="#"><img width="1885" height="1258" src="<?= $users[$i]; $i++; ?>" class="attachment-full size-full" alt="" loading="lazy" /></a></figure>
 <div class="elementor-image-box-content">
-<h3 class="elementor-image-box-title"><a href="#"><?= $rowkategoriproduct['nama_kategori']; ?> </a></h3>
+<h3 class="elementor-image-box-title"><a href="#">Hardware & Software </a></h3>
 <!-- <p class="elementor-image-box-description">2046 Projects</p> -->
 </div>
 </div>
@@ -1560,7 +1268,6 @@
 </div>
 </div>
 </div>
-<?php } ?>
 <!-- end here -->
 <!-- <div class="elementor-element elementor-element-fce85bd elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="fce85bd" data-element_type="widget" data-widget_type="image-box.default">
    <div class="elementor-widget-container">

@@ -33,7 +33,7 @@
       <link rel='stylesheet' id='elementor-post-161-css'  href='wp-content/uploads/sites/20/elementor/css/post-16125aa.css?ver=1652314483' type='text/css' media='all' />
       <link rel='stylesheet' id='elementor-post-2141-css'  href='wp-content/uploads/sites/20/elementor/css/post-214125aa.css?ver=1652314483' type='text/css' media='all' />
       <link rel='stylesheet' id='elementor-post-2005-css'  href='wp-content/uploads/sites/20/elementor/css/post-20055d09.css?ver=1652314551' type='text/css' media='all' />
-      <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSource+Code+Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COrbitron%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.9.3' type='text/css' media='all' />
+      <!-- <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSource+Code+Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COrbitron%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.9.3' type='text/css' media='all' /> -->
       <link rel='stylesheet' id='elementor-icons-shared-0-css'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' type='text/css' media='all' />
       <script type='text/javascript' src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
       <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
@@ -252,6 +252,7 @@
                                        <nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                           <ul id="menu-1-26c93b7" class="elementor-nav-menu">
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="<?= $row00['alamat_web']; ?>" aria-current="page" class="elementor-item">Home</a></li>
+                                             <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="tentang-kami" aria-current="page" class="elementor-item">Tentang Kami</a></li>
 											 
 
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
@@ -312,7 +313,7 @@
 
 
 											 <?php
-												$query4  = $db->prepare("SELECT nama_menu,link FROM menuutama WHERE aktif=? AND lokasi=? ORDER BY urutan ASC");
+												$query4  = $db->prepare("SELECT nama_menu,link FROM menuutama WHERE nama_menu NOT LIKE '%Tentang%' AND aktif=? AND lokasi=? ORDER BY urutan ASC");
 												$query4->bind_param("ss", $aktif4,$lokasi4);
 												$lokasi4 = "Public";
 												$aktif4  = "Y";
@@ -404,13 +405,13 @@
                                  </div>
                                  <div class="elementor-element elementor-element-d441c8d elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="d441c8d" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
-                                       <div class="elementor-button-wrapper">
+                                       <!-- <div class="elementor-button-wrapper">
                                           <a href="hubungi-kami" class="elementor-button-link elementor-button elementor-size-md" role="button">
                                           <span class="elementor-button-content-wrapper">
-                                          <span class="elementor-button-text">Hubungi</span>
+                                          <span class="elementor-button-text">Bahasa</span>
                                           </span>
                                           </a>
-                                       </div>
+                                       </div> -->
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-3d8f33a elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="3d8f33a" data-element_type="widget" data-widget_type="image.default">
