@@ -350,7 +350,7 @@
                </div>
             </div>
          </section>
-         <section class="elementor-section elementor-top-section elementor-element elementor-element-0127a54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0127a54" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+         <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-0127a54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0127a54" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
             <div class="elementor-container elementor-column-gap-wider">
                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-08eb70b" data-id="08eb70b" data-element_type="column">
                   <div class="elementor-widget-wrap elementor-element-populated">
@@ -365,11 +365,11 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="elementor-element elementor-element-317c94a elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="317c94a" data-element_type="widget" data-widget_type="heading.default">
+                                 <div class="elementor-element elementor-element-317c94a elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="317c94a" data-element_type="widget" data-widget_type="heading.default"> -->
                                     <!-- <div class="elementor-widget-container">
                                        <h2 class="elementor-heading-title elementor-size-default">Latest Work</h2>
                                     </div> -->
-                                 </div>
+                                 <!-- </div>
                                  <div class="elementor-element elementor-element-6425679 elementor-widget elementor-widget-heading" data-id="6425679" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                        <h2 class="elementor-heading-title elementor-size-default">See Our Portofolio.</h2>
@@ -393,22 +393,22 @@
                               </div>
                            </div>
                         </div>
-                     </section>
-                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-552eb3c elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="552eb3c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                     </section> -->
+                     <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-552eb3c elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="552eb3c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                         <div class="elementor-container elementor-column-gap-wider">
                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c0df52a" data-id="c0df52a" data-element_type="column">
                               <div class="elementor-widget-wrap elementor-element-populated">
                                  <section class="elementor-section elementor-inner-section elementor-element elementor-element-6ca633f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ca633f" data-element_type="section">
                                     <div class="elementor-container elementor-column-gap-no">
                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ffbbf0a" data-id="ffbbf0a" data-element_type="column">
-                                          <div class="elementor-widget-wrap elementor-element-populated">
-										  <?php
-												$porto = $db->query("SELECT * FROM pengiriman WHERE urutan = 1 AND aktif = 'Y'");
-												$portofolio = $porto->fetch_assoc();
-												?>
-												<div class="elementor-widget-container">
-													<?php echo $portofolio['metode_pengiriman']; ?>
-												</div>
+                                          <div class="elementor-widget-wrap elementor-element-populated"> -->
+										  
+												<!-- // $porto = $db->query("SELECT * FROM pengiriman WHERE urutan = 1 AND aktif = 'Y'"); -->
+												<!-- // $portofolio = $porto->fetch_assoc(); -->
+											
+												<!-- <div class="elementor-widget-container"> -->
+                                       <!-- //  $portofolio['metode_pengiriman'];  -->
+												<!-- </div> -->
 
                                              <!-- <div class="elementor-element elementor-element-ab30927 elementor-widget elementor-widget-heading" data-id="ab30927" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
@@ -420,10 +420,10 @@
                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                                                 </div>
                                              </div> -->
-                                          </div>
+                                          <!-- </div>
                                        </div>
                                     </div>
-                                 </section>
+                                 </section> -->
 								 <!-- isi counter jumlah produk -->
                                  <!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-7ce9329 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ce9329" data-element_type="section">
                                     <div class="elementor-container elementor-column-gap-no">
@@ -513,7 +513,7 @@
                                        </div>
                                     </div>
                                  </section> -->
-                              </div>
+                              <!-- </div>
                            </div>
                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6734060" data-id="6734060" data-element_type="column">
                               <div class="elementor-widget-wrap elementor-element-populated">
@@ -521,7 +521,7 @@
                                     <div class="elementor-widget-container">
                                        <h2 class="elementor-heading-title elementor-size-default">Kami Tunjukkan Bukti kepada Anda</h2>
                                     </div>
-                                 </div>
+                                 </div> -->
                                  <!-- <div class="elementor-element elementor-element-8175618 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="8175618" data-element_type="widget" data-widget_type="image-box.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-image-box-wrapper">
@@ -570,16 +570,14 @@
                                     </div>
                                  </div> -->
 
-								 <?php
-									$users = [
-										'wp-content/uploads/sites/20/2022/03/hardware.png', 
-										'wp-content/uploads/sites/20/2022/03/software.png'];
-									$i = 0;
-									$query1234      = $db->query("SELECT nama_kategori FROM kategori_produk");
-									while( $rowkategoriproduct = $query1234->fetch_assoc() ){
+									<!-- // $users = [
+									// 	'wp-content/uploads/sites/20/2022/03/hardware.png', 
+									// 	'wp-content/uploads/sites/20/2022/03/software.png'];
+									// $i = 0;
+									// $query1234      = $db->query("SELECT nama_kategori FROM kategori_produk");
+									// while( $rowkategoriproduct = $query1234->fetch_assoc() ){ -->
 										
-								?>
-                                 <div class="elementor-element elementor-element-3ba2bb1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3ba2bb1" data-element_type="widget" data-widget_type="divider.default">
+                                 <!-- <div class="elementor-element elementor-element-3ba2bb1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3ba2bb1" data-element_type="widget" data-widget_type="divider.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-divider">
                                           <span class="elementor-divider-separator">
@@ -592,9 +590,10 @@
                                        <div class="elementor-image-box-wrapper">
                                           <figure class="elementor-image-box-img"><a href="#"><img width="1767" height="1179" src="<?php echo $users[$i]; $i++; ?>" class="attachment-full size-full" alt="" loading="lazy" /></a></figure>
                                           <div class="elementor-image-box-content">
-                                             <h3 class="elementor-image-box-title"><a href="#"><?php echo $rowkategoriproduct['nama_kategori']; ?></a></h3>
+                                             <h3 class="elementor-image-box-title"><a href="#">
+                                                //  $rowkategoriproduct['nama_kategori']; ?></a></h3> -->
                                              <!-- <p class="elementor-image-box-description">4936 Projects</p> -->
-                                          </div>
+                                          <!-- </div>
                                        </div>
                                     </div>
                                  </div>
@@ -605,9 +604,9 @@
                                           <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>			</a>
                                        </div>
                                     </div>
-                                 </div>
-								 <?php } ?>
-                              </div>
+                                 </div> -->
+                        <!-- // } -->
+                              <!-- </div>
                            </div>
                         </div>
                      </section>
@@ -623,7 +622,7 @@
                               </div>
                            </div>
                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3090c20" data-id="3090c20" data-element_type="column">
-                              <div class="elementor-widget-wrap elementor-element-populated">
+                              <div class="elementor-widget-wrap elementor-element-populated"> -->
                                  <!-- <div class="elementor-element elementor-element-e7ad029 elementor-widget elementor-widget-heading" data-id="e7ad029" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                        <h2 class="elementor-heading-title elementor-size-default">Find more our gallery projects</h2>
@@ -634,12 +633,13 @@
                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                                     </div>
                                  </div> -->
-								 <?php
-												$porto2 = $db->query("SELECT * FROM pengiriman WHERE urutan = 2 AND aktif = 'Y'");
-												$portofoliosecond = $porto2->fetch_assoc();
-												?>
-												<div class="elementor-widget-container">
-                                       <p><?php echo $portofoliosecond['metode_pengiriman']; ?></p>
+												<!-- // $porto2 = $db->query("SELECT * FROM pengiriman WHERE urutan = 2 AND aktif = 'Y'");
+												// $portofoliosecond = $porto2->fetch_assoc(); -->
+												<!-- <div class="elementor-widget-container">
+                                       <p>
+                                       
+                                       //  $portofoliosecond['metode_pengiriman']; 
+                                        ?></p>
                                     </div>
 
 
@@ -702,7 +702,7 @@
                   </div>
                </div>
             </div>
-         </section>
+         </section> -->
 
 
 		 <?php
