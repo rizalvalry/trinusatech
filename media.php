@@ -237,6 +237,7 @@
                            </div>
                         </div>
                      </section>
+                     <!-- for desktop views -->
                      <section class="elementor-section elementor-inner-section elementor-element elementor-element-4264706 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4264706" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_opacity_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_opacity_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:1}},&quot;background_motion_fx_range&quot;:&quot;page&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;background_motion_fx_opacity_direction&quot;:&quot;out-in&quot;,&quot;background_motion_fx_opacity_level&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
                         <div class="elementor-container elementor-column-gap-wider">
                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b4415c7" data-id="b4415c7" data-element_type="column">
@@ -260,7 +261,7 @@
                                                 
 												<ul class="sub-menu elementor-nav-menu--dropdown">
 												<?php 
-												$query2 = $db->prepare("SELECT * FROM kategori_produk");
+												$query2 = $db->prepare("SELECT nama_kategori, id_kategori FROM kategori_produk");
 												$query2->execute();
 												$result2      = $query2->get_result();
 												while ( $row2         = $result2->fetch_assoc() ){ ?>
@@ -273,7 +274,7 @@
 											 <!-- code -->
 											 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
                                                 <a href="galeri" class="elementor-item elementor-item-anchor">Partnerships</a>
-                                                <ul class="sub-menu elementor-nav-menu--dropdown">
+                                                <!-- <ul class="sub-menu elementor-nav-menu--dropdown"> -->
 												<?php
 											// $query3 = $db->prepare("SELECT judul_galeri FROM galeri");
 											// $query3->bind_param("s", $aktif3);
@@ -283,15 +284,15 @@
 											// while ( $row3 = $result3->fetch_assoc() ){
                                      ?>
                                        <?php
-                                          $query1234      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri DESC");
-                                          while( $row1234 = $query1234->fetch_assoc() ){
-                                             $query12345 = $db->query("SELECT COUNT(id_foto) AS jumlah FROM foto WHERE id_galeri = '$row1234[id_galeri]'");
-                                             $row12345   = $query12345->fetch_assoc();
+                                          // $query1234      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri DESC");
+                                          // while( $row1234 = $query1234->fetch_assoc() ){
+                                          //    $query12345 = $db->query("SELECT COUNT(id_foto) AS jumlah FROM foto WHERE id_galeri = '$row1234[id_galeri]'");
+                                          //    $row12345   = $query12345->fetch_assoc();
                                        ?>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>.html" class="elementor-sub-item"><?php echo $row1234['judul_galeri']; ?></a></li>
+                                                   <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>.html" class="elementor-sub-item"><?php echo $row1234['judul_galeri']; ?></a></li> -->
                                                   
-											<?php } ?> 
-                                                </ul>
+											<?php //} ?> 
+                                                <!-- </ul> -->
                                              </li>
 											 <!-- code -->
 											 
@@ -405,13 +406,7 @@
                                  </div>
                                  <div class="elementor-element elementor-element-d441c8d elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="d441c8d" data-element_type="widget" data-widget_type="button.default">
                                     <div class="elementor-widget-container">
-                                       <!-- <div class="elementor-button-wrapper">
-                                          <a href="hubungi-kami" class="elementor-button-link elementor-button elementor-size-md" role="button">
-                                          <span class="elementor-button-content-wrapper">
-                                          <span class="elementor-button-text">Bahasa</span>
-                                          </span>
-                                          </a>
-                                       </div> -->
+                                      <div id="google_translate_element"></div>
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-3d8f33a elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="3d8f33a" data-element_type="widget" data-widget_type="image.default">
@@ -643,7 +638,7 @@
                                                          <span class="elementor-icon-list-text">Contact Us</span>
                                                          </a>
                                                       </li>
-                                                      <div id="google_translate_element"></div>
+                                                      
                                                    </ul>
                                                 </div>
                                              </div>
@@ -804,7 +799,8 @@
                                           <div class="elementor-icon-box-content">
                                              <h3 class="elementor-icon-box-title">
                                                 <span  >
-                                                Gabung					</span>
+                                                Gabung					
+                                                </span>
                                              </h3>
                                           </div>
                                        </div>
@@ -837,7 +833,7 @@
                                  <div class="elementor-element elementor-element-b261752 elementor-hidden-mobile elementor-widget elementor-widget-gallery" data-id="b261752" data-element_type="widget" data-settings="{&quot;columns&quot;:3,&quot;columns_tablet&quot;:3,&quot;columns_mobile&quot;:3,&quot;aspect_ratio&quot;:&quot;1:1&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
                                     <div class="elementor-widget-container">
                                        <div class="elementor-gallery__container">
-                                          <?php $beside = $db->query("SELECT * FROM produk WHERE aktif= 'Y' LIMIT 6");
+                                          <?php $beside = $db->query("SELECT gambar FROM produk WHERE aktif= 'Y' LIMIT 6");
                                           while($sideimage       = $beside->fetch_assoc()) { ?>
 
 
@@ -871,6 +867,7 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <!-- for mobile views -->
                                  <div class="elementor-element elementor-element-8d04f4e elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-nav-menu" data-id="8d04f4e" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;dropdown&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
                                     <div class="elementor-widget-container">
                                        <!-- <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
@@ -881,31 +878,33 @@
                                           <ul id="menu-2-8d04f4e" class="elementor-nav-menu">
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="<?= $row00['alamat_web']; ?>" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
                                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="#" class="elementor-item" tabindex="-1">About Us</a></li> -->
+                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="tentang-kami" aria-current="page" class="elementor-item">Tentang Kami</a></li>
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
                                                 <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">IT Solutions</a>
                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
                                                 <?php 
-												$query2 = $db->prepare("SELECT nama_kategori FROM kategori_produk");
-												$query2->execute();
-												$result2      = $query2->get_result();
-												while ( $row2         = $result2->fetch_assoc() ){ ?>
-                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row2['nama_kategori']; ?></a></li>
+												$querymobile2 = $db->prepare("SELECT nama_kategori, id_kategori FROM kategori_produk");
+												$querymobile2->execute();
+												$resultmobile1      = $querymobile2->get_result();
+												while ( $rowmobile1         = $resultmobile1->fetch_assoc() ){ ?>
+                                                   <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="solutions-<?= $rowmobile1['id_kategori']; ?>" class="elementor-sub-item" tabindex="-1"><?= $rowmobile1['nama_kategori']; ?></a></li>
                                                    <?php } ?>
                                                 </ul>
                                              </li>
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
-                                                <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Partnerships</a>
-                                                <ul class="sub-menu elementor-nav-menu--dropdown">
+                                                <a href="galeri" class="elementor-item elementor-item-anchor" tabindex="-1">Partnerships</a>
+                                                <!-- <ul class="sub-menu elementor-nav-menu--dropdown"> -->
                                                 <?php
-                                                $query3 = $db->prepare("SELECT judul_galeri FROM galeri");
-                                                $query3->bind_param("s", $aktif3);
-                                                $aktif3 = "Y";
-                                                $query3->execute();
-                                                $result3= $query3->get_result();
-                                                while ( $row3 = $result3->fetch_assoc() ){ ?>                                                               
-                                                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row3['judul_galeri']; ?></a></li>
-                                                <?php } ?> 
-                                                </ul>
+                                                // $query3 = $db->prepare("SELECT judul_galeri FROM galeri");
+                                                // $query3->bind_param("s", $aktif3);
+                                                // $aktif3 = "Y";
+                                                // $query3->execute();
+                                                // $result3= $query3->get_result();
+                                                // while ( $row3 = $result3->fetch_assoc() ){ ?>                                                               
+                                                                  <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row3['judul_galeri']; ?></a></li> -->
+                                                <?php 
+                                             // } ?> 
+                                                <!-- </ul> -->
                                              </li>
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
                                                 <a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Artikel</a>
@@ -917,13 +916,13 @@
                                                 $query3->execute();
                                                 $result3= $query3->get_result();
                                                 while ( $row3 = $result3->fetch_assoc() ){ ?>                                                               
-                                                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107"><a href="#" class="elementor-sub-item" tabindex="-1"><?= $row3['nama_kategori']; ?></a></li>
+                                                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107"><a href="label-<?= $row3['id_kategori']; ?>-<?= $row3['kategori_seo']; ?>" class="elementor-sub-item" tabindex="-1"><?= $row3['nama_kategori']; ?></a></li>
                                                 <?php } ?> 
                                                    
                                                 </ul>
                                              </li>
                                              <?php
-												$query4  = $db->prepare("SELECT nama_menu,link FROM menuutama WHERE aktif=? AND lokasi=? ORDER BY urutan ASC");
+												$query4  = $db->prepare("SELECT nama_menu,link FROM menuutama WHERE nama_menu NOT LIKE '%Tentang%' AND aktif=? AND lokasi=? ORDER BY urutan ASC");
 												$query4->bind_param("ss", $aktif4,$lokasi4);
 												$lokasi4 = "Public";
 												$aktif4  = "Y";

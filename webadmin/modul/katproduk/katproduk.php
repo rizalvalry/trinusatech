@@ -121,9 +121,10 @@
 							
 							$kategori = $_POST['kategori'];
 							$seo      = seo($kategori);
-							
-							$query    = $db->prepare("INSERT INTO kategori_produk (nama_kategori,kategori_seo) VALUES (?,?)");
-							$query->bind_param("ss", $kategori,$seo);
+							$icon = $_POST['icon'];
+
+							$query    = $db->prepare("INSERT INTO kategori_produk (nama_kategori,kategori_seo, icon) VALUES (?,?,?)");
+							$query->bind_param("sss", $kategori,$seo,$icon);
 							$query->execute();
 							
 							echo '<div class="alert alert-success" role="alert" style="font-size : 12px; padding : 5px;">';
@@ -141,6 +142,12 @@
 							<label class="control-label col-sm-4">Kategori Produk</label>
 							<div class="col-sm-4">
 								<input type="text"  class="form-control" name="kategori" placeholder="Kategori Produk" maxlength="50" required autofocus />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">ICON</label>
+							<div class="col-sm-4">
+								<input type="text"  class="form-control" name="icon" placeholder="Kategori Produk" maxlength="60" required autofocus />
 							</div>
 						</div>
 						
@@ -180,7 +187,7 @@
 				<div class="panel-body">	 
 					<?php
 						
-						$query1 = $db->prepare("SELECT nama_kategori FROM kategori_produk WHERE id_kategori=?");
+						$query1 = $db->prepare("SELECT nama_kategori, icon, kategori_seo FROM kategori_produk WHERE id_kategori=?");
 						$query1->bind_param("i", $id_kategori);
 						$id_kategori = $_GET['id'];
 						$query1->execute();
@@ -193,10 +200,11 @@
 							
 							$kategori    = $_POST['kategori'];
 							$seo         = seo($kategori);
+							$icon    = $_POST['icon'];
 							$id_kategori = $_GET['id'];
 							
-							$query    = $db->prepare("UPDATE kategori_produk SET nama_kategori=?,kategori_seo=? WHERE id_kategori=? ");
-							$query->bind_param("ssi", $kategori,$seo,$id_kategori);
+							$query    = $db->prepare("UPDATE kategori_produk SET nama_kategori=?,kategori_seo=?,icon=? WHERE id_kategori=? ");
+							$query->bind_param("sssi", $kategori,$seo,$icon,$id_kategori);
 							$query->execute();
 							
 							echo '<div class="alert alert-success" role="alert" style="font-size : 12px; padding : 5px;">';
@@ -212,6 +220,13 @@
 							<label class="control-label col-sm-4">Kategori Produk</label>
 							<div class="col-sm-4">
 								<input type="text" value="<?php echo $row['nama_kategori']; ?>" class="form-control" name="kategori" maxlength="50" required />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">Icon Produk</label>
+							<div class="col-sm-4">
+								<input type="text" value="<?php echo htmlspecialchars($row['icon']); ?>" class="form-control" name="icon"  required />
+								
 							</div>
 						</div>
 					
