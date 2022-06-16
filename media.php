@@ -3,7 +3,7 @@
 	session_start();
    header('Access-Control-Allow-Origin: *');
 	require "config/koneksi.php";
-	$query00     = $db->query("SELECT nama_toko,email_pengelola,nomor_hp,meta_deskripsi,static_content, alamat, nomor_hp, email_protokol, alamat_web FROM profil");
+	$query00     = $db->query("SELECT nama_toko,email_pengelola,nomor_hp,meta_deskripsi,static_content, alamat, nomor_hp, email_protokol, alamat_web, gambar FROM profil");
 	$row00       = $query00->fetch_assoc();
 	$nama_toko00 = explode(" ", $row00['nama_toko']);
 	$tahun       = date("Y");
@@ -245,7 +245,7 @@
                                  <div class="elementor-element elementor-element-2aa1c5b elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="2aa1c5b" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                        <a href="#">
-                                       <img width="240" height="135" src="wp-content/uploads/sites/20/2022/03/color-white-techvisio.png" class="attachment-full size-full" alt="" loading="lazy" />								</a>
+                                       <img width="240" height="135" src="gambar/toko/<?php echo $row00['gambar']; ?>" class="attachment-full size-full" alt="" loading="lazy" />								</a>
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-26c93b7 elementor-nav-menu--stretch elementor-widget__width-auto elementor-hidden-mobile elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="26c93b7" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
@@ -491,7 +491,7 @@
                                              <div class="elementor-element elementor-element-a9e1118 elementor-widget elementor-widget-heading" data-id="a9e1118" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                 <?php
-                                                   $homepage1 = $db->query("SELECT email FROM user WHERE nama_lengkap LIKE '%direktur%' ");
+                                                   $homepage1 = $db->query("SELECT email, foto FROM user WHERE nama_lengkap LIKE '%direktur%' ");
                                                    $contentone = $homepage1->fetch_assoc();?>
 
                                                    
@@ -721,7 +721,7 @@
                                  <div class="elementor-element elementor-element-cd0630e elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="cd0630e" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                        <a href="#">
-                                       <img width="240" height="135" src="wp-content/uploads/sites/20/2022/03/color-white-techvisio.png" class="attachment-full size-full" alt="" loading="lazy" />								</a>
+                                       <img width="240" height="135" src="gambar/user/<?php echo $contentone['foto']; ?>" class="attachment-full size-full" alt="" loading="lazy" />								</a>
                                     </div>
                                  </div>
                               </div>
@@ -778,7 +778,7 @@
                                  <div class="elementor-element elementor-element-4999800 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="4999800" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                        <a href="#">
-                                       <img width="240" height="135" src="wp-content/uploads/sites/20/2022/03/color-white-techvisio.png" class="attachment-full size-full" alt="" loading="lazy" />								</a>
+                                       <img width="240" height="135" src="gambar/toko/<?php echo $row00['gambar']; ?>" class="attachment-full size-full" alt="" loading="lazy" />								</a>
                                     </div>
                                  </div>
                                  <div class="elementor-element elementor-element-ee95a98 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="ee95a98" data-element_type="widget" data-widget_type="divider.default">
