@@ -43,7 +43,8 @@
 				<div class="graphs">
 					<div class="sign-in-form">
 						<div class="sign-in-form-top">
-							<p><span>Masuk Ke Halaman</span> <a href="index.php">Admin</a></p>
+							<!-- <p><span>Masuk Ke Halaman</span> <a href="index.php">Admin</a></p> -->
+							<img style="width:50%" src="../images/product-trinusa/blue-logo.png">
 						</div>
 						<div class="signin">
 							

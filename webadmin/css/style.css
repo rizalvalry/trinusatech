@@ -706,6 +706,10 @@ footer p a:hover {
 
 div#page-wrapper {
     padding: 2em 2em;
+    background-image: url(https://hellenicocrteam.gr/wp-content/uploads/2021/07/ideas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .left-side-collapsed .logo-icon {
@@ -5806,7 +5810,7 @@ span.badge1 {
 }
 
 .sign-in-form-top {
-    background: url(../images/3.jpg) no-repeat 0px -55px;
+    background: url(../images/trinusa-back.jpg) no-repeat 0px -55px;
     display: block;
     min-height: 150px;
     padding: 3em 0 0;

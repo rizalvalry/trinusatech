@@ -721,7 +721,7 @@
                                  <div class="elementor-element elementor-element-cd0630e elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="cd0630e" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                        <a href="#">
-                                       <img width="240" height="135" src="gambar/user/<?php echo $contentone['foto']; ?>" class="attachment-full size-full" alt="" loading="lazy" />								</a>
+                                       <img width="540px" height="435px" src="gambar/user/<?php echo $contentone['foto']; ?>" class="attachment-full size-full" alt="" loading="lazy" />								</a>
                                     </div>
                                  </div>
                               </div>
