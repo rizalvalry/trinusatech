@@ -45,8 +45,9 @@
       <link rel="canonical" href="index.html" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="PT Trinusa Technologies" />
-      <meta property="og:description" content="<?php include 'seo/dina_meta2.php'; ?>" />
+      <meta name="keywords" content="<?php include "meta_keyword.php" ?>" />
+      <meta property="og:description" content="<?php include "meta_deskripsi.php"; ?>" />
+      <meta property="og:title" content="<?php include "meta_deskripsi.php"; ?>" />
       <meta property="og:url" content="<?= $row00['alamat_web']; ?>" />
       <meta property="og:site_name" content="PT Trinusa Technologies" />
       <meta property="og:image" content="<?= $row00['alamat_web']; ?>gambar/toko/logo.png" />
