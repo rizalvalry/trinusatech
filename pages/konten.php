@@ -145,7 +145,7 @@
                         </div>
                         <div class="elementor-element elementor-element-5b85e51 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="5b85e51" data-element_type="widget" data-widget_type="heading.default">
                            <div class="elementor-widget-container">
-                              <h2 class="elementor-heading-title elementor-size-default">Our Service</h2>
+                              <h2 class="elementor-heading-title elementor-size-default">Our Solutions</h2>
                            </div>
                         </div>
                         <!-- delivering layout -->
@@ -168,10 +168,18 @@
                   <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-af4855d" data-id="af4855d" data-element_type="column">
                      <div class="elementor-widget-wrap elementor-element-populated">
                      <?php 
-												$queryservices = $db->prepare("SELECT nama_kategori, icon FROM kategori_produk");
-												$queryservices->execute();
-												$servicesresult      = $queryservices->get_result();
-												while ( $row1234         = $servicesresult->fetch_assoc() ){ ?>
+
+                  $query1234      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri DESC");
+                  while( $row1234 = $query1234->fetch_assoc() ){
+                     $query12345 = $db->query("SELECT COUNT(id_foto) AS jumlah FROM foto WHERE id_galeri = '$row1234[id_galeri]'");
+                     $row12345   = $query12345->fetch_assoc();
+                     
+												// $queryservices = $db->prepare("SELECT nama_kategori, icon FROM kategori_produk");
+												// $queryservices->execute();
+												// $servicesresult      = $queryservices->get_result();
+												// while ( $row1234         = $servicesresult->fetch_assoc() ){ 
+                                       
+                                       ?>
                         <!-- loop here -->
                         <div class="elementor-element elementor-element-0857d0e elementor-position-left elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-hidden-tablet elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="0857d0e" data-element_type="widget" data-widget_type="icon-box.default">
                            <div class="elementor-widget-container">
@@ -180,15 +188,17 @@
                                     <a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>">
                                        <span class="elementor-icon elementor-animation-" >
                                           <center>
-                                          <!-- <img class="radius-circle" src="gambar/thumb_produk1/<?php echo $row1234['gambar']; ?>" width="48" height="48" /> -->
-                                          <?php echo $row1234['icon']; ?>
+                                          <img class="radius-circle" src="gambar/galeri/<?php echo $row1234['gambar']; ?>" width="48" height="48" />
+                                          <?php 
+                                          // echo $row1234['icon']; 
+                                          ?>
                                           <center>
                                        </span>
                                     </a>
                                  </div>
                                  <div class="elementor-icon-box-content">
                                     <h3 class="elementor-icon-box-title">
-                                       <span><?php echo $row1234['nama_kategori']; ?></span>
+                                       <span><?php echo $row1234['judul_galeri']; ?></span>
                                     </h3>
                                     <!-- <p class="elementor-icon-box-description">Solusi kami mencakup bidang-bidang berikut:</p> -->
                                  </div>

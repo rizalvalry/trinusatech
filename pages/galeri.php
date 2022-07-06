@@ -68,16 +68,17 @@
 					<!-- loop here -->
 					<li class="cards_item">
 					<div class="card">
-					<a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>.html">
-						<div class="card_image"><img src="gambar/galeri/<?php echo $row1234['gambar']; ?>" class="contain-gall"></div>
-					</a>
-						<!-- <div class="card_content">
-						<h2 class="card_title">Card Grid Layout</h2>
-						<p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-						<button class="btn card_btn">Read More</button>
-						</div> -->
+                        <a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>.html">
+                            <div class="card_image"><img src="gambar/galeri/<?php echo $row1234['gambar']; ?>" class="contain-gall"></div>
+                        </a>
+						<div class="card_content">
+                            <h5 class="card_title" style="text-align:center;"><?php echo $row1234['judul_galeri']; ?></h5>
+                            <!-- <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p> -->
+                            <!-- <button class="btn card_btn">Read More</button> -->
+						</div>
 					</div>
-					</li>
+                </li>
+
 					<!-- end loop here -->
 					<?php
 				}
