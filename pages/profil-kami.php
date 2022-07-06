@@ -281,16 +281,18 @@
                               <div class="elementor-image-carousel swiper-wrapper">
                                  
 							  <?php
-				$querygaleri      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri DESC");
-				while( $galerinow = $querygaleri->fetch_assoc() ){
+				// $querygaleri      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri DESC");
+				// while( $galerinow = $querygaleri->fetch_assoc() ){
 
 			?>
 							  <!-- loop here -->
-							 	 <div class="swiper-slide">
+							 	 <!-- <div class="swiper-slide">
                                     <figure class="swiper-slide-inner"><img class="swiper-slide-image" src="gambar/galeri/<?php echo $galerinow['gambar']; ?>" alt="technologies-making-business-easier-4BJ2BZZ" /></figure>
-                                 </div>
+                                 </div> -->
 								 <!-- end loop -->
-								 <?php } ?>
+								 <?php 
+                        // }
+                         ?>
 
                                  <!-- <div class="swiper-slide">
                                     <figure class="swiper-slide-inner"><img class="swiper-slide-image" src="wp-content/uploads/sites/20/2021/06/hi-tech-of-business-and-financial-concept-76U5KNE.jpg" alt="hi-tech-of-business-and-financial-concept-76U5KNE" /></figure>
@@ -318,16 +320,18 @@
 
 
 							  <?php
-									$querygaleri2      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri ASC");
-									while( $galerisec = $querygaleri2->fetch_assoc() ){
+									// $querygaleri2      = $db->query("SELECT id_galeri, judul_galeri, gambar FROM galeri WHERE aktif = 'Y' ORDER BY id_galeri ASC");
+									// while( $galerisec = $querygaleri2->fetch_assoc() ){
 
 								?>
 							  <!-- loop here -->
-							 	 <div class="swiper-slide">
+							 	 <!-- <div class="swiper-slide">
 								  <figure class="swiper-slide-inner"><img class="swiper-slide-image" src="gambar/galeri/<?php echo $galerisec['gambar']; ?>" alt="cropped-view-of-designer-using-graphics-tablet-whi-4WHSQNZ" /></figure>
-                                 </div>
+                                 </div> -->
 								 <!-- end loop -->
-								 <?php } ?>
+								 <?php 
+                        // }
+                         ?>
 
 
                                  <!-- <div class="swiper-slide">

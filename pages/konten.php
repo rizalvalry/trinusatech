@@ -188,7 +188,7 @@
                                     <a href="foto-galeri-<?php echo $row1234['id_galeri']; ?>">
                                        <span class="elementor-icon elementor-animation-" >
                                           <center>
-                                          <img class="radius-circle" src="gambar/galeri/<?php echo $row1234['gambar']; ?>" width="48" height="48" />
+                                          <img src="gambar/galeri/<?php echo $row1234['gambar']; ?>" width="48" height="48" />
                                           <?php 
                                           // echo $row1234['icon']; 
                                           ?>
@@ -876,7 +876,7 @@
          </div>
       </div>
 </section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-3d47d9a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d47d9a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-3d47d9a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d47d9a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 <div class="elementor-container elementor-column-gap-wider">
 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0ebb98e" data-id="0ebb98e" data-element_type="column">
 <div class="elementor-widget-wrap elementor-element-populated">
@@ -890,13 +890,13 @@
 <div class="e-lottie__animation"></div>
 </div>
 </div>
-</div>
+</div> -->
 <!-- <div class="elementor-element elementor-element-250cefd elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="250cefd" data-element_type="widget" data-widget_type="heading.default">
    <div class="elementor-widget-container">
       <h2 class="elementor-heading-title elementor-size-default">Latest Work</h2>
    </div>
    </div> -->
-<div class="elementor-element elementor-element-2f73e37 elementor-widget elementor-widget-heading" data-id="2f73e37" data-element_type="widget" data-widget_type="heading.default">
+<!-- <div class="elementor-element elementor-element-2f73e37 elementor-widget elementor-widget-heading" data-id="2f73e37" data-element_type="widget" data-widget_type="heading.default">
 <div class="elementor-widget-container">
 <h2 class="elementor-heading-title elementor-size-default">See Our Portofolio.</h2>
 </div>
@@ -919,22 +919,24 @@
 </div>
 </div>
 </div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-3e94b53 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="3e94b53" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+</section> -->
+<!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-3e94b53 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="3e94b53" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 <div class="elementor-container elementor-column-gap-wider">
 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-005b006" data-id="005b006" data-element_type="column">
 <div class="elementor-widget-wrap elementor-element-populated">
 <section class="elementor-section elementor-inner-section elementor-element elementor-element-16f5fb8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="16f5fb8" data-element_type="section">
 <div class="elementor-container elementor-column-gap-no">
 <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-8326cf1" data-id="8326cf1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-widget-wrap elementor-element-populated"> -->
 <?php
-   $porto = $db->query("SELECT metode_pengiriman FROM pengiriman WHERE urutan = 1 AND aktif = 'Y'");
-   $portofolio = $porto->fetch_assoc();
+   // $porto = $db->query("SELECT metode_pengiriman FROM pengiriman WHERE urutan = 1 AND aktif = 'Y'");
+   // $portofolio = $porto->fetch_assoc();
    ?>
-<div class="elementor-widget-container">
-<?= $portofolio['metode_pengiriman']; ?>
-</div>
+<!-- <div class="elementor-widget-container"> -->
+<?php
+// echo $portofolio['metode_pengiriman']; 
+?>
+<!-- </div> -->
 <!-- <div class="elementor-element elementor-element-3da005b elementor-widget elementor-widget-heading" data-id="3da005b" data-element_type="widget" data-widget_type="heading.default">
    <div class="elementor-widget-container">
       <h2 class="elementor-heading-title elementor-size-default">What can we do for your needs</h2>
@@ -945,12 +947,12 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
    </div>
    </div> -->
+<!-- </div>
 </div>
 </div>
-</div>
-</section>
+</section> -->
 
-</div>
+<!-- </div>
 </div>
 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-892f01f" data-id="892f01f" data-element_type="column">
 <div class="elementor-widget-wrap elementor-element-populated">
@@ -958,7 +960,7 @@
 <div class="elementor-widget-container">
 <h2 class="elementor-heading-title elementor-size-default">We show you evidence</h2>
 </div>
-</div>
+</div> -->
 <!-- <div class="elementor-element elementor-element-7444513 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="7444513" data-element_type="widget" data-widget_type="image-box.default">
    <div class="elementor-widget-container">
       <div class="elementor-image-box-wrapper">
@@ -988,21 +990,21 @@
    </div> -->
 <!-- loop here -->
 <?php
-   $users = [
-   	'wp-content/uploads/sites/20/2022/03/hardware.png', 
-   	'wp-content/uploads/sites/20/2022/03/software.png'];
-   $i = 0;
+   // $users = [
+   // 	'wp-content/uploads/sites/20/2022/03/hardware.png', 
+   // 	'wp-content/uploads/sites/20/2022/03/software.png'];
+   // $i = 0;
    
    	
    ?>
-<div class="elementor-element elementor-element-f886a39 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="f886a39" data-element_type="widget" data-widget_type="image-box.default">
+<!-- <div class="elementor-element elementor-element-f886a39 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="f886a39" data-element_type="widget" data-widget_type="image-box.default">
 <div class="elementor-widget-container">
 <div class="elementor-image-box-wrapper">
 <figure class="elementor-image-box-img"><a href="#"><img width="1885" height="1258" src="<?= $users[$i]; $i++; ?>" class="attachment-full size-full" alt="" loading="lazy" /></a></figure>
 <div class="elementor-image-box-content">
-<h3 class="elementor-image-box-title"><a href="#">Hardware & Software </a></h3>
+<h3 class="elementor-image-box-title"><a href="#">Hardware & Software </a></h3> -->
 <!-- <p class="elementor-image-box-description">2046 Projects</p> -->
-</div>
+<!-- </div>
 </div>
 </div>
 </div>
@@ -1021,7 +1023,7 @@
 </span>
 </div>
 </div>
-</div>
+</div> -->
 <!-- end here -->
 <!-- <div class="elementor-element elementor-element-fce85bd elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-image-box" data-id="fce85bd" data-element_type="widget" data-widget_type="image-box.default">
    <div class="elementor-widget-container">
@@ -1042,11 +1044,11 @@
       </div>
    </div>
    </div> -->
+<!-- </div>
 </div>
 </div>
-</div>
-</section>
-<section class="elementor-section elementor-inner-section elementor-element elementor-element-a57f60c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a57f60c" data-element_type="section">
+</section> -->
+<!-- <section class="elementor-section elementor-inner-section elementor-element elementor-element-a57f60c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a57f60c" data-element_type="section">
    <div class="elementor-container elementor-column-gap-wider">
       <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-440e548" data-id="440e548" data-element_type="column">
          <div class="elementor-widget-wrap elementor-element-populated">
@@ -1058,7 +1060,7 @@
          </div>
       </div>
       <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1252905" data-id="1252905" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
+         <div class="elementor-widget-wrap elementor-element-populated"> -->
             <!-- <div class="elementor-element elementor-element-81b21d0 elementor-widget elementor-widget-heading" data-id="81b21d0" data-element_type="widget" data-widget_type="heading.default">
                <div class="elementor-widget-container">
                   <h2 class="elementor-heading-title elementor-size-default">Find more our gallery projects</h2>
@@ -1070,20 +1072,22 @@
                </div>
                </div> -->
             <?php
-               $porto2 = $db->query("SELECT metode_pengiriman FROM pengiriman WHERE urutan = 2 AND aktif = 'Y'");
-               $portofoliosecond = $porto2->fetch_assoc();
+               // $porto2 = $db->query("SELECT metode_pengiriman FROM pengiriman WHERE urutan = 2 AND aktif = 'Y'");
+               // $portofoliosecond = $porto2->fetch_assoc();
                ?>
-            <div class="elementor-widget-container">
-               <p><?= $portofoliosecond['metode_pengiriman']; ?></p>
-            </div>
-            <div class="elementor-element elementor-element-f2f1e40 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f2f1e40" data-element_type="widget" data-widget_type="divider.default">
+            <!-- <div class="elementor-widget-container"> -->
+               <p><?php 
+               // echo $portofoliosecond['metode_pengiriman']; 
+               ?></p>
+            <!-- </div> -->
+            <!-- <div class="elementor-element elementor-element-f2f1e40 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="f2f1e40" data-element_type="widget" data-widget_type="divider.default">
                <div class="elementor-widget-container">
                   <div class="elementor-divider">
                      <span class="elementor-divider-separator">
                      </span>
                   </div>
                </div>
-            </div>
+            </div> -->
             <!-- <div class="elementor-element elementor-element-4e55f42 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4e55f42" data-element_type="widget" data-widget_type="icon-list.default">
                <div class="elementor-widget-container">
                   <ul class="elementor-icon-list-items elementor-inline-items">
@@ -1111,7 +1115,7 @@
                   </ul>
                </div>
             </div> -->
-         </div>
+         <!-- </div>
       </div>
       <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c48f564" data-id="c48f564" data-element_type="column">
          <div class="elementor-widget-wrap elementor-element-populated">
@@ -1130,11 +1134,11 @@
          </div>
       </div>
    </div>
-</section>
+</section> -->
+<!-- </div>
 </div>
 </div>
-</div>
-</section>
+</section> -->
 <section class="elementor-section elementor-top-section elementor-element elementor-element-b27ac50 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b27ac50" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
    <div class="elementor-container elementor-column-gap-wider">
       <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-65a0a9a" data-id="65a0a9a" data-element_type="column">
