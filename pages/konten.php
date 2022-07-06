@@ -83,81 +83,8 @@
                   </div>
                </div>
          </section>
-         <section class="elementor-section elementor-inner-section elementor-element elementor-element-e5f9e8c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e5f9e8c" data-element_type="section">
-         <div class="elementor-container elementor-column-gap-wider">
-         <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8b0bd1e" data-id="8b0bd1e" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-         <div class="elementor-element elementor-element-813a7d1 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="813a7d1" data-element_type="widget" data-widget_type="counter.default">
-         <div class="elementor-widget-container">
-         <div class="elementor-counter">
-         <div class="elementor-counter-number-wrapper">
-         <span class="elementor-counter-number-prefix"></span>
-         <!-- <span class="elementor-counter-number" data-duration="2000" data-to-value="782" data-from-value="0" data-delimiter=",">0</span> -->
-         <span class="elementor-counter-number-suffix">Customers</span>
-         </div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-element elementor-element-7ed86f7 elementor-widget elementor-widget-heading" data-id="7ed86f7" data-element_type="widget" data-widget_type="heading.default">
-         <div class="elementor-widget-container">
-         <h2 class="elementor-heading-title elementor-size-default">Loyality</h2>		</div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6673c81" data-id="6673c81" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-         <div class="elementor-element elementor-element-77b6f89 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-spacer" data-id="77b6f89" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="spacer.default">
-         <div class="elementor-widget-container">
-         <div class="elementor-spacer">
-         <div class="elementor-spacer-inner"></div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-element elementor-element-0a6e5ab elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="0a6e5ab" data-element_type="widget" data-widget_type="counter.default">
-         <div class="elementor-widget-container">
-         <div class="elementor-counter">
-         <div class="elementor-counter-number-wrapper">
-         <span class="elementor-counter-number-prefix"></span>
-         <!-- <span class="elementor-counter-number" data-duration="2000" data-to-value="98" data-from-value="0" data-delimiter=",">0</span> -->
-         <span class="elementor-counter-number-suffix">Satisfaction</span>
-         </div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-element elementor-element-e033207 elementor-widget elementor-widget-heading" data-id="e033207" data-element_type="widget" data-widget_type="heading.default">
-         <div class="elementor-widget-container">
-         <h2 class="elementor-heading-title elementor-size-default">Our Service</h2>		</div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-f8bc554" data-id="f8bc554" data-element_type="column">
-         <div class="elementor-widget-wrap elementor-element-populated">
-         <div class="elementor-element elementor-element-9332c91 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-spacer" data-id="9332c91" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="spacer.default">
-         <div class="elementor-widget-container">
-         <div class="elementor-spacer">
-         <div class="elementor-spacer-inner"></div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-element elementor-element-e1deae3 elementor-widget__width-auto elementor-widget elementor-widget-counter" data-id="e1deae3" data-element_type="widget" data-widget_type="counter.default">
-         <div class="elementor-widget-container">
-         <div class="elementor-counter">
-         <div class="elementor-counter-number-wrapper">
-         <span class="elementor-counter-number-prefix"></span>
-         <!-- <span class="elementor-counter-number" data-duration="2000" data-to-value="4862" data-from-value="0" data-delimiter=",">0</span> -->
-         <span class="elementor-counter-number-suffix"> Experts</span>
-         </div>
-         </div>
-         </div>
-         </div>
-         <div class="elementor-element elementor-element-35376cb elementor-widget elementor-widget-heading" data-id="35376cb" data-element_type="widget" data-widget_type="heading.default">
-         <div class="elementor-widget-container">
-         <h2 class="elementor-heading-title elementor-size-default">Arround The World</h2>		</div>
-         </div>
-         </div>
-         </div>
-         </div>
-         </section>
+         
+         
          </div>
       </div>
    </div>
@@ -1147,7 +1074,7 @@
                   </div>
                </div>
             </div>
-            <div class="elementor-element elementor-element-4e55f42 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4e55f42" data-element_type="widget" data-widget_type="icon-list.default">
+            <!-- <div class="elementor-element elementor-element-4e55f42 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4e55f42" data-element_type="widget" data-widget_type="icon-list.default">
                <div class="elementor-widget-container">
                   <ul class="elementor-icon-list-items elementor-inline-items">
                      <li class="elementor-icon-list-item elementor-inline-item">
@@ -1173,7 +1100,7 @@
                      </li>
                   </ul>
                </div>
-            </div>
+            </div> -->
          </div>
       </div>
       <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c48f564" data-id="c48f564" data-element_type="column">
@@ -1232,7 +1159,7 @@
                <div class="elementor-container elementor-column-gap-wider">
                
                <?php
-               $homepage1 = $db->query("SELECT isi_halaman FROM `halaman_statis` WHERE `link_halaman` LIKE '%homepage%' ORDER BY id_halaman LIMIT 1 OFFSET 2");
+               $homepage1 = $db->query("SELECT isi_halaman,aktif FROM `halaman_statis` WHERE `link_halaman` AND aktif='Y' LIKE '%homepage%' ORDER BY id_halaman LIMIT 1 OFFSET 2 ");
                $contentone = $homepage1->fetch_assoc();?>
 
                <?= $contentone['isi_halaman']; ?>

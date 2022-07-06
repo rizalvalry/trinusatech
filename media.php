@@ -257,24 +257,11 @@
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-89"><a href="tentang-kami" aria-current="page" class="elementor-item">Tentang Kami</a></li>
 											 
 
-                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
-                                                <a href="#" class="elementor-item elementor-item-anchor">IT Solutions</a>
-                                                
-												<ul class="sub-menu elementor-nav-menu--dropdown">
-												<?php 
-												$query2 = $db->prepare("SELECT nama_kategori, id_kategori FROM kategori_produk");
-												$query2->execute();
-												$result2      = $query2->get_result();
-												while ( $row2         = $result2->fetch_assoc() ){ ?>
-													<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="solutions-<?= $row2['id_kategori']; ?>" class="elementor-sub-item"><?= $row2['nama_kategori']; ?></a></li>
-													
-													<?php } ?>
-												</ul>
-                                             </li>
+                                             <!-- isi disini -->
 
 											 <!-- code -->
 											 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
-                                                <a href="galeri" class="elementor-item elementor-item-anchor">Partnerships</a>
+                                                <a href="galeri" class="elementor-item elementor-item-anchor">Solutions</a>
                                                 <!-- <ul class="sub-menu elementor-nav-menu--dropdown"> -->
 												<?php
 											// $query3 = $db->prepare("SELECT judul_galeri FROM galeri");
@@ -296,6 +283,20 @@
                                                 <!-- </ul> -->
                                              </li>
 											 <!-- code -->
+                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
+                                                <a href="#" class="elementor-item elementor-item-anchor">Sector Solutions</a>
+                                                
+												<ul class="sub-menu elementor-nav-menu--dropdown">
+												<?php 
+												$query2 = $db->prepare("SELECT nama_kategori, id_kategori FROM kategori_produk");
+												$query2->execute();
+												$result2      = $query2->get_result();
+												while ( $row2         = $result2->fetch_assoc() ){ ?>
+													<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98"><a href="solutions-<?= $row2['id_kategori']; ?>" class="elementor-sub-item"><?= $row2['nama_kategori']; ?></a></li>
+													
+													<?php } ?>
+												</ul>
+                                             </li>
 											 
                                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-93">
                                                 <a href="" class="elementor-item elementor-item-anchor">Artikel</a>
