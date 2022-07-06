@@ -1320,7 +1320,7 @@
       <!-- <script type='text/javascript' src='wp-includes/js/dist/i18n.min771a.js?ver=ebee46757c6a411e38fd079a7ac71d94' id='wp-i18n-js'></script> -->
       <script type="text/javascript">
       function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'id', includedLanguages : 'ar,en,id'}, 'google_translate_element');
+      new google.translate.TranslateElement({pageLanguage: 'id', includedLanguages : 'en,id'}, 'google_translate_element');
       }
       </script>
 
